@@ -1,259 +1,157 @@
-import React, {Component} from "react";
+import React, {useState} from "react";
 import './technology.css';
+import Filter from '../filter';
+import FilterList from '../filter-list';
 
 const lists = [{
-        label: "Marie Forleo",
-        description: "Create new block from builder",
-        tag: "React,Animated,WordPress,JS,HTML5,CSS3,Webpack,NPM",
-        src: "/images/marie.png"
-    },
+    label: "Marie Forleo",
+    description: "Create new block from builder",
+    tag: "React,Animated,WordPress,JS,HTML5,CSS3,Webpack,NPM,",
+    src: "/images/marie.png"
+},
     {
+        id: 1,
         label: "Brand seo-wave.com",
         description: "Landing page",
-        tag: "TweenMax,Animated",
+        tag: "TweenMax,Animated,",
         src: "/images/brand.png"
     },
     {
+        id: 2,
         label: "Unidencellular",
         description: "M1 to M2 Migration. Created and updated UI, bug-fixing, markup",
-        tag: "Magento 1,Magento 2,JS,HTML5,LESS",
+        tag: "Magento 1,Magento 2,JS,HTML5,LESS,",
         src: "/images/und.png"
     },
     {
+        id: 3,
         label: "Bikebiz Blog",
         description: "Created and updated UI, bug-fixing, markup",
-        tag: "React,JS,HTML5,CSS3,Webpack,NPM",
+        tag: "React,JS,HTML5,CSS3,Webpack,NPM,",
         src: "/images/bike.png"
     },
     {
+        id: 4,
         label: "Pharmahyaluron",
         description: "Online store",
-        tag: "OpenCart,JS,HTML5,CSS3,SASS",
+        tag: "OpenCart,JS,HTML5,CSS3,SASS,",
         src: "/images/pharma.png"
     },
     {
+        id: 5,
         label: "Arhitektor krasoty",
         description: "Online store",
-        tag: "OpenCart,JS,HTML5,CSS3,SASS",
+        tag: "OpenCart,JS,HTML5,CSS3,SASS,",
         src: "/images/arhitektor.png"
     },
     {
+        id: 6,
         label: "Gutenberg",
         description: "Create new block from builder",
-        tag: "React,WordPress,JS,HTML5,CSS3,Webpack,NPM",
+        tag: "React,WordPress,JS,HTML5,CSS3,Webpack,NPM,",
         src: "/images/gut.png"
     },
     {
+        id: 7,
         label: "Музей АТО",
         description: "Wordpress corp site",
-        tag: "Wordpress,PHP,JS,HTML5,CSS3",
+        tag: "Wordpress,PHP,JS,HTML5,CSS3,",
         src: "/images/museum.jpg"
     },
     {
+        id: 8,
         label: "Vipidei",
         description: "Wordpress corp site",
-        tag: "Wordpress,PHP,JS,HTML5,CSS3",
+        tag: "Wordpress,PHP,JS,HTML5,CSS3,",
         src: "/images/vipidei.png"
     },
     {
+        id: 9,
         label: "Wiha Russia",
         description: "Wordpress online store",
-        tag: "Wordpress,Woocommerce,PHP,JS,HTML5,CSS3",
+        tag: "Wordpress,Woocommerce,PHP,JS,HTML5,CSS3,",
         src: "/images/wiha.png"
     },
     {
+        id: 10,
         label: "Юридична сотня",
         description: "Wordpress corp site",
-        tag: "Wordpress,PHP,JS,HTML5,CSS3",
+        tag: "Wordpress,PHP,JS,HTML5,CSS3,",
         src: "/images/legal.png"
     },
     {
+        id: 11,
         label: "Seo-wave.com",
         description: "Create corp site",
-        tag: "Joomla,JS,HTML5,CSS3",
+        tag: "Joomla,JS,HTML5,CSS3,",
         src: "/images/seowave.png"
     },
     {
+        id: 12,
         label: "Avantage",
         description: "Create corp site",
-        tag: "Wordpress,Animated,PHP,JS,HTML5,CSS3",
+        tag: "Wordpress,Animated,PHP,JS,HTML5,CSS3,",
         src: "/images/avantage.png"
     },
     {
+        id: 13,
         label: "Koko mama",
         description: "Online store",
-        tag: "OpenCart,JS,HTML5,CSS3",
+        tag: "OpenCart,JS,HTML5,CSS3,",
         src: "/images/kokomama.png"
     },
     {
+        id: 14,
         label: "Valentir store",
         description: "Online store",
-        tag: "OpenCart,JS,HTML5,CSS3",
+        tag: "OpenCart,JS,HTML5,CSS3,",
         src: "/images/valentir.png"
     },
     {
+        id: 15,
         label: "Юнифилд",
         description: "Wordpress online store",
-        tag: "Wordpress,Woocommerce,PHP,JS,HTML5,CSS3",
+        tag: "Wordpress,Woocommerce,PHP,JS,HTML5,CSS3,",
         src: "/images/uni.png"
     }
 ];
-const filters = [
-    {name: "React", status: false},
-    {name: "Vue", status: false},
-    {name: "Animated", status: false},
-    {name: "WordPress", status: false},
-    {name: "Magento 1", status: false},
-    {name: "Magento 2", status: false},
-    {name: "Joomla", status: false},
-    {name: "JS", status: false},
-    {name: "HTML5", status: false},
-    {name: "CSS3", status: false},
-    {name: "Webpack", status: false},
-    {name: "TweenMax", status: false},
-    {name: "NPM", status: false}
-];
+
+const unique = (value, index, self) => {
+    return self.indexOf(value) === index
+}
+
+const notNull = (element) => {
+    return element !== '';
+}
+
+const Technology = () => {
+    const [item, setItem] = useState(lists);
+
+    let menuItems = [...new Set(lists.map((list) => list.tag))];
+    menuItems = menuItems.join('').split(',').filter(notNull).filter(unique);
 
 
-const Filters = ({onClickAll, all, onClick, filters}) =>
-    <ul className="technology__filter">
-        <li onClick={onClickAll} className="technology__filter-item">
-            <input
-                type="checkbox"
-                checked={all}
-            />
-            <label htmlFor="all">All</label>
-        </li>
-        {filters.map(
-            (filter, i) =>
-                <li key={i} className="technology__filter-item" data-index={i} onClick={onClick}>
-                    <input
-                        id={filter.name}
-                        type="checkbox"
-                        checked={filter.status}
-                    />
-                    <label htmlFor={filter.name}>{filter.name}</label>
-                </li>
-        )}
-    </ul>
+    const filterItem = (curtag) => {
+        const newItem = lists.filter((newList) => {
+            const filterTag = newList.tag.split(',').filter(unique);
+            return Object.values(filterTag).includes(curtag);
+        });
 
-const Lists = ({lists}) =>
-    <ul className="technology__list">
-        {lists.map((list, i) => {
-                const tags = list.tag.split(",");
-                const {src, label, description} = list;
-                return (
-                    <li key={i} className="technology__list-item">
-                        <figure>
-                            <img src={src} alt={label}/>
-                            <figcaption>
-                                <div className="label">{label} </div>
-                                <div className="description">{description} </div>
-                                {tags.map((item, j) => {
-                                    return (
-                                        <div className="tag" key={j}>{item}</div>
-                                    )
-                                })}
-                            </figcaption>
-                        </figure>
-                    </li>)
-            }
-        )}
-    </ul>
-
-export default class Technology extends Component {
-    state = {
-        lists,
-        filters,
-        all: true
+        setItem(newItem);
     };
 
-    setFilter = (e) => {
-        e.preventDefault();
-        const {filters} = this.state;
-        const {index} = e.currentTarget.dataset;
+    return (
+        <div className="technology" id="project">
+            <Filter
+                filterItem={filterItem}
+                setItem={setItem}
+                menuItems={menuItems}
+                lists={lists}
+            />
 
-        filters[index].status = !filters[index].status;
-        this.setState({
-            filters
-        });
-
-        this.updateFilters();
-        this.updatelists();
-    }
-
-    setAll = () => {
-        const {filters} = this.state;
-
-        filters.forEach(
-            filter => {
-                filter.status = false;
-            }
-        );
-
-        this.setState({
-            all: true,
-            filters
-        });
-    }
-
-    updateFilters() {
-        const allFiltersTrue = filters.every(filter => filter.status === true);
-        const allFiltersFalse = filters.every(filter => filter.status === false);
-
-        if (allFiltersTrue || allFiltersFalse) {
-            this.setAll();
-        } else {
-            this.setState({
-                all: false
-            });
-        }
-    }
-
-    updatelists() {
-        const {filters} = this.state;
-        let newlists = [];
-        let a = 0;
-
-        const unique = (value, index, self) => {
-            return self.indexOf(value) === index
-        }
-
-        lists.forEach((list, listKey) => {
-            filters.forEach((filter, filterKey) => {
-                const tags = list.tag.split(",");
-
-                tags.forEach((tag) => {
-                    if ((tag === filter.name) && (filter.status === true)) {
-                        newlists[a] = list;
-                        a++;
-                    }
-                })
-                newlists = newlists.filter(unique);
-
-            })
-        });
-
-        this.setState({
-            lists: newlists
-        });
-    }
-
-    render() {
-        const {filters, all} = this.state;
-        return (
-            <div className="technology" id="project">
-                <Filters
-                    onClickAll={this.setAll}
-                    onClick={this.setFilter}
-                    all={all}
-                    filters={filters}/>
-                {(all) ? (
-                    <Lists lists={lists}/>
-                ) : (
-                    <Lists lists={this.state.lists}/>
-                )}
-            </div>
-        );
-    }
+            <FilterList lists={item}/>
+        </div>
+    );
 }
+
+export default Technology;
