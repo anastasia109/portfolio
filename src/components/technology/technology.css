@@ -7,16 +7,14 @@
 .technology__filter-item {
   display: inline-flex;
   margin: 5px 10px; }
-  .technology__filter-item label {
+  .technology__filter-item .tag {
     padding: 5px 10px;
     background-color: #3B5910;
     color: #ffffff;
     border-radius: 8px;
     cursor: pointer; }
-  .technology__filter-item input {
-    display: none; }
-  .technology__filter-item:hover label,
-  .technology__filter-item input:checked ~ label {
+  .technology__filter-item:hover .tag,
+  .technology__filter-item .tag.active {
     background: #9C8CC2; }
 .technology__list {
   display: flex;
