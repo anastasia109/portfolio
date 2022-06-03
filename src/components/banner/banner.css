@@ -1,0 +1,12 @@
+.banner {
+  display: flex; }
+  .banner__title, .banner__text {
+    margin-bottom: 20px; }
+  .banner__content {
+    width: 50%; }
+  .banner__image {
+    width: 50%; }
+    .banner__image img {
+      width: 100%; }
+
+/*# sourceMappingURL=banner.css.map */
