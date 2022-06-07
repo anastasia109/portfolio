@@ -1,6 +1,8 @@
 import React from 'react';
 import './footer.css';
 import {BrowserRouter as Router, Link} from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faCopyright} from '@fortawesome/fontawesome-free-solid'
 import logo from "../../static/icon/logo.svg";
 import Social from "../social";
 
@@ -16,6 +18,9 @@ const Footer = () => {
                     </div>
                     <div className="footer__social">
                         <Social />
+                    </div>
+                    <div className="copyright">
+                        <FontAwesomeIcon icon={faCopyright} /> 2022 Drobotun Anastasia - VAT +380638920606
                     </div>
                 </div>
             </div>

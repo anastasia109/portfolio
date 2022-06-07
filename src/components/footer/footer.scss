@@ -2,5 +2,14 @@
 
 .footer {
   padding: 30px;
+  text-align: center;
   background-color: $light-magenta;
+
+  &__logo {
+    margin-bottom: 50px;
+  }
+}
+
+.copyright {
+  color: $dark-green;
 }

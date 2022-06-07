@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,YAAY;AAOZ,WAAW;ACLX,OAAQ;EACN,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,MAAM;EAElB,aAAQ;IACN,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI;IACZ,OAAO,EAAE,WAAW;IACpB,eAAe,EAAE,MAAM;IACvB,WAAW,EAAE,MAAM;IACnB,aAAa,EAAE,GAAG;IAClB,KAAK,EDZI,OAAO;ICahB,MAAM,EAAE,iBAAqB;IAC7B,MAAM,EAAE,MAAM",
+"sources": ["../../static/scss/base/variables.scss","social.scss"],
 "names": [],
 "file": "social.css"
 }

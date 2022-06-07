@@ -2,6 +2,12 @@
 /* fonts */
 .footer {
   padding: 30px;
+  text-align: center;
   background-color: #E8DFFD; }
+  .footer__logo {
+    margin-bottom: 50px; }
+
+.copyright {
+  color: #3B5910; }
 
 /*# sourceMappingURL=footer.css.map */
