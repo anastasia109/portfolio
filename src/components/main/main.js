@@ -1,7 +1,8 @@
 import React from 'react';
 import './main.css';
-import Technology from "../technology";
 import Banner from "../banner";
+import Technology from "../technology";
+import Skills from "../skills";
 import Contact from "../contact";
 
 const Main = () => {
@@ -10,6 +11,7 @@ const Main = () => {
             <div className="container">
                 <Banner />
                 <Technology />
+                <Skills />
                 <Contact />
             </div>
         </main>

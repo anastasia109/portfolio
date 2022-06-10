@@ -2,5 +2,9 @@
 /* fonts */
 .main {
   display: block; }
+  .main__title {
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 1.1666666667; }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,10 +4,10 @@ import './contact.css';
 const Contact = () => {
     return (
         <div className="contact">
-            <h3 className="contact__title">Get in touch</h3>
+            <h3 className="main__title">Get in touch</h3>
             <p className="contact__content">If you'd like to get in touch, talk to me about collaborating on a project,
                 or just say hi,
-                <br/>fill out the great form below or send an email to <span class="fancy">
+                <br/>fill out the great form below or send an email to <span className="fancy">
                     <a href="mailto:anastasia18106@gmail.com">anastasia18106@gmail.com</a></span> and ~let's talk.</p>
             <div className="contact__form">
                 <form>

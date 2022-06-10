@@ -85,6 +85,9 @@ a {
     transform: rotate(0deg);
     transition: all .5s; }
 
+.mb-50 {
+  margin-bottom: 50px; }
+
 .hidden {
   display: none; }
 
