@@ -3,116 +3,118 @@ import './technology.css';
 import Filter from '../filter';
 import FilterList from '../filter-list';
 
-const lists = [{
-    label: "Marie Forleo",
-    description: "Create new block from builder",
-    tag: "React,Animated,WordPress,JS,HTML5,CSS3,Webpack,NPM,",
-    src: "/images/marie.png"
-},
+const lists = [
+    {
+        id: 0,
+        label: "Marie Forleo",
+        description: "Create new block from builder",
+        tag: "React,Animated,WordPress,JS,HTML5,CSS3,Webpack,NPM,",
+        src: "/images/technology/marie.png"
+    },
     {
         id: 1,
         label: "Brand seo-wave.com",
         description: "Landing page",
         tag: "TweenMax,Animated,",
-        src: "/images/brand.png"
+        src: "/images/technology/brand.png"
     },
     {
         id: 2,
         label: "Unidencellular",
         description: "M1 to M2 Migration. Created and updated UI, bug-fixing, markup",
         tag: "Magento 1,Magento 2,JS,HTML5,LESS,",
-        src: "/images/und.png"
+        src: "/images/technology/und.png"
     },
     {
         id: 3,
         label: "Bikebiz Blog",
         description: "Created and updated UI, bug-fixing, markup",
         tag: "React,JS,HTML5,CSS3,Webpack,NPM,",
-        src: "/images/bike.png"
+        src: "/images/technology/bike.png"
     },
     {
         id: 4,
         label: "Pharmahyaluron",
         description: "Online store",
         tag: "OpenCart,JS,HTML5,CSS3,SASS,",
-        src: "/images/pharma.png"
+        src: "/images/technology/pharma.png"
     },
     {
         id: 5,
         label: "Arhitektor krasoty",
         description: "Online store",
         tag: "OpenCart,JS,HTML5,CSS3,SASS,",
-        src: "/images/arhitektor.png"
+        src: "/images/technology/arhitektor.png"
     },
     {
         id: 6,
         label: "Gutenberg",
         description: "Create new block from builder",
         tag: "React,WordPress,JS,HTML5,CSS3,Webpack,NPM,",
-        src: "/images/gut.png"
+        src: "/images/technology/gut.png"
     },
     {
         id: 7,
         label: "Музей АТО",
         description: "Wordpress corp site",
         tag: "Wordpress,PHP,JS,HTML5,CSS3,",
-        src: "/images/museum.jpg"
+        src: "/images/technology/museum.jpg"
     },
     {
         id: 8,
         label: "Vipidei",
         description: "Wordpress corp site",
         tag: "Wordpress,PHP,JS,HTML5,CSS3,",
-        src: "/images/vipidei.png"
+        src: "/images/technology/vipidei.png"
     },
     {
         id: 9,
         label: "Wiha Russia",
         description: "Wordpress online store",
         tag: "Wordpress,Woocommerce,PHP,JS,HTML5,CSS3,",
-        src: "/images/wiha.png"
+        src: "/images/technology/wiha.png"
     },
     {
         id: 10,
         label: "Юридична сотня",
         description: "Wordpress corp site",
         tag: "Wordpress,PHP,JS,HTML5,CSS3,",
-        src: "/images/legal.png"
+        src: "/images/technology/legal.png"
     },
     {
         id: 11,
         label: "Seo-wave.com",
         description: "Create corp site",
         tag: "Joomla,JS,HTML5,CSS3,",
-        src: "/images/seowave.png"
+        src: "/images/technology/seowave.png"
     },
     {
         id: 12,
         label: "Avantage",
         description: "Create corp site",
         tag: "Wordpress,Animated,PHP,JS,HTML5,CSS3,",
-        src: "/images/avantage.png"
+        src: "/images/technology/avantage.png"
     },
     {
         id: 13,
         label: "Koko mama",
         description: "Online store",
         tag: "OpenCart,JS,HTML5,CSS3,",
-        src: "/images/kokomama.png"
+        src: "/images/technology/kokomama.png"
     },
     {
         id: 14,
         label: "Valentir store",
         description: "Online store",
         tag: "OpenCart,JS,HTML5,CSS3,",
-        src: "/images/valentir.png"
+        src: "/images/technology/valentir.png"
     },
     {
         id: 15,
         label: "Юнифилд",
         description: "Wordpress online store",
         tag: "Wordpress,Woocommerce,PHP,JS,HTML5,CSS3,",
-        src: "/images/uni.png"
+        src: "/images/technology/uni.png"
     }
 ];
 
@@ -141,7 +143,7 @@ const Technology = () => {
     };
 
     return (
-        <div className="technology" id="project">
+        <div className="technology mb-50" id="project">
             <Filter
                 filterItem={filterItem}
                 setItem={setItem}

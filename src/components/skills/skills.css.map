@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,YAAY;AAQZ,WAAW;ACLT,cAAS;EACP,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;AAGhB;mBACY;EACV,GAAG,EAAE,KAAK;EACV;4BAAS;IACP,KAAK,EDNG,OAAO;ACUnB,mBAAY;EACV,IAAI,EAAE,IAAI;EACV,KAAK,EAAE,IAAI",
+"sources": ["../../static/scss/base/variables.scss","skills.scss"],
 "names": [],
 "file": "skills.css"
 }

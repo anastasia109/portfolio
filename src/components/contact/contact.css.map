@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,YAAY;AAOZ,WAAW;ACLX,QAAS;EACP,aAAa,EAAE,IAAI;EAEnB,iBAAW;IACT,aAAa,EAAE,IAAI;EAGrB,eAAO;IACL,aAAa,EAAE,IAAI",
+"mappings": "AAAA,YAAY;AAQZ,WAAW;ACLT,iBAAW;EACT,aAAa,EAAE,IAAI;AAGrB,eAAO;EACL,aAAa,EAAE,IAAI",
 "sources": ["../../static/scss/base/variables.scss","contact.scss"],
 "names": [],
 "file": "contact.css"

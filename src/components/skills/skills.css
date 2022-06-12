@@ -1,3 +1,16 @@
-
+/* colors */
+/* fonts */
+.skills__items {
+  width: 80%;
+  margin: 0 auto; }
+.skills .slick-prev,
+.skills .slick-next {
+  top: -25px; }
+  .skills .slick-prev:before,
+  .skills .slick-next:before {
+    color: #232340; }
+.skills .slick-prev {
+  left: auto;
+  right: 25px; }
 
 /*# sourceMappingURL=skills.css.map */

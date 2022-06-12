@@ -1,0 +1,21 @@
+@import "../../static/scss/base/variables.scss";
+
+.skills {
+  &__items {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: -25px;
+    &:before {
+      color: $color-black;
+    }
+  }
+
+  .slick-prev {
+    left: auto;
+    right: 25px;
+  }
+}
