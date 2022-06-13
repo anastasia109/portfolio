@@ -43,20 +43,24 @@ const Skills = () => {
 
     return (
         <div className="skills mb-50">
-            <h3 className="main__title">Skills</h3>
-            <div className="skills__items">
-                <Slider {...settings}>
-                    {skillsLists.map((item, i) => {
-                        return (
-                            <div className="skills__item" key={i}>
-                                <div className="skills__item-image">
-                                    <img width="200px" src={item.src} alt={item.title}/>
+            <div className="container">
+                <h3 className="main__title">Skills</h3>
+                <div className="skills__items">
+                    <div className="skills__items-inner">
+                    <Slider {...settings}>
+                        {skillsLists.map((item, i) => {
+                            return (
+                                <div className="skills__item" key={i}>
+                                    <div className="skills__item-image">
+                                        <img src={item.src} alt={item.title}/>
+                                    </div>
+                                    <h4 className="skills__item-title">{item.title}</h4>
                                 </div>
-                                <div className="skills__item-title">{item.title}</div>
-                            </div>
-                        )
-                    })}
-                </Slider>
+                            )
+                        })}
+                    </Slider>
+                    </div>
+                </div>
             </div>
         </div>
     );

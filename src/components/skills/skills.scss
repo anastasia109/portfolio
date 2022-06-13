@@ -1,21 +1,137 @@
 @import "../../static/scss/base/variables.scss";
 
 .skills {
+  padding: 30px 0;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(232, 223, 253, 0.5) 100%);
+
   &__items {
     width: 80%;
     margin: 0 auto;
+    padding: 100px 0;
+    overflow: hidden;
+  }
+
+  &__items-inner {
+    position: relative;
+    border-radius: 50px;
+    background: #ffffff;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 140px 30px 60px;
+    min-height: 480px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 38px;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s;
+    }
+
+    &:hover {
+
+      .skills__item-image {
+        background-color: $color-white;
+      }
+
+      .skills__item-title {
+        color: $color-white;
+      }
+
+      &:before {
+        -webkit-transform: scaleY(1.16);
+        -ms-transform: scaleY(1.16);
+        transform: scaleY(1.16);
+        background: $blue-magenta;
+      }
+    }
+  }
+
+  &__item-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px auto;
+    border-radius: 100%;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(232, 223, 253, 0.5) 100%);
+    transition: background-color 0.5s;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  &__item-title {
+    position: relative;
+    font-size: 24px;
+    text-align: center;
+    color: $blue-magenta;
+    transition: color 0.5s;
+  }
+
+  .slick-list {
+    overflow: visible;
   }
 
   .slick-prev,
   .slick-next {
-    top: -25px;
+    top: -75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    border-radius: 100%;
+    opacity: 1;
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: $blue-magenta;
+
+      &:before {
+        color: $color-white;
+      }
+    }
+
     &:before {
       color: $color-black;
+      font-size: 42px;
+      line-height: inherit;
+      font-family: "Font Awesome";
+      transition: color 0.5s;
     }
   }
 
   .slick-prev {
     left: auto;
-    right: 25px;
+    right: 60px;
+  }
+
+  .slick-next {
+    right: 0;
   }
 }

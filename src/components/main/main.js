@@ -10,11 +10,13 @@ const Main = () => {
     return (
         <main className="main">
             <div className="container">
-                <Banner />
-                <Technology />
-                <Skills />
-                <Experience />
-                <Contact />
+                <Banner/>
+                <Technology/>
+            </div>
+            <Skills/>
+            <div className="container">
+                <Experience/>
+                <Contact/>
             </div>
         </main>
     );
