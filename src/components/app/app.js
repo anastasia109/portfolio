@@ -29,11 +29,11 @@ export default class App extends Component {
                     isLoading
                         ? <Spinner/>
                         :
-                        <Fragment>
+                        <div className="page">
                             <Header/>
                             <Main/>
                             <Footer/>
-                        </Fragment>
+                        </div>
                 }
             </Fragment>
         );

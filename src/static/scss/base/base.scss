@@ -41,14 +41,14 @@ a {
   display: inline-block;
   padding: 8px 10px;
   color: #fff;
-  border: 2px solid $dark-green;
+  border: 2px solid $blue-magenta;
   border-radius: 6px;
   transition: all .5s;
   overflow: hidden;
   font-family: $playfair-medium;
 
   &:hover {
-    color: $dark-green;
+    color: $blue-magenta;
     transition: all .5s;
 
     &:before {
@@ -69,7 +69,7 @@ a {
     right: 0;
     bottom: 0;
     z-index: -2;
-    background: $dark-green;
+    background: $blue-magenta;
     transform: translate3D(0, -100%, 0);
     transition: all .5s;
   }

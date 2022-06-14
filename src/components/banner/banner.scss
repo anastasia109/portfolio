@@ -1,20 +1,67 @@
+@import "../../static/scss/base/variables.scss";
+
 .banner {
   display: flex;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 160px 0;
 
-  &__title,
-  &__text {
-    margin-bottom: 20px;
+  &__info {
+    font-size: 42px;
+    line-height: 1.25;
+    margin-bottom: 145px;
+  }
+
+  &__title {
+    margin-bottom: 72px;
+    font-size: 132px;
+    line-height: 1;
+    font-family: $playfair-medium;
+  }
+
+  &__contact.btn {
+    font-size: 24px;
+    padding: 15px 25px;
   }
 
   &__content {
     width: 50%;
   }
 
-  &__image {
+  &__figures {
     width: 50%;
+  }
+
+  &__figure {
+    position: absolute;
+    z-index: -1;
+    font-size: 0;
+    pointer-events: none;
 
     img {
       width: 100%;
+    }
+
+    &:first-child {
+      top: 200px;
+      right: calc(50% - 474px);
+      z-index: 2;
+      width: 244px;
+    }
+
+    &:nth-child(2) {
+      top: 744px;
+      right: calc(50% - 452px);
+      z-index: 3;
+      width: 371px;
+    }
+
+    &:nth-child(3) {
+      top: 129px;
+      right: calc(50% - 1270px);
+      z-index: 1;
+      width: 1260px;
     }
   }
 }

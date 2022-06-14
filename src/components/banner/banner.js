@@ -1,25 +1,32 @@
 import React from 'react';
-import './banner.css'
-import bannerImage from '../../static/images/laptop.png';
+
+import './banner.css';
+
+import figureImage1 from '../../static/images/figure-1.png';
+import figureImage2 from '../../static/images/figure-2.png';
+import figureImage3 from '../../static/images/figure-3.png';
 
 const Banner = () => {
     return (
         <div className="banner">
             <div className="banner__content">
+                <h3 className="banner__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                 <h1 className="banner__title">Portfolio site</h1>
-                <div className="banner__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-                <a href="/" className="btn">More details</a>
+                <a className="btn banner__contact" href="/">More details</a>
             </div>
-            <div className="banner__image">
-                <img src={bannerImage} alt='banner'/>
+            <div className="banner__figures">
+                <div className="banner__figure">
+                    <img className="details__pic js-parallax" data-scale="2" data-orientation="down" src={figureImage1}
+                         alt='figure'/>
+                </div>
+                <div className="banner__figure">
+                    <img className="details__pic js-parallax" data-scale="2" data-orientation="up" src={figureImage2}
+                         alt='figure'/>
+                </div>
+                <div className="banner__figure">
+                    <img className="details__pic js-parallax" data-scale="1.2" data-orientation="up" src={figureImage3}
+                         alt='figure'/>
+                </div>
             </div>
         </div>
     );

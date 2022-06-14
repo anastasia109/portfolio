@@ -1,12 +1,48 @@
+/* colors */
+/* fonts */
 .banner {
-  display: flex; }
-  .banner__title, .banner__text {
-    margin-bottom: 20px; }
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 160px 0; }
+  .banner__info {
+    font-size: 42px;
+    line-height: 1.25;
+    margin-bottom: 145px; }
+  .banner__title {
+    margin-bottom: 72px;
+    font-size: 132px;
+    line-height: 1;
+    font-family: "PlayfairDisplay-Medium"; }
+  .banner__contact.btn {
+    font-size: 24px;
+    padding: 15px 25px; }
   .banner__content {
     width: 50%; }
-  .banner__image {
+  .banner__figures {
     width: 50%; }
-    .banner__image img {
+  .banner__figure {
+    position: absolute;
+    z-index: -1;
+    font-size: 0;
+    pointer-events: none; }
+    .banner__figure img {
       width: 100%; }
+    .banner__figure:first-child {
+      top: 200px;
+      right: calc(50% - 474px);
+      z-index: 2;
+      width: 244px; }
+    .banner__figure:nth-child(2) {
+      top: 744px;
+      right: calc(50% - 452px);
+      z-index: 3;
+      width: 371px; }
+    .banner__figure:nth-child(3) {
+      top: 129px;
+      right: calc(50% - 1270px);
+      z-index: 1;
+      width: 1260px; }
 
 /*# sourceMappingURL=banner.css.map */
