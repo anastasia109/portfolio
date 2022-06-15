@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,YAAY;AAQZ,WAAW;ACNX,KAAM;EACJ,QAAQ,EAAE,QAAQ;EAClB,QAAQ,EAAE,MAAM;EAChB,UAAU,EAAE,KAAK",
+"mappings": "AAAA,YAAY;AAUZ,WAAW;ACRX,KAAM;EACJ,QAAQ,EAAE,QAAQ;EAClB,QAAQ,EAAE,MAAM;EAChB,UAAU,EAAE,KAAK",
 "sources": ["../../static/scss/base/variables.scss","app.scss"],
 "names": [],
 "file": "app.css"

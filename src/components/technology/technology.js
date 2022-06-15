@@ -144,13 +144,13 @@ const Technology = () => {
 
     return (
         <div className="technology mb-50" id="project">
+            <h2 className="main__title">Projects</h2>
             <Filter
                 filterItem={filterItem}
                 setItem={setItem}
                 menuItems={menuItems}
                 lists={lists}
             />
-
             <FilterList lists={item}/>
         </div>
     );

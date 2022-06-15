@@ -62,7 +62,7 @@
         -webkit-transform: scaleY(1.16);
         -ms-transform: scaleY(1.16);
         transform: scaleY(1.16);
-        background: $blue-magenta;
+        background: $main-color2;
       }
     }
   }
@@ -88,7 +88,7 @@
     position: relative;
     font-size: 24px;
     text-align: center;
-    color: $blue-magenta;
+    color: $main-color2;
     transition: color 0.5s;
   }
 
@@ -110,7 +110,7 @@
     transition: background-color 0.5s;
 
     &:hover {
-      background-color: $blue-magenta;
+      background-color: $main-color2;
 
       &:before {
         color: $color-white;

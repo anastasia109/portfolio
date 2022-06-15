@@ -10,21 +10,21 @@ const Filter = ({filterItem, setItem, menuItems, lists}) => {
 
     const ButtonTag = ({item, isActive}) => {
         return (
-            <button
+            <span
                 className={isActive ? "tag active" : "tag"}
                 onClick={() => tagClick(item)}>
                 {item}
-            </button>
+            </span>
         );
     };
 
     const ButtonAll = ({item, isActive}) => {
         return (
-            <button
+            <span
                 className={isActive ? "tag active" : "tag"}
                 onClick={() => tagAllClick(item)}>
                 {item}
-            </button>
+            </span>
         );
     };
 

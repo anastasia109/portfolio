@@ -7,14 +7,9 @@
   position: relative;
   padding: 160px 0; }
   .banner__info {
-    font-size: 42px;
-    line-height: 1.25;
     margin-bottom: 145px; }
   .banner__title {
-    margin-bottom: 72px;
-    font-size: 132px;
-    line-height: 1;
-    font-family: "PlayfairDisplay-Medium"; }
+    margin-bottom: 72px; }
   .banner__contact.btn {
     font-size: 24px;
     padding: 15px 25px; }

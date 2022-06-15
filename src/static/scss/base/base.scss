@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: $playfair-display, sans-serif;
+  font-family: $montserrat-display, sans-serif;
   font-size: 16px;
 }
 
@@ -41,15 +41,14 @@ a {
   display: inline-block;
   padding: 8px 10px;
   color: #fff;
-  border: 2px solid $blue-magenta;
-  border-radius: 6px;
-  transition: all .5s;
+  border: 2px solid $main-color2;
+  border-radius: 12px;
   overflow: hidden;
-  font-family: $playfair-medium;
+  font-weight: 500;
+  transition: all .5s;
 
   &:hover {
-    color: $blue-magenta;
-    transition: all .5s;
+    color: $main-color2;
 
     &:before {
       transform: translateX(-100%) rotate(-30deg);
@@ -69,7 +68,7 @@ a {
     right: 0;
     bottom: 0;
     z-index: -2;
-    background: $blue-magenta;
+    background: $main-color2;
     transform: translate3D(0, -100%, 0);
     transition: all .5s;
   }

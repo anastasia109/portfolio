@@ -4,22 +4,25 @@ import './filter-list.css';
 const FilterList = ({lists}) =>
     <ul className="technology__list">
         {lists.map((list, i) => {
-                const tags = list.tag.split(",");
+                // const tags = list.tag.split(",");
                 const {src, label, description} = list;
                 return (
                     <li key={i} className="technology__list-item">
-                        <figure>
-                            <img src={src} alt={label}/>
-                            <figcaption>
-                                <div className="label">{label} </div>
-                                <div className="description">{description} </div>
-                                {tags.map((item, j) => {
-                                    return (
-                                        <div className="tag" key={j}>{item}</div>
-                                    )
-                                })}
-                            </figcaption>
-                        </figure>
+                        <div>
+                            <div className="technology__list-image">
+                                <img src={src} alt={label}/>
+                            </div>
+
+                            <div className="technology__list-text">
+                                <h4 className="technology__list-label">{label} </h4>
+                                <div className="technology__list-description">{description} </div>
+                                {/*{tags.map((item, j) => {*/}
+                                {/*    return (*/}
+                                {/*        <div className="tag" key={j}>{item}</div>*/}
+                                {/*    )*/}
+                                {/*})}*/}
+                            </div>
+                        </div>
                     </li>)
             }
         )}
