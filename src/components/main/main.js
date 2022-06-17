@@ -14,9 +14,11 @@ const Main = () => {
                 <Technology/>
             </div>
             <Skills/>
-            <div className="container">
-                <Experience/>
-                <Contact/>
+            <div className="wrapper_gradient">
+                <div className="container">
+                    <Experience/>
+                    <Contact/>
+                </div>
             </div>
         </main>
     );

@@ -1,11 +1,100 @@
 @import "../../static/scss/base/variables.scss";
 
 .contact {
+  background-color: $color-white;
+  padding: 100px 100px 60px;
+  border-radius: 48px;
+
   &__content {
-    margin-bottom: 20px;
+    max-width: 535px;
+    margin-bottom: 40px;
+    padding-right: 20px;
   }
 
-  .label {
+  &__text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: $color-darkgray;
+  }
+
+  &__form-input {
     margin-bottom: 20px;
+
+    input,
+    textarea {
+      padding: 0 72px 0 24px;
+      width: 100%;
+      background: rgba(244, 244, 244, 0.8);
+      border-radius: 12px;
+      border: 2px solid rgba(244, 244, 244, 0.8);
+      font-size: 18px;
+      color: $color-black;
+      transition: all .25s;
+
+      &:focus,
+      &:focus-visible {
+        outline: none;
+        border-color: $main-color2;
+        background: $color-white;
+      }
+    }
+
+    input {
+      height: 72px;
+    }
+
+    textarea {
+      height: 200px;
+      padding-top: 20px;
+    }
+  }
+
+  &__submit {
+    font-size: 24px;
+    padding: 15px 25px;
+  }
+
+  &__details,
+  &__info {
+    display: flex;
+
+    > div {
+      width: 50%;
+    }
+  }
+
+  &__figures {
+    position: relative;
+  }
+
+  &__figure {
+    position: absolute;
+
+    img {
+      width: 100%;
+      filter: drop-shadow(1px 1px 5px $color-gray);
+    }
+
+    &:first-child {
+      top: 0;
+      left: 25%;
+      z-index: 2;
+      width: 244px;
+    }
+
+    &:nth-child(2) {
+      left: 79.5%;
+      top: -16%;
+      z-index: 3;
+      width: 21%;
+      filter: hue-rotate(290deg);
+    }
+
+    &:nth-child(3) {
+      left: 70%;
+      top: -14%;
+      z-index: 2;
+      width: 40%;
+    }
   }
 }

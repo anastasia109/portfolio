@@ -46,6 +46,7 @@ a {
   overflow: hidden;
   font-weight: 500;
   transition: all .5s;
+  z-index: 2;
 
   &:hover {
     color: $main-color2;
@@ -91,4 +92,10 @@ a {
     transform: rotate(0deg);
     transition: all .5s;
   }
+}
+
+.wrapper_gradient {
+  background: -o-radial-gradient(20.49% 12.79%, 75.22% 75.22%, #FFFFFF 0%, rgba(228, 231, 233, 0.502295) 100%);
+  background: radial-gradient(75.22% 75.22% at 20.49% 12.79%, #FFFFFF 0%, rgba(228, 231, 233, 0.502295) 100%);
+  padding: 50px 0;
 }
