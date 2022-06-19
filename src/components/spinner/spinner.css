@@ -17,7 +17,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    background: #77cae1;
+    background: #fdcd45;
     border-radius: 50%;
     animation: spinner-lqsq3g 1.25s infinite ease; }
   .spinner::before {

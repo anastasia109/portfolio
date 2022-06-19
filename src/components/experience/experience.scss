@@ -1,0 +1,66 @@
+@import "../../static/scss/base/variables.scss";
+
+.experience {
+  padding: 100px 100px 60px;
+  width: 85%;
+  margin: 0 auto;
+
+  &__item {
+    width: 100%;
+
+    &:first-child {
+      max-width: 466px;
+      margin-left: auto;
+
+      .experience__item-image {
+        height: 430px;
+        background: $main-color2;
+      }
+    }
+
+    &:nth-child(2) {
+      max-width: 470px;
+      margin-top: -310px;
+
+      .experience__item-image {
+        height: 500px;
+        background: $main-color1;
+      }
+    }
+
+    &:nth-child(3) {
+      max-width: 467px;
+      margin: 0 100px 0 auto;
+
+      .experience__item-image {
+        height: 315px;
+        background: $main-color2;
+      }
+    }
+  }
+
+  &__item-image {
+    border-radius: 24px;
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__item-company {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__item-description {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  &__item-during {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

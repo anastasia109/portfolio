@@ -10,7 +10,7 @@ const Banner = () => {
     return (
         <div className="banner">
             <div className="banner__content">
-                <h3 className="banner__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                <p className="banner__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <h1 className="banner__title">Portfolio site</h1>
                 <a className="btn banner__contact" href="/">More details</a>
             </div>

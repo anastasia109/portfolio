@@ -44,7 +44,7 @@ const Skills = () => {
     return (
         <div className="skills mb-50">
             <div className="container">
-                <h2 className="main__title">Skills</h2>
+                <h3 className="main__title">Skills</h3>
                 <div className="skills__items">
                     <div className="skills__items-inner">
                     <Slider {...settings}>

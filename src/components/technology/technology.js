@@ -144,7 +144,7 @@ const Technology = () => {
 
     return (
         <div className="technology mb-50" id="project">
-            <h2 className="main__title">Projects</h2>
+            <h3 className="main__title">Projects</h3>
             <Filter
                 filterItem={filterItem}
                 setItem={setItem}
