@@ -55,3 +55,36 @@ h4 {
   font-size: 32px;
   line-height: 1.5;
 }
+
+[data-aos="animation-translate-right"] {
+  transform: translateX(-30px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="animation-translate-right"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+[data-aos="animation-translate-up"] {
+  transform: translateY(40px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="animation-translate-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+[data-aos="animation-scale-y"] {
+  transform: translateY(40px) scaleY(1.4);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="animation-scale-y"].aos-animate {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
+}

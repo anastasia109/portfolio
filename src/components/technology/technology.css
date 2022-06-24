@@ -22,7 +22,7 @@
   flex-wrap: wrap; }
 .technology__list-item {
   position: relative;
-  width: calc(25% - 20px);
+  width: calc(100%/3 - 20px);
   margin: 0 10px 20px 10px;
   animation: show .8s ease;
   border-radius: 24px;

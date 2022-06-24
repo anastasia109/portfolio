@@ -151,7 +151,9 @@ const Technology = () => {
                 menuItems={menuItems}
                 lists={lists}
             />
-            <FilterList lists={item}/>
+            <div className="inner">
+                <FilterList lists={item}/>
+            </div>
         </div>
     );
 }

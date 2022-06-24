@@ -56,10 +56,9 @@
       width: 244px; }
     .contact__figure:nth-child(2) {
       left: 79.5%;
-      top: -16%;
+      top: -25%;
       z-index: 3;
-      width: 21%;
-      filter: hue-rotate(290deg); }
+      width: 21%; }
     .contact__figure:nth-child(3) {
       left: 70%;
       top: -14%;

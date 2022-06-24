@@ -31,24 +31,25 @@ const experienceLists = [
 
 const Experience = () => {
     return (
-        <div className="experience mb-50">
+        <div className="experience mb-50" id="experience">
             <h3 className="main__title">Experience</h3>
-            <div className="experience__items">
-
-                {experienceLists.map((item, i) => {
-                    return (
-                        <div className="experience__item" key={i}>
-                            <a className="experience__item-company" href={item.link}><h4>{item.company}</h4></a>
-                            <div className="experience__item-image">
-                                <img src={item.src} alt={item.company}/>
+            <div className="inner">
+                <div className="experience__items">
+                    {experienceLists.map((item, i) => {
+                        return (
+                            <div className="experience__item" key={i}>
+                                <a className="experience__item-company" href={item.link}><h4>{item.company}</h4></a>
+                                <div className="experience__item-image">
+                                    <img src={item.src} alt={item.company}/>
+                                </div>
+                                <div className="experience__item-content">
+                                    <p className="experience__item-description">{item.description}</p>
+                                    <p className="experience__item-during">{item.during}</p>
+                                </div>
                             </div>
-                            <div className="experience__item-content">
-                                <p className="experience__item-description">{item.description}</p>
-                                <p className="experience__item-during">{item.during}</p>
-                            </div>
-                        </div>
-                    )
-                })}
+                        )
+                    })}
+                </div>
             </div>
         </div>
     );
