@@ -1,13 +1,26 @@
 @import "../../static/scss/base/variables.scss";
+@import "../../static/scss/base/mixins.scss";
 
 .skills {
   padding: 30px 0;
-  background: linear-gradient(360deg, rgba(253, 253, 253, 0.5) 0%, rgba(232, 223, 253, 0.5) 100%);
+  background: linear-gradient(360deg, rgba(253, 243, 253, 0.5) 0%, rgba(232, 223, 253, 0.5) 100%);
+
+  @include tablets {
+    padding: 50px 0;
+  }
+
+  @include laptop {
+    padding: 100px 0;
+  }
 
   &__items {
-    margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
+    margin-top: -90px;
     overflow: hidden;
+
+    @include laptop {
+      margin-top: 0;
+    }
   }
 
   &__items-inner {
@@ -31,8 +44,18 @@
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 140px 30px 60px;
-    min-height: 480px;
+    padding: 40px 10px 20px 10px;
+    min-height: 210px;
+
+    @include tablets {
+      padding: 100px 30px 60px;
+      min-height: 380px;
+    }
+
+    @include laptop {
+      padding: 140px 30px 60px;
+      min-height: 480px;
+    }
 
     &:before {
       content: "";
@@ -71,24 +94,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     margin: 0 auto 30px auto;
     border-radius: 100%;
     background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(232, 223, 253, 0.5) 100%);
     transition: background-color 0.5s;
 
+    @include tablets {
+      width: 120px;
+      height: 120px;
+    }
+
+    @include laptop {
+      width: 150px;
+      height: 150px;
+    }
+
     img {
-      width: 100px;
+      width: 50px;
+
+      @include tablets {
+        width: 80px;
+      }
+
+      @include laptop {
+        width: 100px;
+      }
     }
   }
 
   &__item-title {
     position: relative;
-    font-size: 24px;
     text-align: center;
     color: $main-color2;
     transition: color 0.5s;
+
+    @include laptop {
+      font-size: 24px;
+    }
   }
 
   .slick-list {
@@ -97,7 +141,7 @@
 
   .slick-prev,
   .slick-next {
-    top: -75px;
+    top: -65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,6 +151,10 @@
     border-radius: 100%;
     opacity: 1;
     transition: background-color 0.5s;
+
+    @include laptop {
+      top: -75px;
+    }
 
     &:hover {
       background-color: $main-color2;

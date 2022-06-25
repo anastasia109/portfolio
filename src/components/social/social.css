@@ -1,18 +1,23 @@
 /* colors */
 /* fonts */
+/* breakpoints */
 .social__link {
   position: relative;
   width: fit-content;
   display: block;
-  padding-left: 50px;
-  font-size: 18px;
+  padding-left: 45px;
+  font-size: 14px;
   line-height: 1.5;
   margin-bottom: 20px;
   color: #232340; }
+  @media (min-width: 768px) {
+    .social__link {
+      padding-left: 50px;
+      font-size: 18px; } }
   .social__link path {
-    fill: #9C8CC2; }
+    fill: #9c8cc2; }
   .social__link:hover .social__icon {
-    background-color: #9C8CC2; }
+    background-color: #9c8cc2; }
   .social__link:hover path {
     fill: #ffffff; }
 .social__icon {
@@ -26,7 +31,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  border: 1px solid #9C8CC2;
+  border: 1px solid #9c8cc2;
   border-radius: 50%;
   transition: all .25s; }
 

@@ -1,9 +1,19 @@
 @import "../../static/scss/base/variables.scss";
+@import "../../static/scss/base/mixins.scss";
 
 .contact {
   background-color: $color-white;
-  padding: 100px 100px 60px;
-  border-radius: 48px;
+  padding: 30px 20px 10px;
+  border-radius: 28px;
+
+  @include tablets {
+    padding: 60px 50px 20px;
+    border-radius: 48px;
+  }
+
+  @include laptop {
+    padding: 100px 100px 60px;
+  }
 
   &__content {
     max-width: 535px;
@@ -12,9 +22,14 @@
   }
 
   &__text {
-    font-size: 18px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.5;
     color: $color-darkgray;
+
+    @include tablets {
+      font-size: 18px;
+      line-height: 1.7;
+    }
   }
 
   &__form-input {
@@ -22,12 +37,12 @@
 
     input,
     textarea {
-      padding: 0 72px 0 24px;
+      padding: 0 10px;
       width: 100%;
       background: rgba(244, 244, 244, 0.8);
       border-radius: 12px;
       border: 2px solid rgba(244, 244, 244, 0.8);
-      font-size: 18px;
+      font-size: 16px;
       color: $color-black;
       transition: all .25s;
 
@@ -37,21 +52,35 @@
         border-color: $main-color2;
         background: $color-white;
       }
+
+      @include tablets {
+        padding: 0 72px 0 24px;
+        font-size: 18px;
+      }
     }
 
     input {
-      height: 72px;
+      height: 45px;
+      @include tablets {
+        height: 72px;
+      }
     }
 
     textarea {
-      height: 200px;
-      padding-top: 20px;
+      height: 100px;
+      padding-top: 10px;
+      @include tablets {
+        height: 200px;
+        padding-top: 20px;
+      }
     }
   }
 
   &__submit {
-    font-size: 24px;
-    padding: 15px 25px;
+    @include tablets {
+      font-size: 24px;
+      padding: 15px 25px;
+    }
   }
 
   &__details,
@@ -59,12 +88,29 @@
     display: flex;
 
     > div {
-      width: 50%;
+      @include laptop {
+        width: 50%;
+      }
+    }
+  }
+
+  &__details {
+    flex-direction: column;
+    @include laptop {
+      flex-direction: row;
+    }
+  }
+
+  &__social {
+    margin-bottom: 30px;
+    @include laptop {
+      margin-bottom: 0;
     }
   }
 
   &__figures {
     position: relative;
+    display: none;
   }
 
   &__figure {

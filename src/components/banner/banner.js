@@ -11,9 +11,15 @@ const Banner = () =>  {
         return (
             <div className="banner aos-init">
                 <div className="banner__content">
-                    <p className="banner__info aos-init" data-aos="animation-translate-up" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p className="banner__info aos-init" data-aos="animation-translate-up" data-aos-delay="100">Hello, my name's Anastasia. I'm a Front-end developer.</p>
                     <h1 className="banner__title aos-init" data-aos="animation-translate-up" data-aos-delay="200">Portfolio site</h1>
-                    <a className="btn banner__contact" href="/">More details</a>
+                    {/*<h1 className="main__title title h1">*/}
+                    {/*    <span data-aos="transform" data-aos-delay="150">Hello, my</span>*/}
+                    {/*    <span data-aos="transform" data-aos-delay="300">name's Anastasia.</span>*/}
+                    {/*    <span data-aos="transform" data-aos-delay="450">I'm a Front-end</span><span*/}
+                    {/*    data-aos="transform" data-aos-delay="600">Developer.</span></h1>*/}
+
+                <a className="btn banner__contact" href="/">More details</a>
                 </div>
                 <div className="banner__figures">
                     <div className="banner__figure">

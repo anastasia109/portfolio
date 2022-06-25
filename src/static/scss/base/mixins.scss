@@ -4,11 +4,6 @@
     @content
   }
 }
-@mixin largeDesktop {
-  @media (min-width: 1366px) {
-    @content
-  }
-}
 @mixin laptop {
   @media (min-width: 1024px) {
     @content
@@ -21,14 +16,6 @@
 }
 @mixin phones {
   @media (min-width: 544px) {
-    @content
-  }
-}
-
-@mixin retina {
-  @media
-  only screen and ( min-device-pixel-ratio: 2),
-  only screen and ( min-resolution: 192dpi) {
     @content
   }
 }

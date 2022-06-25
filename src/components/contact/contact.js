@@ -7,7 +7,7 @@ import figureImage5 from "../../static/images/figure-5.png";
 
 const Contact = () => {
     return (
-        <div className="contact mb-50" id="contact">
+        <div className="contact" id="contact">
             <div className="contact__info">
                 <div className="contact__content">
                     <h3 className="main__title">Get in touch</h3>

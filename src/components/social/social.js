@@ -18,10 +18,6 @@ const Social = () => {
                 <span className="social__icon"><FontAwesomeIcon icon={faLinkedinIn}/></span>
                 linkedin/anastasiia-drobotun
             </a>
-            <a className="social__link" href="https://t.me/anastasia_drobotun" target="_blank" rel="noreferrer">
-                <span className="social__icon"><FontAwesomeIcon icon={faTelegram}/></span>
-                https://t.me/anastasia_drobotun
-            </a>
             <a className="social__link" href="mailto:drobotun.nastia@gmail.com" target="_blank" rel="noreferrer">
                 <span className="social__icon"><FontAwesomeIcon icon={faEnvelope}/></span>
                 drobotun.nastia@gmail.com

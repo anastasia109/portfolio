@@ -1,40 +1,78 @@
 @import "../../static/scss/base/variables.scss";
+@import "../../static/scss/base/mixins.scss";
 
 .banner {
   display: flex;
-  width: 80%;
   margin: 0 auto;
   position: relative;
-  padding: 160px 0;
+  padding: 40px 0 90px 0;
+
+  @include tablets {
+    padding: 80px 0;
+  }
+
+  @include laptop {
+    width: 80%;
+    padding: 100px 0;
+  }
+
+  @include desktop {
+    padding: 160px 0;
+  }
 
   &__info {
-    font-size: 42px;
+    font-size: 20px;
     line-height: 1.25;
-    margin-bottom: 145px;
+    margin-bottom: 40px;
+
+    @include tablets {
+      font-size: 32px;
+      margin-bottom: 90px;
+    }
+
+    @include desktop {
+      font-size: 42px;
+      margin-bottom: 145px;
+    }
   }
 
   &__title {
-    margin-bottom: 72px;
+    margin-bottom: 60px;
+
+    @include desktop {
+      margin-bottom: 70px;
+    }
   }
 
   &__contact.btn {
-    font-size: 24px;
-    padding: 15px 25px;
+    @include tablets {
+      font-size: 22px;
+      padding: 10px 20px;
+    }
+
+    @include desktop {
+      font-size: 24px;
+      padding: 15px 25px;
+    }
   }
 
   &__content {
-    width: 50%;
-  }
+    position: relative;
+    z-index: 4;
 
-  &__figures {
-    width: 50%;
+    @include tablets {
+      width: 80%;
+      padding-left: 30px;
+    }
+    @include laptop {
+      width: 50%;
+    }
   }
 
   &__figure {
     position: absolute;
     z-index: -1;
     font-size: 0;
-    pointer-events: none;
 
     img {
       width: 100%;
@@ -42,24 +80,73 @@
     }
 
     &:first-child {
-      top: 200px;
-      right: calc(50% - 474px);
+      top: 60px;
+      right: calc(50% - 150px);
       z-index: 2;
-      width: 244px;
+      width: 150px;
+
+      @include tablets {
+        top: 130px;
+        right: calc(50% - 200px);
+      }
+
+      @include laptop {
+        top: 90px;
+        right: calc(50% - 310px);
+        width: 244px;
+      }
+
+      @include desktop {
+        right: calc(50% - 475px);
+        top: 200px;
+      }
     }
 
     &:nth-child(2) {
-      top: 744px;
-      right: calc(50% - 452px);
       z-index: 3;
-      width: 371px;
+      top: 350px;
+      right: 170px;
+      width: 150px;
+
+      @include tablets {
+        top: 440px;
+        right: calc(50% - 120px);
+        width: 240px;
+      }
+
+      @include laptop {
+        top: 544px;
+        right: calc(50% - 300px);
+        width: 270px;
+      }
+
+      @include desktop {
+        top: 744px;
+        right: calc(50% - 452px);
+        width: 371px;
+      }
     }
 
     &:nth-child(3) {
-      top: 129px;
-      right: calc(50% - 1270px);
+      top: 165px;
+      right: -150px;
+      width: 430px;
       z-index: 1;
-      width: 1260px;
+
+      @include tablets {
+        top: 130px;
+        right: calc(50% - 720px);
+        width: 800px;
+      }
+
+      @include laptop {
+        right: calc(50% - 820px);
+      }
+
+      @include desktop {
+        right: calc(50% - 1270px);
+        width: 1260px;
+      }
     }
   }
 }

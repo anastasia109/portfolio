@@ -33,23 +33,24 @@ a {
   padding: 0 20px;
   margin: 0 auto; }
 
-.inner {
-  width: 80%;
-  margin: 0 auto; }
+@media (min-width: 1366px) {
+  .inner {
+    width: 80%;
+    margin: 0 auto; } }
 
 .btn {
   position: relative;
   display: inline-block;
   padding: 8px 10px;
   color: #fff;
-  border: 2px solid #9C8CC2;
+  border: 2px solid #9c8cc2;
   border-radius: 12px;
   overflow: hidden;
   font-weight: 500;
   transition: all .5s;
   z-index: 2; }
   .btn:hover {
-    color: #9C8CC2; }
+    color: #9c8cc2; }
     .btn:hover:before {
       transform: translateX(-100%) rotate(-30deg); }
     .btn:hover:after {
@@ -62,7 +63,7 @@ a {
     right: 0;
     bottom: 0;
     z-index: -2;
-    background: #9C8CC2;
+    background: #9c8cc2;
     transform: translate3D(0, -100%, 0);
     transition: all .5s; }
   .btn:before {
@@ -81,10 +82,25 @@ a {
     transform: rotate(0deg);
     transition: all .5s; }
 
-.wrapper_gradient {
-  background: -o-radial-gradient(20.49% 12.79%, 75.22% 75.22%, #FFFFFF 0%, rgba(228, 231, 233, 0.502295) 100%);
-  background: radial-gradient(75.22% 75.22% at 20.49% 12.79%, #FFFFFF 0%, rgba(228, 231, 233, 0.502295) 100%);
-  padding: 50px 0; }
+.wrapper-gradient-first {
+  background: linear-gradient(360deg, rgba(232, 223, 253, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .wrapper-gradient-first {
+      padding-bottom: 50px; } }
+  @media (min-width: 1024px) {
+    .wrapper-gradient-first {
+      padding-bottom: 100px; } }
+
+.wrapper-gradient-second {
+  background: linear-gradient(360deg, rgba(253, 205, 69, 0.3) 0%, rgba(253, 243, 253, 0.5) 100%);
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .wrapper-gradient-second {
+      padding-bottom: 50px; } }
+  @media (min-width: 1024px) {
+    .wrapper-gradient-second {
+      padding-bottom: 100px; } }
 
 .hidden {
   display: none; }
@@ -95,38 +111,55 @@ a {
 .error {
   background: #d53722; }
 
-.mb-50 {
-  margin-bottom: 50px; }
-
-.cursor--default {
-  cursor: default; }
-
-@keyframes fadeInDowCustom {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0); }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0); } }
-@media screen and (min-width: 768px) {
-  .fadeInDowCustom {
-    animation-name: fadeInDowCustom; } }
-
 h1 {
-  font-size: 132px;
+  font-size: 58px;
   line-height: 1; }
+  @media (min-width: 544px) {
+    h1 {
+      font-size: 72px; } }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 96px; } }
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 112px; } }
+  @media (min-width: 1366px) {
+    h1 {
+      font-size: 132px; } }
 
 h2 {
-  font-size: 52px;
+  font-size: 44px;
   line-height: 1.2; }
+  @media (min-width: 544px) {
+    h2 {
+      font-size: 48px; } }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 52px; } }
 
 h3 {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.2; }
+  @media (min-width: 544px) {
+    h3 {
+      font-size: 44px; } }
+  @media (min-width: 1024px) {
+    h3 {
+      font-size: 48px; } }
 
 h4 {
-  font-size: 32px;
-  line-height: 1.5; }
+  font-size: 18px;
+  line-height: 1.2; }
+  @media (min-width: 544px) {
+    h4 {
+      font-size: 24px;
+      line-height: 1.5; } }
+  @media (min-width: 1024px) {
+    h4 {
+      font-size: 28px; } }
+  @media (min-width: 1366px) {
+    h4 {
+      font-size: 32px; } }
 
 [data-aos="animation-translate-right"] {
   transform: translateX(-30px);

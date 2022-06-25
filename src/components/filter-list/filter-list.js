@@ -8,20 +8,18 @@ const FilterList = ({lists}) =>
                 const {src, label, description} = list;
                 return (
                     <li key={i} className="technology__list-item">
-                        <div>
-                            <div className="technology__list-image">
-                                <img src={src} alt={label}/>
-                            </div>
+                        <div className="technology__list-image">
+                            <img src={src} alt={label}/>
+                        </div>
 
-                            <div className="technology__list-text">
-                                <h4 className="technology__list-label">{label} </h4>
-                                <div className="technology__list-description">{description} </div>
-                                {/*{tags.map((item, j) => {*/}
-                                {/*    return (*/}
-                                {/*        <div className="tag" key={j}>{item}</div>*/}
-                                {/*    )*/}
-                                {/*})}*/}
-                            </div>
+                        <div className="technology__list-text">
+                            <h5 className="technology__list-label">{label} </h5>
+                            <div className="technology__list-description">{description} </div>
+                            {/*{tags.map((item, j) => {*/}
+                            {/*    return (*/}
+                            {/*        <div className="tag" key={j}>{item}</div>*/}
+                            {/*    )*/}
+                            {/*})}*/}
                         </div>
                     </li>)
             }

@@ -20,7 +20,7 @@ const lists = [
     },
     {
         id: 2,
-        label: "Unidencellular",
+        label: "Uniden",
         description: "M1 to M2 Migration. Created and updated UI, bug-fixing, markup",
         tag: "Magento 1,Magento 2,JS,HTML5,LESS,",
         src: "/images/technology/und.png"
@@ -34,7 +34,7 @@ const lists = [
     },
     {
         id: 4,
-        label: "Pharmahyaluron",
+        label: "Pharma hyaluron",
         description: "Online store",
         tag: "OpenCart,JS,HTML5,CSS3,SASS,",
         src: "/images/technology/pharma.png"
@@ -143,7 +143,7 @@ const Technology = () => {
     };
 
     return (
-        <div className="technology mb-50" id="project">
+        <div className="technology" id="project">
             <h3 className="main__title">Projects</h3>
             <Filter
                 filterItem={filterItem}

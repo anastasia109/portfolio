@@ -1,16 +1,34 @@
 @import "../../static/scss/base/variables.scss";
+@import "../../static/scss/base/mixins.scss";
 
 .technology {
+  padding-top: 30px;
+
+  @include tablets {
+    padding-top: 50px;
+  }
+
+  @include laptop {
+    padding-top: 100px;
+  }
 
   &__filter {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include laptop {
+      margin-bottom: 50px;
+    }
   }
 
   &__filter-item {
     display: inline-flex;
-    margin: 5px 10px;
+    margin: 5px;
+
+    @include tablets {
+      margin: 5px 10px;
+    }
 
     .tag {
       font-size: 18px;
@@ -34,12 +52,17 @@
 
   &__list-item {
     position: relative;
-    width: calc(100%/3 - 20px);
-    margin: 0 10px 20px 10px;
+    width: calc(100% / 2 - 10px);
+    margin: 0 5px 10px 5px;
     animation: show .8s ease;
     border-radius: 24px;
     background-color: $color-white;
     transition: all .15s;
+
+    @include laptop {
+      width: calc(100% / 3 - 20px);
+      margin: 0 10px 20px 10px;
+    }
 
     &:hover {
       background-color: $light-magenta;
@@ -64,10 +87,18 @@
 
     img {
       width: 100%;
-      height: 300px;
-      border-top-left-radius: 24px ;
+      height: 100px;
+      border-top-left-radius: 24px;
       border-top-right-radius: 24px;
       object-fit: cover;
+
+      @include tablets {
+        height: 200px;
+      }
+
+      @include laptop {
+        height: 300px;
+      }
     }
   }
 
@@ -77,15 +108,31 @@
   }
 
   &__list-text {
-    padding: 20px 20px 30px 20px;
+    padding: 15px 10px;
+
+    @include tablets {
+      padding: 20px 20px 30px;
+    }
   }
 
   &__list-label {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+
+    @include tablets {
+      margin-bottom: 25px;
+    }
   }
 
   &__list-description {
-    font-size: 20px;
+    font-size: 14px;
     color: $color-darkgray;
+
+    @include tablets {
+      font-size: 18px;
+    }
+
+    @include laptop {
+      font-size: 20px;
+    }
   }
 }

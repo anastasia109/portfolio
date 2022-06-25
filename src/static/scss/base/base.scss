@@ -37,8 +37,10 @@ a {
 }
 
 .inner {
-  width: 80%;
-  margin: 0 auto;
+  @include desktop {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .btn {
@@ -99,8 +101,28 @@ a {
   }
 }
 
-.wrapper_gradient {
-  background: -o-radial-gradient(20.49% 12.79%, 75.22% 75.22%, #FFFFFF 0%, rgba(228, 231, 233, 0.502295) 100%);
-  background: radial-gradient(75.22% 75.22% at 20.49% 12.79%, #FFFFFF 0%, rgba(228, 231, 233, 0.502295) 100%);
-  padding: 50px 0;
+.wrapper-gradient-first {
+  background: linear-gradient(360deg, rgba(232, 223, 253, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  padding-bottom: 30px;
+
+  @include tablets {
+    padding-bottom: 50px;
+  }
+
+  @include laptop {
+    padding-bottom: 100px;
+  }
+}
+
+.wrapper-gradient-second {
+  background: linear-gradient(360deg, rgba(253, 205, 69, 0.3) 0%, rgba(253, 243, 253, 0.5) 100%);
+  padding-bottom: 30px;
+
+  @include tablets {
+    padding-bottom: 50px;
+  }
+
+  @include laptop {
+    padding-bottom: 100px;
+  }
 }

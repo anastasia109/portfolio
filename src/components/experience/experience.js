@@ -31,14 +31,14 @@ const experienceLists = [
 
 const Experience = () => {
     return (
-        <div className="experience mb-50" id="experience">
+        <div className="experience" id="experience">
             <h3 className="main__title">Experience</h3>
             <div className="inner">
                 <div className="experience__items">
                     {experienceLists.map((item, i) => {
                         return (
                             <div className="experience__item" key={i}>
-                                <a className="experience__item-company" href={item.link}><h4>{item.company}</h4></a>
+                                <a className="experience__item-company" href={item.link}>{item.company}</a>
                                 <div className="experience__item-image">
                                     <img src={item.src} alt={item.company}/>
                                 </div>
