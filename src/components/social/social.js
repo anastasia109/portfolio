@@ -1,7 +1,7 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPhone, faEnvelope} from '@fortawesome/fontawesome-free-solid'
-import {faFacebookF, faLinkedinIn, faTelegram} from '@fortawesome/free-brands-svg-icons'
+import {faFacebookF, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 
 import './social.css';
 
