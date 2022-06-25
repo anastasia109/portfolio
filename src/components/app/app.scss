@@ -1,1 +1,7 @@
 @import "../../static/scss/base/variables.scss";
+
+.page {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}

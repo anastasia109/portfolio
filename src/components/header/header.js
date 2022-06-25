@@ -1,42 +1,82 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from '../../static/icon/logo.svg';
 import {BrowserRouter as Router, Link} from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+import {Link as LinkS} from "react-scroll";
 
 import './header.css';
 
-const Header = () => {
-    return (
-        <header>
-            <div className="header-container">
-                <div className="header">
-                    <div className="header__logo">
-                        <Router>
-                            <Link to="/"><img src={logo} alt='Drobotun Anastasia logo' width="100px" height="92px"/></Link>
-                        </Router>
-                    </div>
-                    <nav>
-                        <div className="header__nav">
+class Header extends Component {
+    state = {mobileMenu: false};
+
+    toggleMobileMenu = () => {
+        this.setState({mobileMenu: !this.state.mobileMenu});
+    }
+
+    render() {
+        const {mobileMenu} = this.state;
+
+        let burgerClassName = ["header__burger"],
+            menuClassName = ["header__nav"];
+
+        if (mobileMenu) {
+            menuClassName.push("opened");
+            burgerClassName.push("opened");
+        }
+
+        return (
+            <header>
+                <div className="header-container">
+                    <div className="header">
+                        <div className="header__logo">
+                            <Router>
+                                <Link to="/"><img src={logo} alt='Drobotun Anastasia logo' width="100px"/></Link>
+                            </Router>
+                        </div>
+                        <nav>
+                            <div className={menuClassName.join(" ")}>
                                 <LinkS activeClass="active"
-                                    to="project"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-10}
-                                    duration={500}>
+                                       to="project"
+                                       spy={true}
+                                       smooth={true}
+                                       offset={-10}
+                                       duration={500}>
                                     Project
                                 </LinkS>
-                                <LinkS to="contact" className="btn">
+                                <LinkS activeClass="active"
+                                       to="skills"
+                                       spy={true}
+                                       smooth={true}
+                                       offset={-10}
+                                       duration={500}>
+                                    Skills
+                                </LinkS>
+                                <LinkS activeClass="active"
+                                       to="experience"
+                                       spy={true}
+                                       smooth={true}
+                                       offset={-10}
+                                       duration={500}>
+                                    Experience
+                                </LinkS>
+                                <LinkS className="btn"
+                                       to="contact"
+                                       spy={true}
+                                       smooth={true}
+                                       offset={-10}
+                                       duration={500}>
                                     Contact Me
                                 </LinkS>
-                        </div>
-                        <div className="header__burger">
-                            <span/><span/><span/>
-                        </div>
-                    </nav>
+                            </div>
+                            <div className={burgerClassName.join(" ")}
+                                 onClick={this.toggleMobileMenu}>
+                                <span/><span/><span/>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-            </div>
-        </header>
-    );
+            </header>
+        );
+    }
 };
 
 export default Header;

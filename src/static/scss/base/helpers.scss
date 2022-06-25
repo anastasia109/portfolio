@@ -10,25 +10,100 @@
   background: $red;
 }
 
-.cursor--default {
-  cursor: default;
+h1 {
+  font-size: 58px;
+  line-height: 1;
+
+  @include phones {
+    font-size: 72px;
+  }
+
+  @include tablets {
+    font-size: 96px;
+  }
+
+  @include laptop {
+    font-size: 112px;
+  }
+
+  @include desktop {
+    font-size: 132px;
+  }
 }
 
-@keyframes fadeInDowCustom {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
+h2 {
+  font-size: 44px;
+  line-height: 1.2;
+
+  @include phones {
+    font-size: 48px;
   }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+  @include laptop {
+    font-size: 52px;
   }
 }
 
-.fadeInDowCustom {
-  @media screen and (min-width: 768px) {
-    animation-name: fadeInDowCustom;
+h3 {
+  font-size: 40px;
+  line-height: 1.2;
+
+  @include phones {
+    font-size: 44px;
   }
 
+  @include laptop {
+    font-size: 48px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 1.2;
+
+  @include phones {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  @include laptop {
+    font-size: 28px;
+  }
+
+  @include desktop {
+    font-size: 32px;
+  }
+}
+
+[data-aos="animation-translate-right"] {
+  transform: translateX(-30px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="animation-translate-right"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+[data-aos="animation-translate-up"] {
+  transform: translateY(40px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="animation-translate-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+[data-aos="animation-scale-y"] {
+  transform: translateY(40px) scaleY(1.4);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="animation-scale-y"].aos-animate {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
 }

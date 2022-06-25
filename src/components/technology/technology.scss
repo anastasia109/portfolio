@@ -1,27 +1,47 @@
 @import "../../static/scss/base/variables.scss";
+@import "../../static/scss/base/mixins.scss";
 
 .technology {
+  padding-top: 30px;
+
+  @include tablets {
+    padding-top: 50px;
+  }
+
+  @include laptop {
+    padding-top: 100px;
+  }
+
   &__filter {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include laptop {
+      margin-bottom: 50px;
+    }
   }
 
   &__filter-item {
     display: inline-flex;
-    margin: 5px 10px;
+    margin: 5px;
+
+    @include tablets {
+      margin: 5px 10px;
+    }
 
     .tag {
-      padding: 5px 10px;
-      background-color: $dark-green;
-      color: $color-white;
-      border-radius: 8px;
-      cursor: pointer;
+      font-size: 18px;
+      color: $color-darkgray;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
     }
 
     &:hover .tag,
     .tag.active {
-      background: #9C8CC2;
+      color: $color-black;
+      cursor: pointer;
+      border-bottom-color: $main-color2;
     }
   }
 
@@ -31,16 +51,88 @@
   }
 
   &__list-item {
-    width: 25%;
-    padding: 10px;
-    -webkit-animation: show .8s ease;
+    position: relative;
+    width: calc(100% / 2 - 10px);
+    margin: 0 5px 10px 5px;
     animation: show .8s ease;
+    border-radius: 24px;
+    background-color: $color-white;
+    transition: all .15s;
+
+    @include laptop {
+      width: calc(100% / 3 - 20px);
+      margin: 0 10px 20px 10px;
+    }
+
+    &:hover {
+      background-color: $light-magenta;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 30px;
+      right: 30px;
+      bottom: -96px;
+      z-index: -1;
+      border-radius: 24px;
+      filter: blur(86.985px);
+      background: $color-gray;
+      pointer-events: none;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s;
+    }
 
     img {
       width: 100%;
-      height: 300px;
-      margin-bottom: 10px;
-      object-fit: contain;
+      height: 100px;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+      object-fit: cover;
+
+      @include tablets {
+        height: 200px;
+      }
+
+      @include laptop {
+        height: 300px;
+      }
+    }
+  }
+
+  &__list-image {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  &__list-text {
+    padding: 15px 10px;
+
+    @include tablets {
+      padding: 20px 20px 30px;
+    }
+  }
+
+  &__list-label {
+    margin-bottom: 15px;
+
+    @include tablets {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__list-description {
+    font-size: 14px;
+    color: $color-darkgray;
+
+    @include tablets {
+      font-size: 18px;
+    }
+
+    @include laptop {
+      font-size: 20px;
     }
   }
 }

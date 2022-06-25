@@ -2,5 +2,7 @@
 /* fonts */
 .main {
   display: block; }
+  .main__title {
+    margin-bottom: 30px; }
 
 /*# sourceMappingURL=main.css.map */

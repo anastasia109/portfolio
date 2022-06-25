@@ -1,0 +1,145 @@
+@import "../../static/scss/base/variables.scss";
+@import "../../static/scss/base/mixins.scss";
+
+.contact {
+  background-color: $color-white;
+  padding: 30px 20px 10px;
+  border-radius: 28px;
+
+  @include tablets {
+    padding: 60px 50px 20px;
+    border-radius: 48px;
+  }
+
+  @include laptop {
+    padding: 100px 100px 60px;
+  }
+
+  &__content {
+    max-width: 535px;
+    margin-bottom: 40px;
+    padding-right: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $color-darkgray;
+
+    @include tablets {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+  }
+
+  &__form-input {
+    margin-bottom: 20px;
+
+    input,
+    textarea {
+      padding: 0 10px;
+      width: 100%;
+      background: rgba(244, 244, 244, 0.8);
+      border-radius: 12px;
+      border: 2px solid rgba(244, 244, 244, 0.8);
+      font-size: 16px;
+      color: $color-black;
+      transition: all .25s;
+
+      &:focus,
+      &:focus-visible {
+        outline: none;
+        border-color: $main-color2;
+        background: $color-white;
+      }
+
+      @include tablets {
+        padding: 0 72px 0 24px;
+        font-size: 18px;
+      }
+    }
+
+    input {
+      height: 45px;
+      @include tablets {
+        height: 72px;
+      }
+    }
+
+    textarea {
+      height: 100px;
+      padding-top: 10px;
+      @include tablets {
+        height: 200px;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  &__submit {
+    @include tablets {
+      font-size: 24px;
+      padding: 15px 25px;
+    }
+  }
+
+  &__details,
+  &__info {
+    display: flex;
+
+    > div {
+      @include laptop {
+        width: 50%;
+      }
+    }
+  }
+
+  &__details {
+    flex-direction: column;
+    @include laptop {
+      flex-direction: row;
+    }
+  }
+
+  &__social {
+    margin-bottom: 30px;
+    @include laptop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__figures {
+    position: relative;
+    display: none;
+  }
+
+  &__figure {
+    position: absolute;
+
+    img {
+      width: 100%;
+      filter: drop-shadow(1px 1px 5px $color-gray);
+    }
+
+    &:first-child {
+      top: 0;
+      left: 25%;
+      z-index: 2;
+      width: 244px;
+    }
+
+    &:nth-child(2) {
+      left: 79.5%;
+      top: -25%;
+      z-index: 3;
+      width: 21%;
+    }
+
+    &:nth-child(3) {
+      left: 70%;
+      top: -14%;
+      z-index: 2;
+      width: 40%;
+    }
+  }
+}

@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: $playfair-display, sans-serif;
+  font-family: $montserrat-display, sans-serif;
   font-size: 16px;
 }
 
@@ -31,9 +31,16 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1680px;
+  max-width: 1640px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.inner {
+  @include desktop {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .btn {
@@ -41,15 +48,15 @@ a {
   display: inline-block;
   padding: 8px 10px;
   color: #fff;
-  border: 2px solid $dark-green;
-  border-radius: 6px;
-  transition: all .5s;
+  border: 2px solid $main-color2;
+  border-radius: 12px;
   overflow: hidden;
-  font-family: $playfair-medium;
+  font-weight: 500;
+  transition: all .5s;
+  z-index: 2;
 
   &:hover {
-    color: $dark-green;
-    transition: all .5s;
+    color: $main-color2;
 
     &:before {
       transform: translateX(-100%) rotate(-30deg);
@@ -69,7 +76,7 @@ a {
     right: 0;
     bottom: 0;
     z-index: -2;
-    background: $dark-green;
+    background: $main-color2;
     transform: translate3D(0, -100%, 0);
     transition: all .5s;
   }
@@ -91,5 +98,31 @@ a {
     transform-origin: right bottom;
     transform: rotate(0deg);
     transition: all .5s;
+  }
+}
+
+.wrapper-gradient-first {
+  background: linear-gradient(360deg, rgba(232, 223, 253, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  padding-bottom: 30px;
+
+  @include tablets {
+    padding-bottom: 50px;
+  }
+
+  @include laptop {
+    padding-bottom: 100px;
+  }
+}
+
+.wrapper-gradient-second {
+  background: linear-gradient(360deg, rgba(253, 205, 69, 0.3) 0%, rgba(253, 243, 253, 0.5) 100%);
+  padding-bottom: 30px;
+
+  @include tablets {
+    padding-bottom: 50px;
+  }
+
+  @include laptop {
+    padding-bottom: 100px;
   }
 }

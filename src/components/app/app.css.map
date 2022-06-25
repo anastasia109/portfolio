@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,YAAY;AAOZ,WAAW",
-"sources": ["../../static/scss/base/variables.scss"],
+"mappings": "AAAA,YAAY;AAUZ,WAAW;ACRX,KAAM;EACJ,QAAQ,EAAE,QAAQ;EAClB,QAAQ,EAAE,MAAM;EAChB,UAAU,EAAE,KAAK",
+"sources": ["../../static/scss/base/variables.scss","app.scss"],
 "names": [],
 "file": "app.css"
 }

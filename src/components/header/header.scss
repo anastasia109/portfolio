@@ -1,10 +1,15 @@
 @import "../../static/scss/base/variables.scss";
+@import "../../static/scss/base/mixins.scss";
 
 .header-container {
   width: 100%;
-  max-width: 1920px;
-  padding: 20px;
+  max-width: 1840px;
+  padding: 10px 20px;
   margin: 0 auto;
+
+  @include desktop {
+    padding: 20px;
+  }
 }
 
 .header {
@@ -13,22 +18,97 @@
   justify-content: space-between;
 
   &__nav {
-    display: flex;
+    display: none;
     align-items: center;
+
+    @include tablets {
+      display: flex;
+    }
+
+    &.opened {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      padding: 70px 20px 20px;
+      background: linear-gradient(360deg, rgba(253, 253, 253, 1) 0%, rgba(232, 223, 253, 1) 100%);
+      box-shadow: 0px 5px 15px 1px rgba(156, 140, 194, 0.5);
+
+      a {
+        font-size: 28px;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+    }
 
     a {
       font-size: 20px;
       line-height: 1.2;
       margin: 0 10px;
+      transition: all .25s;
       cursor: pointer;
+
+      &:hover {
+        color: $main-color2;
+      }
 
       &:last-child {
         margin-right: 0;
       }
 
       &.active {
-        color: $dark-green;
+        color: $main-color1;
       }
+    }
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 6;
+
+    a {
+      display: flex;
+    }
+
+    img {
+      width: 60px;
+
+      @include tablets {
+        width: 80px;
+      }
+      @include desktop {
+        width: 100px;
+      }
+    }
+  }
+
+  &__burger {
+    display: block;
+    width: 32px;
+
+    &.opened {
+      position: relative;
+      z-index: 6;
+      top: 0;
+      right: 0;
+    }
+
+    span {
+      display: block;
+      height: 2px;
+      margin-bottom: 4px;
+      background-color: $color-black;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include tablets {
+      display: none;
     }
   }
 }
