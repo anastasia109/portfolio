@@ -55,9 +55,13 @@
     width: calc(100% / 2 - 10px);
     margin: 0 5px 10px 5px;
     animation: show .8s ease;
-    border-radius: 24px;
+    border-radius: 12px;
     background-color: $color-white;
     transition: all .15s;
+
+    @include tablets {
+      border-radius: 24px;
+    }
 
     @include laptop {
       width: calc(100% / 3 - 20px);

@@ -40,9 +40,12 @@
     width: calc(100% / 2 - 10px);
     margin: 0 5px 10px 5px;
     animation: show .8s ease;
-    border-radius: 24px;
+    border-radius: 12px;
     background-color: #ffffff;
     transition: all .15s; }
+    @media (min-width: 768px) {
+      .technology__list-item {
+        border-radius: 24px; } }
     @media (min-width: 1024px) {
       .technology__list-item {
         width: calc(100% / 3 - 20px);
