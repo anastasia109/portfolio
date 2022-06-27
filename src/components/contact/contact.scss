@@ -76,7 +76,14 @@
     }
   }
 
-  &__submit {
+  &__submit.btn {
+    cursor: pointer;
+    background-color: $main-color2;
+
+    &:hover {
+      color: $color-white;
+    }
+
     @include tablets {
       font-size: 24px;
       padding: 15px 25px;
@@ -111,6 +118,10 @@
   &__figures {
     position: relative;
     display: none;
+    @include tablets {
+      display: block;
+      width: 50%;
+    }
   }
 
   &__figure {
@@ -122,24 +133,67 @@
     }
 
     &:first-child {
-      top: 0;
-      left: 25%;
       z-index: 2;
-      width: 244px;
+
+      @include tablets {
+        top: 85%;
+        left: -90%;
+        width: 80%;
+      }
+
+      @include laptop {
+        top: 40%;
+        left: -9%;
+        width: 50%;
+      }
+
+      @include desktop {
+        top: -60%;
+        left: 25%;
+        width: 35%;
+      }
     }
 
     &:nth-child(2) {
-      left: 79.5%;
-      top: -25%;
       z-index: 3;
-      width: 21%;
+
+      @include tablets {
+        left: 26.5%;
+        top: 10%;
+        width: 50%;
+      }
+
+      @include laptop {
+        left: 63.5%;
+        top: 5%;
+        width: 28%;
+      }
+
+      @include desktop {
+        left: 79.5%;
+        top: -40%;
+        width: 21%;
+      }
     }
 
     &:nth-child(3) {
-      left: 70%;
-      top: -14%;
       z-index: 2;
-      width: 40%;
+
+      @include tablets {
+        left: 0;
+        top: 33%;
+        width: 100%;
+      }
+
+      @include laptop {
+        left: 50%;
+        top: 25%;
+        width: 55%;
+      }
+
+      @include desktop {
+        width: 40%;
+      }
     }
   }
 }

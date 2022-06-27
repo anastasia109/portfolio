@@ -59,10 +59,15 @@
         .contact__form-input textarea {
           height: 200px;
           padding-top: 20px; } }
-  @media (min-width: 768px) {
-    .contact__submit {
-      font-size: 24px;
-      padding: 15px 25px; } }
+  .contact__submit.btn {
+    cursor: pointer;
+    background-color: #9c8cc2; }
+    .contact__submit.btn:hover {
+      color: #ffffff; }
+    @media (min-width: 768px) {
+      .contact__submit.btn {
+        font-size: 24px;
+        padding: 15px 25px; } }
   .contact__details, .contact__info {
     display: flex; }
     @media (min-width: 1024px) {
@@ -81,25 +86,63 @@
   .contact__figures {
     position: relative;
     display: none; }
+    @media (min-width: 768px) {
+      .contact__figures {
+        display: block;
+        width: 50%; } }
   .contact__figure {
     position: absolute; }
     .contact__figure img {
       width: 100%;
       filter: drop-shadow(1px 1px 5px #DBDEE1); }
     .contact__figure:first-child {
-      top: 0;
-      left: 25%;
-      z-index: 2;
-      width: 244px; }
+      z-index: 2; }
+      @media (min-width: 768px) {
+        .contact__figure:first-child {
+          top: 85%;
+          left: -90%;
+          width: 80%; } }
+      @media (min-width: 1024px) {
+        .contact__figure:first-child {
+          top: 40%;
+          left: -9%;
+          width: 50%; } }
+      @media (min-width: 1366px) {
+        .contact__figure:first-child {
+          top: -60%;
+          left: 25%;
+          width: 35%; } }
     .contact__figure:nth-child(2) {
-      left: 79.5%;
-      top: -25%;
-      z-index: 3;
-      width: 21%; }
+      z-index: 3; }
+      @media (min-width: 768px) {
+        .contact__figure:nth-child(2) {
+          left: 26.5%;
+          top: 10%;
+          width: 50%; } }
+      @media (min-width: 1024px) {
+        .contact__figure:nth-child(2) {
+          left: 63.5%;
+          top: 5%;
+          width: 28%; } }
+      @media (min-width: 1366px) {
+        .contact__figure:nth-child(2) {
+          left: 79.5%;
+          top: -40%;
+          width: 21%; } }
     .contact__figure:nth-child(3) {
-      left: 70%;
-      top: -14%;
-      z-index: 2;
-      width: 40%; }
+      z-index: 2; }
+      @media (min-width: 768px) {
+        .contact__figure:nth-child(3) {
+          left: 0;
+          top: 33%;
+          width: 100%; } }
+      @media (min-width: 1024px) {
+        .contact__figure:nth-child(3) {
+          left: 50%;
+          top: 25%;
+          width: 55%; } }
+      @media (min-width: 1366px) {
+        .contact__figure:nth-child(3) {
+          width: 40%; } }
 
 /*# sourceMappingURL=contact.css.map */
