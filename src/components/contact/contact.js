@@ -18,10 +18,10 @@ class Contact extends Component {
 
     handleFormSubmit = e => {
         e.preventDefault();
-
+        const api = 'https://anastasiia-portfolio.netlify.app/mail.php';
         axios({
             method: 'post',
-            url: `${process.env.REACT_APP_API}`,
+            url: api,
             headers: { 'content-type': 'application/json' },
             data: this.state
         })
