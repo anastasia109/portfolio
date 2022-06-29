@@ -32,19 +32,19 @@ const experienceLists = [
 const Experience = () => {
     return (
         <div className="experience" id="experience">
-            <h3 className="main__title">Experience</h3>
+            <h3 className="main__title aos-init" data-aos="animation-scale-y" data-aos-delay="150">Experience</h3>
             <div className="inner">
                 <div className="experience__items">
                     {experienceLists.map((item, i) => {
                         return (
-                            <div className="experience__item" key={i}>
-                                <a className="experience__item-company" href={item.link}>{item.company}</a>
-                                <div className="experience__item-image">
-                                    <img src={item.src} alt={item.company}/>
+                            <div key={i} className="experience__item">
+                                <a className="experience__item-company aos-init" data-aos="animation-translate-y" data-aos-offset="100" href={item.link}>{item.company}</a>
+                                <div className="experience__item-image aos-init" data-aos="animation-translate-y" data-aos-offset="200">
+                                    <img src={item.src} alt={item.company} />
                                 </div>
                                 <div className="experience__item-content">
-                                    <p className="experience__item-description">{item.description}</p>
-                                    <p className="experience__item-during">{item.during}</p>
+                                    <p className="experience__item-description aos-init" data-aos="animation-translate-y" data-aos-offset="300">{item.description}</p>
+                                    <p className="experience__item-during aos-init" data-aos="animation-translate-y" data-aos-offset="400">{item.during}</p>
                                 </div>
                             </div>
                         )

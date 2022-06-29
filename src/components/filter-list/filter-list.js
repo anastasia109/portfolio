@@ -6,8 +6,11 @@ const FilterList = ({lists}) =>
         {lists.map((list, i) => {
                 // const tags = list.tag.split(",");
                 const {src, label, description} = list;
+                const delay = i + '00';
+
                 return (
-                    <li key={i} className="technology__list-item">
+                    <li key={i} className="technology__list-item aos-init" data-aos="animation-translate-y"
+                        data-aos-delay={delay}>
                         <div className="technology__list-image">
                             <img src={src} alt={label}/>
                         </div>

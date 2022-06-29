@@ -40,14 +40,19 @@ const Filter = ({filterItem, setItem, menuItems, lists}) => {
 
     return (
         <ul className="technology__filter">
-            <li className="technology__filter-item">
+            <li className="technology__filter-item aos-init" data-aos="animation-scale-y">
                 <ButtonAll item={'All'} isActive={active === 'All'} onClick={tagAllClick}/>
             </li>
-            {menuItems.map((item, id) => (
-                    <li key={id} className="technology__filter-item">
-                        <ButtonTag item={item} isActive={active === item} onClick={tagClick}/>
-                    </li>
-                )
+            {menuItems.map((item, id) => {
+                    const delay = id + '00';
+
+                    return (
+                        <li key={id} className="technology__filter-item aos-init" data-aos="animation-scale-y"
+                            data-aos-delay={delay}>
+                            <ButtonTag item={item} isActive={active === item} onClick={tagClick}/>
+                        </li>
+                    )
+                }
             )}
         </ul>
     )

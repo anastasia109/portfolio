@@ -5,6 +5,8 @@ import Header from '../header';
 import Main from '../main';
 import Footer from '../footer';
 
+import AOS from 'aos';
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../static/scss/base/module.css';
@@ -16,10 +18,14 @@ export default class App extends Component {
     }
 
     async componentDidMount() {
+        AOS.init();
+        AOS.refresh();
+
         this.setState({
             isLoading: false
         })
     }
+
 
     render() {
         const {isLoading} = this.state;
@@ -29,7 +35,7 @@ export default class App extends Component {
                     isLoading
                         ? <Spinner/>
                         :
-                        <div className="page">
+                        <div className="page" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
                             <Header/>
                             <Main/>
                             <Footer/>

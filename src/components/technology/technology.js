@@ -144,7 +144,7 @@ const Technology = () => {
 
     return (
         <div className="technology" id="project">
-            <h3 className="main__title">Projects</h3>
+            <h3 className="main__title aos-init" data-aos="animation-scale-y" data-aos-delay="150">Projects</h3>
             <Filter
                 filterItem={filterItem}
                 setItem={setItem}

@@ -5,27 +5,47 @@ import {faFacebookF, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 
 import './social.css';
 
+const links = [
+    {
+        id: 0,
+        link: "https://www.facebook.com/people/Anastasiia-Drobotun/100006845957045/",
+        icon: <FontAwesomeIcon icon={faFacebookF} />,
+        name: 'Anastasiia-Drobotun'
+    },
+    {
+        id: 1,
+        link: "https://www.linkedin.com/in/anastasiia-drobotun-a34255119",
+        icon: <FontAwesomeIcon icon={faLinkedinIn} />,
+        name: 'linkedin/anastasiia-drobotun'
+    },
+    {
+        id: 2,
+        link: "mailto:drobotun.nastia@gmail.com",
+        icon: <FontAwesomeIcon icon={faEnvelope} />,
+        name: 'drobotun.nastia@gmail.com'
+    },
+    {
+        id: 3,
+        link: "tel:+380638920606",
+        icon: <FontAwesomeIcon icon={faPhone} />,
+        name: '+380638920606'
+    },
+]
+
 const Social = () => {
     return (
         <div className="social">
-            <a className="social__link" href="https://www.facebook.com/people/Anastasiia-Drobotun/100006845957045/"
-               target="_blank" rel="noreferrer">
-                <span className="social__icon"><FontAwesomeIcon icon={faFacebookF}/></span>
-                Anastasiia-Drobotun
-            </a>
-            <a className="social__link" href="https://www.linkedin.com/in/anastasiia-drobotun-a34255119" target="_blank"
-               rel="noreferrer">
-                <span className="social__icon"><FontAwesomeIcon icon={faLinkedinIn}/></span>
-                linkedin/anastasiia-drobotun
-            </a>
-            <a className="social__link" href="mailto:drobotun.nastia@gmail.com" target="_blank" rel="noreferrer">
-                <span className="social__icon"><FontAwesomeIcon icon={faEnvelope}/></span>
-                drobotun.nastia@gmail.com
-            </a>
-            <a className="social__link" href="tel:+380638920606" target="_blank" rel="noreferrer">
-                <span className="social__icon"><FontAwesomeIcon icon={faPhone}/></span>
-                +380638920606
-            </a>
+            {links.map((link, i) => {
+                const delay = i + '00';
+                return (
+                    <a key={i} className="social__link aos-init" data-aos="animation-translate-y"
+                       data-aos-delay={delay}  href={link.link}
+                       target="_blank" rel="noreferrer">
+                    <span className="social__icon">{link.icon}</span>
+                        {link.name}
+                </a>
+                )
+            })}
         </div>
     );
 };
