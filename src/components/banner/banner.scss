@@ -21,6 +21,8 @@
   }
 
   &__info {
+    perspective: 400px;
+    transform-style: preserve-3d;
     font-size: 20px;
     line-height: 1.25;
     margin-bottom: 40px;
@@ -76,7 +78,7 @@
 
     img {
       width: 100%;
-      filter: hue-rotate(315deg);
+      filter: hue-rotate(315deg) !important;
     }
 
     &:first-child {

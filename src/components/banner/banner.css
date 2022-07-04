@@ -17,6 +17,8 @@
     .banner {
       padding: 160px 0; } }
   .banner__info {
+    perspective: 400px;
+    transform-style: preserve-3d;
     font-size: 20px;
     line-height: 1.25;
     margin-bottom: 40px; }
@@ -57,7 +59,7 @@
     font-size: 0; }
     .banner__figure img {
       width: 100%;
-      filter: hue-rotate(315deg); }
+      filter: hue-rotate(315deg) !important; }
     .banner__figure:first-child {
       top: 60px;
       right: calc(50% - 150px);

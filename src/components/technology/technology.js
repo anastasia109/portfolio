@@ -3,82 +3,84 @@ import './technology.css';
 import Filter from '../filter';
 import FilterList from '../filter-list';
 
+const showItems = 6;
+
 const lists = [
     {
         id: 0,
         label: "Marie Forleo",
         description: "Create new block from builder",
-        tag: "React,Animated,WordPress,JS,HTML5,CSS3,Webpack,NPM,",
+        tag: "React,JS,HTML5,CSS3,LESS/SASS,TweenMax,Webpack,WordPress,",
         src: "/images/technology/marie.png"
     },
     {
         id: 1,
         label: "Brand seo-wave.com",
         description: "Landing page",
-        tag: "TweenMax,Animated,",
+        tag: "TweenMax,",
         src: "/images/technology/brand.png"
     },
     {
         id: 2,
         label: "Uniden",
         description: "M1 to M2 Migration. Created and updated UI, bug-fixing, markup",
-        tag: "Magento 1,Magento 2,JS,HTML5,LESS,",
+        tag: "Magento,JS,HTML5,LESS/SASS,",
         src: "/images/technology/und.png"
     },
     {
         id: 3,
         label: "Bikebiz Blog",
         description: "Created and updated UI, bug-fixing, markup",
-        tag: "React,JS,HTML5,CSS3,Webpack,NPM,",
+        tag: "React,JS,HTML5,CSS3,Webpack,",
         src: "/images/technology/bike.png"
     },
     {
         id: 4,
         label: "Pharma hyaluron",
         description: "Online store",
-        tag: "OpenCart,JS,HTML5,CSS3,SASS,",
+        tag: "OpenCart,JS,HTML5,CSS3,LESS/SASS,",
         src: "/images/technology/pharma.png"
     },
     {
         id: 5,
         label: "Arhitektor krasoty",
         description: "Online store",
-        tag: "OpenCart,JS,HTML5,CSS3,SASS,",
+        tag: "OpenCart,JS,HTML5,CSS3,LESS/SASS,",
         src: "/images/technology/arhitektor.png"
     },
     {
         id: 6,
         label: "Gutenberg",
         description: "Create new block from builder",
-        tag: "React,WordPress,JS,HTML5,CSS3,Webpack,NPM,",
+        tag: "React,WordPress,JS,HTML5,CSS3,Webpack,",
         src: "/images/technology/gut.png"
     },
     {
         id: 7,
         label: "Музей АТО",
         description: "Wordpress corp site",
-        tag: "Wordpress,PHP,JS,HTML5,CSS3,",
+        tag: "Wordpress,JS,HTML5,CSS3,",
         src: "/images/technology/museum.jpg"
     },
     {
         id: 8,
         label: "Vipidei",
         description: "Wordpress corp site",
-        tag: "Wordpress,PHP,JS,HTML5,CSS3,",
+        tag: "Wordpress,JS,HTML5,CSS3,",
         src: "/images/technology/vipidei.png"
     },
     {
         id: 9,
         label: "Wiha Russia",
         description: "Wordpress online store",
-        tag: "Wordpress,Woocommerce,PHP,JS,HTML5,CSS3,",
+        tag: "Wordpress,Woocommerce,JS,HTML5,CSS3,",
         src: "/images/technology/wiha.png"
     },
     {
         id: 10,
         label: "Юридична сотня",
         description: "Wordpress corp site",
-        tag: "Wordpress,PHP,JS,HTML5,CSS3,",
+        tag: "Wordpress,JS,HTML5,CSS3,",
         src: "/images/technology/legal.png"
     },
     {
@@ -92,7 +94,7 @@ const lists = [
         id: 12,
         label: "Avantage",
         description: "Create corp site",
-        tag: "Wordpress,Animated,PHP,JS,HTML5,CSS3,",
+        tag: "Wordpress,JS,HTML5,CSS3,",
         src: "/images/technology/avantage.png"
     },
     {
@@ -113,7 +115,7 @@ const lists = [
         id: 15,
         label: "Юнифилд",
         description: "Wordpress online store",
-        tag: "Wordpress,Woocommerce,PHP,JS,HTML5,CSS3,",
+        tag: "Wordpress,Woocommerce,JS,HTML5,CSS3,",
         src: "/images/technology/uni.png"
     }
 ];
@@ -144,7 +146,7 @@ const Technology = () => {
 
     return (
         <div className="technology" id="project">
-            <h3 className="main__title">Projects</h3>
+            <h3 className="main__title aos-init" data-aos="animation-scale-y" data-aos-delay="150">Projects</h3>
             <Filter
                 filterItem={filterItem}
                 setItem={setItem}
@@ -152,7 +154,7 @@ const Technology = () => {
                 lists={lists}
             />
             <div className="inner">
-                <FilterList lists={item}/>
+                <FilterList lists={item} showItems={showItems}/>
             </div>
         </div>
     );

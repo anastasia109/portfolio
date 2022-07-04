@@ -1,4 +1,6 @@
 import React from 'react';
+import {Parallax} from 'react-parallax';
+import {Link as LinkS} from "react-scroll";
 
 import './banner.css';
 
@@ -6,40 +8,69 @@ import figureImage1 from '../../static/images/figure-1.png';
 import figureImage2 from '../../static/images/figure-2.png';
 import figureImage3 from '../../static/images/figure-3.png';
 
-const Banner = () =>  {
+const Banner = () => {
 
-        return (
-            <div className="banner aos-init">
-                <div className="banner__content">
-                    <p className="banner__info aos-init" data-aos="animation-translate-up" data-aos-delay="100">Hello, my name's Anastasia. I'm a Front-end developer.</p>
-                    <h1 className="banner__title aos-init" data-aos="animation-translate-up" data-aos-delay="200">Portfolio site</h1>
-                    {/*<h1 className="main__title title h1">*/}
-                    {/*    <span data-aos="transform" data-aos-delay="150">Hello, my</span>*/}
-                    {/*    <span data-aos="transform" data-aos-delay="300">name's Anastasia.</span>*/}
-                    {/*    <span data-aos="transform" data-aos-delay="450">I'm a Front-end</span><span*/}
-                    {/*    data-aos="transform" data-aos-delay="600">Developer.</span></h1>*/}
-
-                <a className="btn banner__contact" href="/">More details</a>
-                </div>
-                <div className="banner__figures">
-                    <div className="banner__figure">
-                        <img className="details__pic js-parallax" data-scale="2" data-orientation="down"
-                             src={figureImage1}
-                             alt='figure'/>
-                    </div>
-                    <div className="banner__figure">
-                        <img className="details__pic js-parallax" data-scale="2" data-orientation="up"
-                             src={figureImage2}
-                             alt='figure'/>
-                    </div>
-                    <div className="banner__figure">
-                        <img className="details__pic js-parallax" data-scale="1.2" data-orientation="up"
-                             src={figureImage3}
-                             alt='figure'/>
-                    </div>
-                </div>
+    return (
+        <div className="banner aos-init">
+            <div className="banner__content">
+                <p className="banner__info">
+                    <span data-aos="transform" data-aos-delay="150"
+                          className="aos-init">Hello, my name's Anastasia. </span>
+                    <span data-aos="transform" data-aos-delay="300"
+                          className="aos-init">I'm a Front-end developer.</span>
+                </p>
+                <h1 className="banner__title aos-init" data-aos="animation-translate-up" data-aos-delay="200">Portfolio
+                    site</h1>
+                <LinkS className="btn btn__l banner__contact aos-init" data-aos="animation-translate-up"
+                       data-aos-delay="400"
+                       to="project"
+                       spy={true}
+                       smooth={true}
+                       offset={-10}
+                       duration={500}>
+                    Scroll down
+                </LinkS>
             </div>
-        );
+            <div className="banner__figures">
+                <Parallax
+                    className="banner__figure"
+                    bgImage={figureImage1}
+                    strength={100}
+                    style={{
+                        position: 'absolute',
+                        overflow: 'visible',
+                        willChange:'transform',
+                        transition: 'transform 0.5s cubic-bezier(0, 0, 0, 1) 0s'
+                    }}
+                >
+                </Parallax>
+                <Parallax
+                    className="banner__figure"
+                    bgImage={figureImage2}
+                    strength={-100}
+                    style={{
+                        position: 'absolute',
+                        overflow: 'visible',
+                        willChange:'transform',
+                        transition: 'transform 0.5s cubic-bezier(0, 0, 0, 1) 0s'
+                    }}
+                >
+                </Parallax>
+                <Parallax
+                    className="banner__figure"
+                    bgImage={figureImage3}
+                    strength={-100}
+                    style={{
+                        position: 'absolute',
+                        overflow: 'visible',
+                        willChange:'transform',
+                        transition: 'transform 0.5s cubic-bezier(0, 0, 0, 1) 0s'
+                    }}
+                >
+                </Parallax>
+            </div>
+        </div>
+    );
 }
 
 export default Banner;
