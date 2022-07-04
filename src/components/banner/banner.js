@@ -1,5 +1,6 @@
 import React from 'react';
 import {Parallax} from 'react-parallax';
+import {Link as LinkS} from "react-scroll";
 
 import './banner.css';
 
@@ -20,8 +21,15 @@ const Banner = () => {
                 </p>
                 <h1 className="banner__title aos-init" data-aos="animation-translate-up" data-aos-delay="200">Portfolio
                     site</h1>
-                <a className="btn banner__contact aos-init" href="/" data-aos="animation-translate-up"
-                   data-aos-delay="400">More details</a>
+                <LinkS className="btn btn__l banner__contact aos-init" data-aos="animation-translate-up"
+                       data-aos-delay="400"
+                       to="project"
+                       spy={true}
+                       smooth={true}
+                       offset={-10}
+                       duration={500}>
+                    Scroll down
+                </LinkS>
             </div>
             <div className="banner__figures">
                 <Parallax

@@ -35,6 +35,16 @@
   .technology__list {
     display: flex;
     flex-wrap: wrap; }
+  .technology__btn {
+    margin-top: 40px;
+    text-align: center; }
+  .technology__showing {
+    margin-bottom: 20px;
+    text-align: right;
+    color: #606060; }
+    @media (min-width: 1024px) {
+      .technology__showing {
+        font-size: 18px; } }
   .technology__list-item {
     position: relative;
     width: calc(100% / 2 - 10px);

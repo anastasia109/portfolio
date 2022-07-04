@@ -48,7 +48,16 @@ a {
   overflow: hidden;
   font-weight: 500;
   transition: all .5s;
+  cursor: pointer;
   z-index: 2; }
+  @media (min-width: 768px) {
+    .btn__l {
+      font-size: 22px;
+      padding: 10px 20px; } }
+  @media (min-width: 1366px) {
+    .btn__l {
+      font-size: 24px;
+      padding: 15px 25px; } }
   .btn:hover {
     color: #9c8cc2; }
     .btn:hover:before {
@@ -160,6 +169,16 @@ h4 {
   @media (min-width: 1366px) {
     h4 {
       font-size: 32px; } }
+
+h5 {
+  font-size: 16px;
+  line-height: 1.2; }
+  @media (min-width: 1024px) {
+    h5 {
+      font-size: 18px; } }
+  @media (min-width: 1366px) {
+    h5 {
+      font-size: 20px; } }
 
 span {
   display: block; }
