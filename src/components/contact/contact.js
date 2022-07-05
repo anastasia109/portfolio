@@ -8,29 +8,41 @@ import figureImage1 from "../../static/images/figure-1.png";
 import figureImage4 from "../../static/images/figure-4.png";
 import figureImage5 from "../../static/images/figure-5.png";
 
+
 const Contact = () => {
+    const [error, setError] = useState();
     const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
     const form = useRef();
-
-    // const templateParams = {
-    //     name: {name},
-    //     email: {email},
-    //     message: {message}
-    // };
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.send('service_hxmtc6l', 'portfolio_template', form.current, 'Vj0vGrnawqHWJHjaN')
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-            }, (err) => {
-                console.log('FAILED...', err);
-            });
+        let {name, email} = form.current;
+        name = name.value;
+        email = email.value;
+
+        if (name && email) {
+            emailjs.sendForm('service_hxmtc6l', 'portfolio_template', form.current, 'Vj0vGrnawqHWJHjaN')
+                .then((result) => {
+                    console.log('SUCCESS!', result.text);
+                }, (error) => {
+                    console.log('FAILED...', error.text);
+                });
+
+            setError(true);
+        } else {
+            setError(false);
+        }
+    };
+
+    let showValid;
+
+    if (error === false) {
+        showValid = <p className="error">You need to provide your name and email address.</p>
+    } else if (error === true) {
+        showValid = <p className="success">Thanks {name} for your message.</p>
     }
+
     return (
         <div className="contact" id="contact">
             <div className="contact__info">
@@ -92,25 +104,21 @@ const Contact = () => {
                         <div className="contact__form-block">
                             <div className="contact__form-input aos-init" data-aos="animation-scale-y"
                                  data-aos-delay="100">
-                                <input autoComplete="off" type="text" name="name" placeholder="Name"
+                                <input autoComplete="off" type="text" name="name" placeholder="Name*"
                                        value={name}
                                        onChange={(e) => setName(e.target.value)}
                                 />
                             </div>
                             <div className="contact__form-input aos-init" data-aos="animation-scale-y"
                                  data-aos-delay="200">
-                                <input autoComplete="off" type="text" name="email" placeholder="email"
-                                       value={email}
-                                       onChange={(e) => setEmail(e.target.value)}
-                                />
+                                <input autoComplete="off" type="text" name="email" placeholder="Email*"/>
                             </div>
                             <div className="contact__form-input aos-init" data-aos="animation-scale-y"
                                  data-aos-delay="300">
-                                        <textarea name="message" placeholder="now write your awesome message :)"
-                                                  value={message}
-                                                  onChange={(e) => setMessage(e.target.value)}
-                                        >
-                                        </textarea>
+                                <textarea name="message" placeholder="Now write your awesome message :)"/>
+                            </div>
+                            <div className="contact__form-input">
+                                {showValid}
                             </div>
                             <div className="contact__form-submit aos-init" data-aos="animation-scale-y"
                                  data-aos-delay="400">

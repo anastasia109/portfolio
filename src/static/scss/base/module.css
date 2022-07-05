@@ -118,7 +118,12 @@ a {
   display: block; }
 
 .error {
-  background: #d53722; }
+  margin-top: 10px;
+  color: #d53722; }
+
+.success {
+  margin-top: 10px;
+  color: #3ca727; }
 
 h1 {
   font-size: 58px;

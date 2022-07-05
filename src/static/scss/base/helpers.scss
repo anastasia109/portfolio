@@ -7,7 +7,13 @@
 }
 
 .error {
-  background: $red;
+  margin-top: 10px;
+  color: $red;
+}
+
+.success {
+  margin-top: 10px;
+  color: $green;
 }
 
 h1 {
