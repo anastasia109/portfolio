@@ -15,11 +15,11 @@ const Contact = () => {
 
     const form = useRef();
 
-    const templateParams = {
-        name: {name},
-        email: {email},
-        message: {message}
-    };
+    // const templateParams = {
+    //     name: {name},
+    //     email: {email},
+    //     message: {message}
+    // };
 
     const sendEmail = (e) => {
         e.preventDefault();
