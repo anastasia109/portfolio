@@ -1,0 +1,27 @@
+@import "../../static/scss/base/variables.scss";
+
+.top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: $main-color2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-white;
+  cursor: pointer;
+  transition: all .5s;
+
+  &:before {
+    content: '→';
+    padding-bottom: 15px;
+    font-size: 42px;
+    line-height: inherit;
+    font-family: "Font Awesome";
+    transition: color 0.5s;
+    transform: rotate(-90deg);
+  }
+}

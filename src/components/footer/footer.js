@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="container">
                 <div className="footer__content">
-                    <div className="footer__logo aos-init" data-aos="animation-translate-y" data-aos-offset="100">
+                    <div className="footer__logo aos-init" data-aos="animation-translate-y">
                         <Router>
                             <Link to="/"><img src={logo} alt='Drobotun Anastasia logo' width="100px" height="92px"/></Link>
                         </Router>
