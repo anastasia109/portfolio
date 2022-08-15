@@ -121,6 +121,9 @@ a {
   margin-top: 10px;
   color: #d53722; }
 
+.relative {
+  position: relative; }
+
 .success {
   margin-top: 10px;
   color: #3ca727; }

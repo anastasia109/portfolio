@@ -17,13 +17,13 @@ const notNull = (element) => {
 const Technology = () => {
     const [item, setItem] = useState(lists);
 
-    let menuItems = [...new Set(lists.map((list) => list.tag))];
+    let menuItems = [...new Set(lists.map((list) => list.tags))];
     menuItems = menuItems.join('').split(',').filter(notNull).filter(unique);
 
 
     const filterItem = (curtag) => {
         const newItem = lists.filter((newList) => {
-            const filterTag = newList.tag.split(',').filter(unique);
+            const filterTag = newList.tags.split(',').filter(unique);
             return Object.values(filterTag).includes(curtag);
         });
 

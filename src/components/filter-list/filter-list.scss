@@ -1,0 +1,24 @@
+@import "../../static/scss/base/variables.scss";
+@import "../../static/scss/base/mixins.scss";
+
+.technology {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  &__showing {
+    margin-bottom: 20px;
+    text-align: right;
+    color: $color-darkgray;
+
+    @include laptop {
+      font-size: 18px;
+    }
+  }
+}
