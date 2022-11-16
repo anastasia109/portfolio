@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import axios from "axios";
+
 import './footer.css';
 import {BrowserRouter as Router, Link} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,6 +8,21 @@ import {faCopyright} from '@fortawesome/fontawesome-free-solid'
 import logo from "../../static/icon/logo.svg";
 
 const Footer = () => {
+
+    async function fetchDada() {
+        const response = await axios.get('https://www.sec.gov/files/company_tickers.json');
+        console.log(response)
+    }
+
+    useEffect(() => {
+        fetch('https://www.sec.gov/files/company_tickers.json')
+            .then(response => response.json())
+            .then(json => console.log(json))
+        fetchDada();
+
+    }, [])
+
+
     return (
         <footer className="footer">
             <div className="container">
