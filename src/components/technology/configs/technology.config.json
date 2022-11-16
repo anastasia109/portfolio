@@ -1,0 +1,194 @@
+[
+  {
+    "id": 0,
+    "label": "Marie Forleo",
+    "suplabel": "Wordpress website",
+    "description": "Create new block from builder",
+    "tags": "React,JS,HTML5,CSS3,LESS/SASS,TweenMax,Webpack,Wordpress,",
+    "src": "/images/technology/marie.jpg"
+  },
+  {
+    "id": 1,
+    "label": "ATO Museum",
+    "suplabel": "Wordpress corp site",
+    "description": "Creating new website",
+    "tags": "Wordpress,JS,HTML5,CSS3,",
+    "src": "/images/technology/museum.jpg"
+  },
+  {
+    "id": 2,
+    "label": "Bikebiz Blog",
+    "suplabel": "Website",
+    "description": "Created and updated UI,bug-fixing,markup",
+    "tags": "React,JS,HTML5,CSS3,Webpack,",
+    "src": "/images/technology/bike.jpg"
+  },
+  {
+    "id": 3,
+    "label": "Gutenberg",
+    "suplabel": "Wordpress website",
+    "description": "Create new block from builder",
+    "tags": "React,Wordpress,JS,HTML5,CSS3,Webpack,",
+    "src": "/images/technology/gut.jpg"
+  },
+  {
+    "id": 4,
+    "label": "Unidencellular",
+    "suplabel": "M1 to M2 Migration",
+    "description": "Created and updated UI,bug-fixing,markup",
+    "tags": "Magento,JS,HTML5,LESS/SASS,",
+    "src": "/images/technology/und.jpg"
+  },
+  {
+    "id": 5,
+    "label": "Pharma hyaluron",
+    "suplabel": "Create online store",
+    "description": "Online store",
+    "tags": "OpenCart,JS,HTML5,CSS3,LESS/SASS,",
+    "src": "/images/technology/pharma.jpg"
+  },
+  {
+    "id": 6,
+    "label": "Arhitektor krasoty",
+    "suplabel": "Online store",
+    "description": "Create online store",
+    "tags": "OpenCart,JS,HTML5,CSS3,LESS/SASS,",
+    "src": "/images/technology/arhitektor.jpg"
+  },
+  {
+    "id": 7,
+    "label": "Brand Seowave",
+    "suplabel": "Landing page",
+    "description": "Landing page",
+    "tags": "TweenMax,",
+    "src": "/images/technology/brand.jpg"
+  },
+  {
+    "id": 8,
+    "label": "Vipidei",
+    "suplabel": "Wordpress corp site",
+    "description": "Creating new website",
+    "tags": "Wordpress,JS,HTML5,CSS3,",
+    "src": "/images/technology/vipidei.jpg"
+  },
+  {
+    "id": 9,
+    "label": "Seo-wave.com",
+    "suplabel": "Create corp site",
+    "description": "Creating new theme,bug fixing,markup\n\n",
+    "tags": "Joomla,JS,HTML5,CSS3,",
+    "src": "/images/technology/seowave.jpg"
+  },
+  {
+    "id": 10,
+    "label": "Wimpolepharmacy",
+    "suplabel": "Wordpress online store",
+    "description": "Created and updated UI",
+    "tags": "Wordpress,Woocommerce,JS,HTML5,CSS3,",
+    "src": "/images/technology/wimpo.jpg"
+  },
+  {
+    "id": 11,
+    "label": "Suprime",
+    "suplabel": "Group of Wordpress projects",
+    "description": "Created and updated UI,bug-fixing,markup",
+    "tags": "Wordpress,JS,PHP,CSS3,LESS/SASS,",
+    "src": "/images/technology/suprime.jpg"
+  },
+  {
+    "id": 12,
+    "label": "Legal 100",
+    "suplabel": "Wordpress corp site",
+    "description": "Create wordpress corp site",
+    "tags": "Wordpress,JS,HTML5,CSS3,",
+    "src": "/images/technology/legal.jpg"
+  },
+  {
+    "id": 13,
+    "label": "Avantage",
+    "suplabel": "Create corp site",
+    "description": "Create corp site",
+    "tags": "Wordpress,JS,HTML5,CSS3,",
+    "src": "/images/technology/avantage.jpg"
+  },
+  {
+    "id": 14,
+    "label": "Koko mama",
+    "suplabel": "Online store",
+    "description": "Create online store",
+    "tags": "OpenCart,JS,HTML5,CSS3,",
+    "src": "/images/technology/kokomama.jpg"
+  },
+  {
+    "id": 15,
+    "label": "Valentir store",
+    "suplabel": "Online store",
+    "description": "Create online store",
+    "tags": "OpenCart,JS,HTML5,CSS3,",
+    "src": "/images/technology/valentir.jpg"
+  },
+  {
+    "id": 16,
+    "label": "Unifield",
+    "suplabel": "Wordpress online store",
+    "description": "Create wordpress online store",
+    "tags": "Wordpress,Woocommerce,JS,HTML5,CSS3,",
+    "src": "/images/technology/uni.jpg"
+  },
+  {
+    "id": 17,
+    "label": "Hautarzt",
+    "suplabel": "Website online consultation",
+    "description": "Created and updated UI,bug-fixing,markup",
+    "tags": "Vue,HTML5,LESS/SASS,JS,Webpack,",
+    "src": "/images/technology/hautarzt.jpg"
+  },
+  {
+    "id": 18,
+    "label": "Armogan",
+    "suplabel": "Magento 2 CE online store",
+    "description": "Created and updated UI,bug-fixing,markup",
+    "tags": "Magento,JS,HTML5,LESS/SASS,Webpack,",
+    "src": "/images/technology/armogan.jpg"
+  },
+  {
+    "id": 19,
+    "label": "Damp-e PWA M2",
+    "suplabel": "M2 Website",
+    "description": "Created and updated UI,bug-fixing,markup",
+    "tags": "Magento,JS,HTML5,LESS/SASS,Graphql,",
+    "src": "/images/technology/damp-e.jpg"
+  },
+  {
+    "id": 20,
+    "label": "SapienCreations",
+    "suplabel": "M1 Website",
+    "description": "Created new UI,bug-fixing,markup",
+    "tags": "Magento,JS,HTML5,LESS/SASS,",
+    "src": "/images/technology/sap.jpg"
+  },
+  {
+    "id": 21,
+    "label": "MVP",
+    "suplabel": "Wordpress corp site",
+    "description": "Created and updated UI",
+    "tags": "Wordpress,JS,HTML5,CSS3,",
+    "src": "/images/technology/mvp.jpg"
+  },
+  {
+    "id": 22,
+    "label": "Delm",
+    "suplabel": "M2 Website",
+    "description": "Created and updated UI,bug-fixing,markup",
+    "tags": "Magento,JS,HTML5,LESS/SASS,Grunt",
+    "src": "/images/technology/delm.jpg"
+  },
+  {
+    "id": 23,
+    "label": "Gadgetline",
+    "suplabel": "M2 Website",
+    "description": "Created and updated UI,bug-fixing,markup",
+    "tags": "Magento,JS,HTML5,LESS/SASS,Grunt",
+    "src": "/images/technology/gadgetline.jpg"
+  }
+]

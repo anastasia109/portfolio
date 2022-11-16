@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,YAAY;AAWZ,WAAW;ACXX,iBAAiB;ACIf,iBAAQ;EACN,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;AAGjB,gBAAO;EACL,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,MAAM;AAGpB,oBAAW;EACT,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,KAAK;EACjB,KAAK,EFRQ,OAAO;ECFtB,0BAA2B;ICO3B,oBAAW;MAMP,SAAS,EAAE,IAAI",
+"sources": ["../../static/scss/base/variables.scss","../../static/scss/base/mixins.scss","filter-list.scss"],
 "names": [],
 "file": "filter-list.css"
 }

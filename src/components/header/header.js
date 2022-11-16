@@ -58,6 +58,14 @@ class Header extends Component {
                                        duration={500}>
                                     Experience
                                 </LinkS>
+                                <LinkS activeClass="active"
+                                       to="soft-skills"
+                                       spy={true}
+                                       smooth={true}
+                                       offset={-10}
+                                       duration={500}>
+                                    Soft skills
+                                </LinkS>
                                 <LinkS className="btn"
                                        to="contact"
                                        spy={true}

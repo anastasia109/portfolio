@@ -1,36 +1,8 @@
 import React from 'react';
 import Slider from "react-slick";
+import skillsLists from './configs/skills.config.json';
 
 import './skills.css';
-
-const skillsLists = [
-    {
-        id: 0,
-        title: "React",
-        src: "/images/skills/react.svg"
-    },
-    {
-        id: 1,
-        title: "HTML5",
-        src: "/images/skills/html5.svg"
-    },
-    {
-        id: 2,
-        title: "CSS3",
-        src: "/images/skills/css3.svg"
-    },
-    {
-        id: 3,
-        title: "JS",
-        src: "/images/skills/javascript.svg"
-    },
-    {
-        id: 4,
-        title: "PHP",
-        src: "/images/skills/php.svg"
-    },
-
-];
 
 const Skills = () => {
     var settings = {

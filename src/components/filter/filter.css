@@ -1,3 +1,28 @@
-
+/* colors */
+/* fonts */
+/* breakpoints */
+.technology__filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px; }
+  @media (min-width: 1024px) {
+    .technology__filter {
+      margin-bottom: 50px; } }
+.technology__filter-item {
+  display: inline-flex;
+  margin: 5px; }
+  @media (min-width: 768px) {
+    .technology__filter-item {
+      margin: 5px 10px; } }
+  .technology__filter-item .tag {
+    font-size: 18px;
+    color: #606060;
+    font-weight: 500;
+    border-bottom: 2px solid transparent; }
+  .technology__filter-item:hover .tag,
+  .technology__filter-item .tag.active {
+    color: #232340;
+    cursor: pointer;
+    border-bottom-color: #9c8cc2; }
 
 /*# sourceMappingURL=filter.css.map */

@@ -1,0 +1,102 @@
+/* colors */
+/* fonts */
+/* breakpoints */
+.technology__list-item {
+  width: calc(100% / 2 - 10px);
+  margin: 0 5px 10px 5px;
+  animation: show .8s ease;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 1px rgba(156, 140, 194, 0.5);
+  transition: all .15s; }
+  @media (min-width: 768px) {
+    .technology__list-item:hover .technology__list-show {
+      opacity: 1;
+      background-color: #e8dffd;
+      transition: all .5s; } }
+  @media (min-width: 768px) {
+    .technology__list-item {
+      border-radius: 24px; } }
+  @media (min-width: 1024px) {
+    .technology__list-item {
+      width: calc(100% / 3 - 20px);
+      margin: 0 10px 20px 10px; } }
+  .technology__list-item img {
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    object-fit: cover; }
+    @media (min-width: 768px) {
+      .technology__list-item img {
+        height: 200px; } }
+    @media (min-width: 1024px) {
+      .technology__list-item img {
+        height: 300px; } }
+.technology__list-image {
+  display: flex;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px; }
+.technology__list-text {
+  position: relative;
+  padding: 15px 10px; }
+  @media (min-width: 768px) {
+    .technology__list-text {
+      padding: 20px 20px 30px; } }
+.technology__list-label {
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .technology__list-label {
+      margin-bottom: 25px; } }
+.technology__list-suplabel {
+  font-size: 16px;
+  color: #606060;
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .technology__list-suplabel {
+      font-size: 18px;
+      margin-bottom: 25px; } }
+  @media (min-width: 1024px) {
+    .technology__list-suplabel {
+      font-size: 20px; } }
+.technology__list-description {
+  font-size: 14px;
+  color: #232340;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .technology__list-description {
+      font-size: 16px;
+      margin-bottom: 15px; } }
+.technology__list-tags {
+  font-size: 14px;
+  color: #232340;
+  margin: 0 -5px; }
+  @media (min-width: 768px) {
+    .technology__list-tags {
+      font-size: 16px;
+      line-height: 1.5; } }
+.technology__list-tag {
+  display: inline-block;
+  margin: 0 5px;
+  border-bottom: 2px solid #9c8cc2; }
+  @media (min-width: 768px) {
+    .technology__list-tag {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 15px; } }
+@media (min-width: 768px) {
+  .technology__list-show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    background-color: #e8dffd;
+    transition: all .5s; } }
+
+/*# sourceMappingURL=filter-item.css.map */
