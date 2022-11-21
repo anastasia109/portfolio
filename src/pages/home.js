@@ -1,19 +1,16 @@
 import React, {Component, Fragment} from 'react';
-
-import Spinner from '../spinner';
-import Header from '../header';
-import Main from '../main';
-import Footer from '../footer';
-import Top from '../top';
-
-import AOS from 'aos';
+import Spinner from "../components/spinner";
+import Header from "../components/header";
+import Main from "../components/main";
+import Footer from "../components/footer";
+import Top from "../components/top";
+import AOS from "aos";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import '../../static/scss/base/module.css';
-import './app.css';
+import '../static/scss/base/module.css';
 
-export default class App extends Component {
+export default class Home extends Component {
     state = {
         isLoading: true
     }
@@ -27,7 +24,6 @@ export default class App extends Component {
         })
     }
 
-
     render() {
         const {isLoading} = this.state;
         return (
@@ -36,14 +32,15 @@ export default class App extends Component {
                     isLoading
                         ? <Spinner/>
                         :
-                        <div className="page" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" id="top">
+                        <div className="page" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"
+                             id="top">
                             <Header/>
                             <Main/>
                             <Footer/>
-                            <Top />
+                            <Top/>
                         </div>
                 }
             </Fragment>
         );
-    };
-}
+    }
+};
