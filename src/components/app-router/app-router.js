@@ -9,13 +9,13 @@ const AppRouter = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/">
+                <Route exact path="/">
                     <Home />
                 </Route>
-                <Route path="/projects">
+                <Route exact path="/projects">
                     <Projects />
                 </Route>
-                <Route path="/projects/:id">
+                <Route exact path="/projects/:id">
                     <ProjectIdPage />
                 </Route>
                 <Redirect to="/" />
