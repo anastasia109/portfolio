@@ -40,7 +40,7 @@ class Header extends Component {
                                        smooth={true}
                                        offset={-10}
                                        duration={500}>
-                                    Project
+                                    Projects
                                 </LinkS>
                                 <LinkS activeClass="active"
                                        to="skills"

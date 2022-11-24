@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": 1,
     "label": "Marie Forleo",
     "suplabel": "Wordpress website",
     "description": "Create new block from builder",
@@ -8,7 +8,7 @@
     "src": "/images/technology/marie.jpg"
   },
   {
-    "id": 1,
+    "id": 2,
     "label": "ATO Museum",
     "suplabel": "Wordpress corp site",
     "description": "Creating new website",
@@ -16,7 +16,7 @@
     "src": "/images/technology/museum.jpg"
   },
   {
-    "id": 2,
+    "id": 3,
     "label": "Bikebiz Blog",
     "suplabel": "Website",
     "description": "Created and updated UI,bug-fixing,markup",
@@ -24,7 +24,7 @@
     "src": "/images/technology/bike.jpg"
   },
   {
-    "id": 3,
+    "id": 4,
     "label": "Gutenberg",
     "suplabel": "Wordpress website",
     "description": "Create new block from builder",
@@ -32,7 +32,7 @@
     "src": "/images/technology/gut.jpg"
   },
   {
-    "id": 4,
+    "id": 5,
     "label": "Unidencellular",
     "suplabel": "M1 to M2 Migration",
     "description": "Created and updated UI,bug-fixing,markup",
@@ -40,7 +40,7 @@
     "src": "/images/technology/und.jpg"
   },
   {
-    "id": 5,
+    "id": 6,
     "label": "Pharma hyaluron",
     "suplabel": "Create online store",
     "description": "Online store",
@@ -48,7 +48,7 @@
     "src": "/images/technology/pharma.jpg"
   },
   {
-    "id": 6,
+    "id": 7,
     "label": "Arhitektor krasoty",
     "suplabel": "Online store",
     "description": "Create online store",
@@ -56,7 +56,7 @@
     "src": "/images/technology/arhitektor.jpg"
   },
   {
-    "id": 7,
+    "id": 8,
     "label": "Brand Seowave",
     "suplabel": "Landing page",
     "description": "Landing page",
@@ -64,7 +64,7 @@
     "src": "/images/technology/brand.jpg"
   },
   {
-    "id": 8,
+    "id": 9,
     "label": "Vipidei",
     "suplabel": "Wordpress corp site",
     "description": "Creating new website",
@@ -72,7 +72,7 @@
     "src": "/images/technology/vipidei.jpg"
   },
   {
-    "id": 9,
+    "id": 10,
     "label": "Seo-wave.com",
     "suplabel": "Create corp site",
     "description": "Creating new theme,bug fixing,markup\n\n",
@@ -80,7 +80,7 @@
     "src": "/images/technology/seowave.jpg"
   },
   {
-    "id": 10,
+    "id": 11,
     "label": "Wimpolepharmacy",
     "suplabel": "Wordpress online store",
     "description": "Created and updated UI",
@@ -88,7 +88,7 @@
     "src": "/images/technology/wimpo.jpg"
   },
   {
-    "id": 11,
+    "id": 12,
     "label": "Suprime",
     "suplabel": "Group of Wordpress projects",
     "description": "Created and updated UI,bug-fixing,markup",
@@ -96,7 +96,7 @@
     "src": "/images/technology/suprime.jpg"
   },
   {
-    "id": 12,
+    "id": 13,
     "label": "Legal 100",
     "suplabel": "Wordpress corp site",
     "description": "Create wordpress corp site",
@@ -104,7 +104,7 @@
     "src": "/images/technology/legal.jpg"
   },
   {
-    "id": 13,
+    "id": 14,
     "label": "Avantage",
     "suplabel": "Create corp site",
     "description": "Create corp site",
@@ -112,7 +112,7 @@
     "src": "/images/technology/avantage.jpg"
   },
   {
-    "id": 14,
+    "id": 15,
     "label": "Koko mama",
     "suplabel": "Online store",
     "description": "Create online store",
@@ -120,7 +120,7 @@
     "src": "/images/technology/kokomama.jpg"
   },
   {
-    "id": 15,
+    "id": 16,
     "label": "Valentir store",
     "suplabel": "Online store",
     "description": "Create online store",
@@ -128,7 +128,7 @@
     "src": "/images/technology/valentir.jpg"
   },
   {
-    "id": 16,
+    "id": 17,
     "label": "Unifield",
     "suplabel": "Wordpress online store",
     "description": "Create wordpress online store",
@@ -136,7 +136,7 @@
     "src": "/images/technology/uni.jpg"
   },
   {
-    "id": 17,
+    "id": 18,
     "label": "Hautarzt",
     "suplabel": "Website online consultation",
     "description": "Created and updated UI,bug-fixing,markup",
@@ -144,7 +144,7 @@
     "src": "/images/technology/hautarzt.jpg"
   },
   {
-    "id": 18,
+    "id": 19,
     "label": "Armogan",
     "suplabel": "Magento 2 CE online store",
     "description": "Created and updated UI,bug-fixing,markup",
@@ -152,7 +152,7 @@
     "src": "/images/technology/armogan.jpg"
   },
   {
-    "id": 19,
+    "id": 20,
     "label": "Damp-e PWA M2",
     "suplabel": "M2 Website",
     "description": "Created and updated UI,bug-fixing,markup",
@@ -160,7 +160,7 @@
     "src": "/images/technology/damp-e.jpg"
   },
   {
-    "id": 20,
+    "id": 21,
     "label": "SapienCreations",
     "suplabel": "M1 Website",
     "description": "Created new UI,bug-fixing,markup",
@@ -168,7 +168,7 @@
     "src": "/images/technology/sap.jpg"
   },
   {
-    "id": 21,
+    "id": 22,
     "label": "MVP",
     "suplabel": "Wordpress corp site",
     "description": "Created and updated UI",
@@ -176,7 +176,7 @@
     "src": "/images/technology/mvp.jpg"
   },
   {
-    "id": 22,
+    "id": 23,
     "label": "Delm",
     "suplabel": "M2 Website",
     "description": "Created and updated UI,bug-fixing,markup",
@@ -184,7 +184,7 @@
     "src": "/images/technology/delm.jpg"
   },
   {
-    "id": 23,
+    "id": 24,
     "label": "Gadgetline",
     "suplabel": "M2 Website",
     "description": "Created and updated UI,bug-fixing,markup",

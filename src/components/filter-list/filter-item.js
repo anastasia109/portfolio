@@ -1,15 +1,19 @@
 import React from 'react';
+import {useHistory} from 'react-router-dom';
 
 import './filter-item.css';
 
 const FilterItem = ({newList}) => {
+    const router = useHistory();
 
     return (
         <>
             {newList.map((list, i) => {
-                    const {src, label, suplabel, description} = list,
+                    const {id, src, label, suplabel, description} = list,
                         tags = list.tags.split(",").slice(0, -1),
                         delay = i + '0';
+
+                    const tagList = tags.map((tag) => <li key={tag} className="technology__list-tag">{tag}</li>)
 
                     return (
                         <li key={i} className="technology__list-item aos-init" data-aos="animation-translate-y"
@@ -24,8 +28,11 @@ const FilterItem = ({newList}) => {
                                 <div className="technology__list-show">
                                     <div className="technology__list-description">{description}</div>
                                     <ul className="technology__list-tags">
-                                        {tags.map((tag) => <li className="technology__list-tag">{tag}</li>)}
+                                        {tagList}
                                     </ul>
+                                    <button className="btn"
+                                            onClick={() => router.push(`/projects/${id}`)} >
+                                        Read more</button>
                                 </div>
                             </div>
                         </li>)

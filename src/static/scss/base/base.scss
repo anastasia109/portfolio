@@ -29,6 +29,12 @@ a {
   color: #181818;
 }
 
+.page {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
 .container {
   width: 100%;
   max-width: 1640px;
