@@ -1,14 +1,11 @@
 import React from 'react';
-import Header from "../components/header";
-import Footer from "../components/footer";
-import Top from "../components/top";
+import Technology from "../components/technology";
+
 
 const Projects = () => {
     return (
-        <div className="page" id="top">
-            <Header/>
-            <Footer/>
-            <Top/>
+        <div className='container'>
+            <Technology />
         </div>
     );
 };
