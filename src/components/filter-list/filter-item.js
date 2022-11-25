@@ -1,11 +1,9 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import './filter-item.css';
 
 const FilterItem = ({newList}) => {
-    const router = useHistory();
-
     return (
         <>
             {newList.map((list, i) => {
@@ -30,9 +28,8 @@ const FilterItem = ({newList}) => {
                                     <ul className="technology__list-tags">
                                         {tagList}
                                     </ul>
-                                    <button className="btn"
-                                            onClick={() => router.push(`/projects/${id}`)} >
-                                        Read more</button>
+                                    <Link className="btn"
+                                          to={'/projects/' + id}>Read more</Link>
                                 </div>
                             </div>
                         </li>)

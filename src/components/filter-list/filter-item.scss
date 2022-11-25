@@ -46,6 +46,12 @@
         height: 300px;
       }
     }
+
+    .btn {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+    }
   }
 
   &__list-image {
@@ -135,11 +141,5 @@
       background-color: $light-magenta;
       transition: all .5s;
     }
-  }
-
-  .btn {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
   }
 }

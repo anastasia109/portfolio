@@ -33,6 +33,10 @@
     @media (min-width: 1024px) {
       .technology__list-item img {
         height: 300px; } }
+  .technology__list-item .btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px; }
 .technology__list-image {
   display: flex;
   border-top-left-radius: 24px;
@@ -98,9 +102,5 @@
     padding: 20px;
     background-color: #e8dffd;
     transition: all .5s; } }
-.technology .btn {
-  position: absolute;
-  bottom: 5px;
-  right: 5px; }
 
 /*# sourceMappingURL=filter-item.css.map */

@@ -16,7 +16,7 @@ const FilterList = ({lists, showItems}) => {
     return (
         <>
             <ul className="technology__list">
-                <FilterItem newList={newList}/>
+                <FilterItem newList={newList} />
                 {visible ? <FilterItem newList={newShowList}/> : null}
             </ul>
 
