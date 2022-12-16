@@ -17,10 +17,10 @@
 
   &:before {
     content: '→';
-    padding-bottom: 15px;
+    position: relative;
+    left: -8px;
     font-size: 42px;
     line-height: inherit;
-    font-family: "Font Awesome";
     transition: color 0.5s;
     transform: rotate(-90deg);
   }

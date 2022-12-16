@@ -53,7 +53,7 @@ const Contact = () => {
                         like to get in touch, talk to me about collaborating
                         on a
                         project, or just say hi,<br/> fill out the great form below or send an email to <a
-                            href="mailto:anastasia18106@gmail.com">anastasia18106@gmail.com</a> and ~let's talk.
+                            href="mailto:drobotun.nastia@gmail.com">drobotun.nastia@gmail.com</a> and ~let's talk.
                     </p>
                 </div>
                 <div className="contact__figures">
@@ -122,7 +122,7 @@ const Contact = () => {
                             </div>
                             <div className="contact__form-submit aos-init" data-aos="animation-scale-y"
                                  data-aos-delay="400">
-                                <button className="contact__submit btn btn__l" type="submit">Let’s Talk</button>
+                                <button className="btn btn__l" type="submit">Let’s Talk</button>
                             </div>
                         </div>
                     </form>

@@ -165,10 +165,10 @@
     }
 
     &:before {
+      font-family: Arial;
       color: $color-black;
       font-size: 42px;
       line-height: inherit;
-      font-family: "Font Awesome";
       transition: color 0.5s;
     }
   }
@@ -176,9 +176,17 @@
   .slick-prev {
     left: auto;
     right: 60px;
+
+    &:before {
+      content: "←";
+    }
   }
 
   .slick-next {
     right: 0;
+
+    &:before {
+      content: "→";
+    }
   }
 }

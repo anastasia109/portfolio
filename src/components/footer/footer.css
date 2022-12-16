@@ -5,9 +5,10 @@
   text-align: center;
   background: linear-gradient(360deg, rgba(253, 253, 253, 0.3) 0%, rgba(253, 205, 69, 0.3) 100%); }
   .footer__logo {
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
 
 .copyright {
+  margin-bottom: 50px;
   color: #232340; }
 
 /*# sourceMappingURL=footer.css.map */

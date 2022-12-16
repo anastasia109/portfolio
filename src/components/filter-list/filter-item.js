@@ -7,7 +7,7 @@ const FilterItem = ({newList}) => {
     return (
         <>
             {newList.map((list, i) => {
-                    const {id, src, label, suplabel, description} = list,
+                    const {id, src, label, suplabel} = list,
                         tags = list.tags.split(",").slice(0, -1),
                         delay = i + '0';
 
@@ -24,7 +24,6 @@ const FilterItem = ({newList}) => {
                                 <h5 className="technology__list-label">{label} </h5>
                                 <div className="technology__list-suplabel">{suplabel}</div>
                                 <div className="technology__list-show">
-                                    <div className="technology__list-description">{description}</div>
                                     <ul className="technology__list-tags">
                                         {tagList}
                                     </ul>

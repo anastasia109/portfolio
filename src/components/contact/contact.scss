@@ -76,15 +76,6 @@
     }
   }
 
-  &__submit.btn {
-    cursor: pointer;
-    background-color: $main-color2;
-
-    &:hover {
-      color: $color-white;
-    }
-  }
-
   &__details,
   &__info {
     display: flex;
