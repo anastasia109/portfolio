@@ -2,27 +2,83 @@
 /* fonts */
 /* breakpoints */
 .technology__filter {
-  display: flex;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 1;
+  display: none;
   flex-wrap: wrap;
-  margin-bottom: 30px; }
-  @media (min-width: 1024px) {
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+  background-color: #ffffff; }
+  @media (min-width: 768px) {
     .technology__filter {
+      position: static;
+      display: flex; } }
+.technology__items {
+  margin-bottom: 30px;
+  position: relative; }
+  @media (min-width: 1024px) {
+    .technology__items {
       margin-bottom: 50px; } }
+  .technology__items.opened .technology__filter {
+    display: flex;
+    border: 1px solid #9c8cc2;
+    border-radius: 12px;
+    overflow: hidden; }
+  .technology__items.opened .fa-angle-down {
+    transform: rotate(180deg);
+    transition: all .5s; }
 .technology__filter-item {
   display: inline-flex;
-  margin: 5px; }
+  width: 100%;
+  opacity: 1; }
   @media (min-width: 768px) {
     .technology__filter-item {
-      margin: 5px 10px; } }
+      width: auto;
+      margin: 5px 10px;
+      opacity: 0; } }
   .technology__filter-item .tag {
+    width: 100%;
+    padding: 5px 10px;
     font-size: 18px;
     color: #606060;
-    font-weight: 500;
-    border-bottom: 2px solid transparent; }
+    font-weight: 500; }
+    @media (min-width: 768px) {
+      .technology__filter-item .tag {
+        padding: 0;
+        border-bottom: 2px solid transparent; } }
   .technology__filter-item:hover .tag,
   .technology__filter-item .tag.active {
-    color: #232340;
+    color: #ffffff;
     cursor: pointer;
-    border-bottom-color: #9c8cc2; }
+    background-color: #9c8cc2; }
+    @media (min-width: 768px) {
+      .technology__filter-item:hover .tag,
+      .technology__filter-item .tag.active {
+        color: #232340;
+        border-bottom-color: #9c8cc2;
+        background-color: transparent; } }
+.technology__item-title {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  color: #606060;
+  font-weight: 500;
+  background-color: #ffffff;
+  border: 1px solid #9c8cc2;
+  border-radius: 12px; }
+  @media (min-width: 768px) {
+    .technology__item-title {
+      display: none; } }
+.technology .fa-angle-down {
+  position: absolute;
+  right: 10px;
+  top: auto;
+  bottom: auto;
+  height: 24px;
+  color: #9c8cc2;
+  transition: all .5s; }
 
 /*# sourceMappingURL=filter.css.map */

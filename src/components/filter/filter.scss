@@ -3,35 +3,106 @@
 
 .technology {
   &__filter {
-    display: flex;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    z-index: 1;
+    display: none;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    border: 1px solid transparent;
+    background-color: $color-white;
+
+    @include tablets {
+      position: static;
+      display: flex;
+    }
+  }
+
+  &__items {
+    margin-bottom: 30px;
+    position: relative;
 
     @include laptop {
       margin-bottom: 50px;
+    }
+
+    &.opened {
+      .technology__filter {
+        display: flex;
+        border: 1px solid $main-color2;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .fa-angle-down {
+        transform: rotate(180deg);
+        transition: all .5s;
+      }
     }
   }
 
   &__filter-item {
     display: inline-flex;
-    margin: 5px;
+    width: 100%;
+    opacity: 1;
 
     @include tablets {
+      width: auto;
       margin: 5px 10px;
+      opacity: 0;
     }
 
     .tag {
+      width: 100%;
+      padding: 5px 10px;
       font-size: 18px;
       color: $color-darkgray;
       font-weight: 500;
-      border-bottom: 2px solid transparent;
+
+      @include tablets {
+        padding: 0;
+        border-bottom: 2px solid transparent;
+      }
     }
 
     &:hover .tag,
     .tag.active {
-      color: $color-black;
+      color: $color-white;
       cursor: pointer;
-      border-bottom-color: $main-color2;
+      background-color: $main-color2;
+
+      @include tablets {
+        color: $color-black;
+        border-bottom-color: $main-color2;
+        background-color: transparent;
+      }
     }
+  }
+
+  &__item-title {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    color: $color-darkgray;
+    font-weight: 500;
+    background-color: $color-white;
+    border: 1px solid $main-color2;
+    border-radius: 12px;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  .fa-angle-down {
+    position: absolute;
+    right: 10px;
+    top: auto;
+    bottom: auto;
+    height: 24px;
+    color: $main-color2;
+    transition: all .5s;
   }
 }
