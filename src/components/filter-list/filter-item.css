@@ -2,6 +2,8 @@
 /* fonts */
 /* breakpoints */
 .technology__list-item {
+  display: flex;
+  flex-direction: column;
   width: calc(100% / 2 - 10px);
   margin: 0 5px 10px 5px;
   animation: show .8s ease;
@@ -9,11 +11,6 @@
   background-color: #ffffff;
   box-shadow: 0 5px 15px 1px rgba(156, 140, 194, 0.5);
   transition: all .15s; }
-  @media (min-width: 768px) {
-    .technology__list-item:hover .technology__list-show {
-      opacity: 1;
-      background-color: #e8dffd;
-      transition: all .5s; } }
   @media (min-width: 768px) {
     .technology__list-item {
       border-radius: 24px; } }
@@ -36,17 +33,27 @@
   .technology__list-item .btn {
     position: absolute;
     bottom: 5px;
-    right: 5px; }
+    right: 0;
+    left: 0;
+    width: 115px;
+    margin: 0 auto; }
+    @media (min-width: 1024px) {
+      .technology__list-item .btn {
+        bottom: 10px;
+        right: 10px;
+        left: auto;
+        margin: 0; } }
 .technology__list-image {
   display: flex;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px; }
 .technology__list-text {
   position: relative;
-  padding: 15px 10px; }
+  height: 100%;
+  padding: 15px 10px 60px; }
   @media (min-width: 768px) {
     .technology__list-text {
-      padding: 20px 20px 30px; } }
+      padding: 20px 20px 60px; } }
 .technology__list-label {
   margin-bottom: 15px; }
   @media (min-width: 768px) {
@@ -90,17 +97,8 @@
       margin-bottom: 15px; } }
 @media (min-width: 768px) {
   .technology__list-show {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 20px;
-    background-color: #e8dffd;
-    transition: all .5s; } }
+    justify-content: center; } }
 
 /*# sourceMappingURL=filter-item.css.map */

@@ -33,14 +33,14 @@ const FilterList = ({lists, showItems}) => {
                                    offset={10}
                                    duration={500}
                                    onClick={() => setShowMore(!visible)}
-                            > Show less
+                            > Less
                             </LinkS>)
                         : (
                             <span className="technology__btn-link btn btn__l aos-init"
                                   data-aos="animation-translate-up"
                                   data-aos-delay="100"
                                   onClick={() => setShowMore(!visible)}
-                            > Show all</span>
+                            > More</span>
                         )}
                 </div>
             )}

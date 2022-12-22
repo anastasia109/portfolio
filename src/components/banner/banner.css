@@ -80,7 +80,7 @@
           top: 200px; } }
     .banner__figure:nth-child(2) {
       z-index: 3;
-      top: 350px;
+      top: 275px;
       right: 170px;
       width: 150px; }
       @media (min-width: 768px) {

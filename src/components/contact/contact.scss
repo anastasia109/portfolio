@@ -16,20 +16,28 @@
   }
 
   &__content {
-    max-width: 535px;
-    margin-bottom: 40px;
-    padding-right: 20px;
+    @include tablets {
+      max-width: 480px;
+      margin-bottom: 40px;
+      padding-right: 20px;
+    }
   }
 
-  &__text {
-    font-size: 16px;
-    line-height: 1.5;
-    color: $color-darkgray;
+  &__img {
+    margin-bottom: 30px;
 
-    @include tablets {
-      font-size: 18px;
-      line-height: 1.7;
+    img {
+      width: 100%;
+      border-radius: 12px;
+
+      @include tablets {
+        border-radius: 24px;
+      }
     }
+  }
+
+  &__form {
+    width: 100%;
   }
 
   &__form-input {
@@ -76,18 +84,11 @@
     }
   }
 
-  &__submit.btn {
-    cursor: pointer;
-    background-color: $main-color2;
-
-    &:hover {
-      color: $color-white;
-    }
-  }
-
   &__details,
   &__info {
-    display: flex;
+    @include tablets {
+      display: flex;
+    }
 
     > div {
       @include laptop {
@@ -97,9 +98,13 @@
   }
 
   &__details {
-    flex-direction: column;
     @include laptop {
-      flex-direction: row;
+      justify-content: end;
+      margin-top: -30%;
+    }
+
+    @include desktop {
+      margin-top: -25%;
     }
   }
 
@@ -132,18 +137,18 @@
 
       @include tablets {
         top: 85%;
-        left: -90%;
+        left: -55%;
         width: 80%;
       }
 
       @include laptop {
-        top: 40%;
+        top: 20%;
         left: -9%;
         width: 50%;
       }
 
       @include desktop {
-        top: -67%;
+        top: -17%;
         left: -6%;
         width: 35%;
       }
@@ -160,13 +165,13 @@
 
       @include laptop {
         left: 63.5%;
-        top: 5%;
+        top: -10%;
         width: 28%;
       }
 
       @include desktop {
         left: 59.5%;
-        top: -25%;
+        top: -10%;
         width: 21%;
       }
     }
@@ -176,13 +181,13 @@
 
       @include tablets {
         left: 0;
-        top: 33%;
+        top: 26%;
         width: 100%;
       }
 
       @include laptop {
         left: 50%;
-        top: 7%;
+        top: 0%;
         width: 55%;
       }
 

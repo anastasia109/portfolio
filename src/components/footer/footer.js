@@ -16,9 +16,9 @@ const Footer = () => {
                         <Router>
                             <Link to="/"><img src={logo} alt='Drobotun Anastasia logo' width="100px" height="92px"/></Link>
                         </Router>
-                    </div>
-                    <div className="copyright aos-init" data-aos="animation-translate-y" data-aos-offset="100">
-                        <FontAwesomeIcon icon={faCopyright} /> 2022 Drobotun Anastasia - VAT <a href="tel:+380638920606">+380638920606</a>
+                        <div className="copyright aos-init" data-aos="animation-translate-y">
+                            <FontAwesomeIcon icon={faCopyright} /> 2022 Drobotun Anastasiia
+                        </div>
                     </div>
                 </div>
             </div>

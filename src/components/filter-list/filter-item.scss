@@ -4,6 +4,8 @@
 .technology {
 
   &__list-item {
+    display: flex;
+    flex-direction: column;
     width: calc(100% / 2 - 10px);
     margin: 0 5px 10px 5px;
     animation: show .8s ease;
@@ -11,16 +13,6 @@
     background-color: $color-white;
     box-shadow: 0 5px 15px 1px rgba(156, 140, 194, 0.5);
     transition: all .15s;
-
-    &:hover {
-      .technology__list-show {
-        @include tablets {
-          opacity: 1;
-          background-color: $light-magenta;
-          transition: all .5s;
-        }
-      }
-    }
 
     @include tablets {
       border-radius: 24px;
@@ -50,7 +42,17 @@
     .btn {
       position: absolute;
       bottom: 5px;
-      right: 5px;
+      right: 0;
+      left: 0;
+      width: 115px;
+      margin: 0 auto;
+
+      @include laptop {
+        bottom: 10px;
+        right: 10px;
+        left: auto;
+        margin: 0;
+      }
     }
   }
 
@@ -62,10 +64,11 @@
 
   &__list-text {
     position: relative;
-    padding: 15px 10px;
+    height: 100%;
+    padding: 15px 10px 60px;
 
     @include tablets {
-      padding: 20px 20px 30px;
+      padding: 20px 20px 60px;
     }
   }
 
@@ -128,18 +131,9 @@
 
   &__list-show {
     @include tablets {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      opacity: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 100%;
-      padding: 20px;
-      background-color: $light-magenta;
-      transition: all .5s;
     }
   }
 }

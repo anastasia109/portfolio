@@ -83,8 +83,12 @@
   }
 
   &__item-image {
-    border-radius: 24px;
+    border-radius: 12px;
     margin-bottom: 40px;
+
+    @include tablets {
+      border-radius: 24px;
+    }
 
     img {
       width: 100%;

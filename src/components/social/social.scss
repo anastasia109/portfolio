@@ -2,20 +2,25 @@
 @import "../../static/scss/base/mixins.scss";
 
 .social {
+  display: flex;
+  justify-content: center;
 
   &__link {
     position: relative;
-    width: fit-content;
     display: block;
-    padding-left: 45px;
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    margin-right: 20px;
     color: $color-black;
 
     @include tablets {
-      padding-left: 50px;
       font-size: 18px;
+      margin-right: 20px;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
 
     path {
@@ -34,10 +39,6 @@
   }
 
   &__icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
     width: 35px;
     height: 35px;
     display: flex;
