@@ -3,18 +3,20 @@
 
 .social {
   display: flex;
+  justify-content: center;
 
   &__link {
     position: relative;
     display: block;
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-right: 20px;
     color: $color-black;
 
     @include tablets {
       font-size: 18px;
+      margin-right: 20px;
     }
 
     &:last-child {

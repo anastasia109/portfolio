@@ -16,10 +16,12 @@ class Header extends Component {
         const {mobileMenu} = this.state;
 
         let burgerClassName = ["header__burger"],
+            overlayClassName = ["overlay"],
             menuClassName = ["header__nav"];
 
         if (mobileMenu) {
             menuClassName.push("opened");
+            overlayClassName.push("opened");
             burgerClassName.push("opened");
         }
 
@@ -77,11 +79,12 @@ class Header extends Component {
                             </div>
                             <div className={burgerClassName.join(" ")}
                                  onClick={this.toggleMobileMenu}>
-                                <span/><span/><span/>
+                                <span/><span/><span/><span/><span/>
                             </div>
                         </nav>
                     </div>
                 </div>
+                <div className={overlayClassName.join(' ')} onClick={this.toggleMobileMenu}></div>
             </header>
         );
     }

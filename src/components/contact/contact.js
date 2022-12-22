@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 
 import './contact.css';
 import Social from "../social";
+import contactPhoto from "../../static/images/contact-photo.jpg";
 import figureImage1 from "../../static/images/figure-1.png";
 import figureImage4 from "../../static/images/figure-4.png";
 import figureImage5 from "../../static/images/figure-5.png";
@@ -49,12 +50,12 @@ const Contact = () => {
                 <div className="contact__content">
                     <h3 className="main__title aos-init" data-aos="animation-scale-y" data-aos-delay="150">Get in
                         touch</h3>
-                    <p className="contact__text aos-init" data-aos="animation-translate-y" data-aos-delay="200">If you'd
-                        like to get in touch, talk to me about collaborating
-                        on a
-                        project, or just say hi,<br/> fill out the great form below or send an email to <a
-                            href="mailto:drobotun.nastia@gmail.com">drobotun.nastia@gmail.com</a> and ~let's talk.
-                    </p>
+                    <div className="contact__img aos-init" data-aos="animation-translate-y" data-aos-delay="200">
+                        <img src={contactPhoto} alt="contact-photo"/>
+                    </div>
+                    <div className="contact__social">
+                        <Social/>
+                    </div>
                 </div>
                 <div className="contact__figures">
                     <Parallax
@@ -96,9 +97,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="contact__details">
-                <div className="contact__social">
-                    <Social/>
-                </div>
+
                 <div className="contact__form">
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="contact__form-block">
