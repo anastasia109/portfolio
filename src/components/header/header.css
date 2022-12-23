@@ -13,6 +13,16 @@
   }
 }
 
+@media (min-width: 768px) {
+  header {
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    background: linear-gradient(360deg, rgb(253, 253, 253) 0%, rgb(232, 223, 253) 100%);
+    box-shadow: 0 5px 15px 1px rgba(156, 140, 194, 0.5);
+  }
+}
+
 .header {
   display: flex;
   align-items: center;

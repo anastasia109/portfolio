@@ -36,6 +36,15 @@
     border-radius: 24px;
   }
 }
+.soft-skills__item:first-child .soft-skills__item-img {
+  background-color: #f3ebff;
+}
+.soft-skills__item:nth-child(2) .soft-skills__item-img {
+  background-color: #ffffff;
+}
+.soft-skills__item:nth-child(3) .soft-skills__item-img {
+  background-color: #dbe7ff;
+}
 .soft-skills__item:hover {
   background-color: #9c8cc2;
   transition: all 0.5s;
@@ -50,6 +59,11 @@
 }
 .soft-skills__item-title {
   margin-bottom: 25px;
+}
+@media (min-width: 1366px) {
+  .soft-skills__item-title {
+    font-size: 30px;
+  }
 }
 .soft-skills__item-content {
   padding: 15px;
@@ -68,10 +82,14 @@
   align-items: center;
   opacity: 0;
   transition: all 0.5s;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
 }
 @media (min-width: 768px) {
   .soft-skills__item-img {
     max-width: 40%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 12px;
   }
 }
 .soft-skills__item-img img {

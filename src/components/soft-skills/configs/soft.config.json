@@ -1,20 +1,20 @@
 [
   {
     "id": 0,
-    "title": "Team Skills",
+    "title": "Teamwork",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "src": "/images/soft-skills/marie.jpg"
+    "src": "/images/soft-skills/teamwork.jpg"
   },
   {
     "id": 1,
-    "title": "2Team Skills",
+    "title": "Good Communication",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "src": "/images/soft-skills/marie.jpg"
+    "src": "/images/soft-skills/good-communication.jpg"
   },
   {
-    "id": 3,
-    "title": "Team Skills",
+    "id": 2,
+    "title": "Problem-solving",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "src": "/images/soft-skills/marie.jpg"
+    "src": "/images/soft-skills/problem-solving.jpg"
   }
 ]

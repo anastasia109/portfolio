@@ -32,13 +32,17 @@ const Skills = () => {
                             <Slider {...settings}>
                                 {skillsLists.map((item, i) => {
                                     const delay = i + '00';
+                                    const {title, src, description} = item;
                                     return (
                                         <div key={i} className="skills__item aos-init" data-aos="animation-translate-y"
                                              data-aos-delay={delay}>
-                                            <div className="skills__item-image">
-                                                <img src={item.src} alt={item.title}/>
+                                            <div className="skills__item-container">
+                                                <div className="skills__item-image">
+                                                    <img src={src} alt={title}/>
+                                                </div>
+                                                <h4 className="skills__item-title">{title}</h4>
+                                                <p className="skills__item-description">{description}</p>
                                             </div>
-                                            <h4 className="skills__item-title">{item.title}</h4>
                                         </div>
                                     )
                                 })}

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import logo from '../../static/icon/logo.svg';
-import {BrowserRouter as Router, Link} from "react-router-dom";
 import {Link as LinkS} from "react-scroll";
 
 import './header.css';
@@ -30,9 +29,9 @@ class Header extends Component {
                 <div className="header-container">
                     <div className="header">
                         <div className="header__logo">
-                            <Router>
-                                <Link to="/"><img src={logo} alt='Drobotun Anastasia logo' width="100px"/></Link>
-                            </Router>
+                                <a href="/">
+                                    <img src={logo} alt='Drobotun Anastasia logo' width="100px"/>
+                                </a>
                         </div>
                         <nav>
                             <div className={menuClassName.join(" ")}>
