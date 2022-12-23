@@ -51,7 +51,7 @@ const Contact = () => {
                     <h3 className="main__title aos-init" data-aos="animation-scale-y" data-aos-delay="150">Get in
                         touch</h3>
                     <div className="contact__img aos-init" data-aos="animation-translate-y" data-aos-delay="200">
-                        <img src={contactPhoto} alt="contact-photo"/>
+                        <img src={contactPhoto} alt='Drobotun Anastasia'/>
                     </div>
                     <div className="contact__social">
                         <Social/>

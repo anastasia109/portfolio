@@ -16,7 +16,7 @@ const Footer = () => {
                         <Router>
                             <Link to="/"><img src={logo} alt='Drobotun Anastasia logo' width="100px" height="92px"/></Link>
                         </Router>
-                        <div className="copyright aos-init" data-aos="animation-translate-y">
+                        <div className="copyright">
                             <FontAwesomeIcon icon={faCopyright} /> 2022 Drobotun Anastasiia
                         </div>
                     </div>

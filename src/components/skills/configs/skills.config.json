@@ -2,26 +2,31 @@
   {
     "id": 0,
     "title": "React",
-    "src": "/images/skills/react.svg"
+    "src": "/images/skills/react.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
   },
   {
     "id": 1,
     "title": "HTML5",
-    "src": "/images/skills/react.svg"
+    "src": "/images/skills/html5.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
   },
   {
     "id": 2,
     "title": "CSS3",
-    "src": "/images/skills/css3.svg"
+    "src": "/images/skills/css3.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
   },
   {
     "id": 3,
     "title": "JS",
-    "src": "/images/skills/javascript.svg"
+    "src": "/images/skills/javascript.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
   },
   {
     "id": 4,
     "title": "PHP",
-    "src": "/images/skills/php.svg"
+    "src": "/images/skills/php.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
   }
 ]

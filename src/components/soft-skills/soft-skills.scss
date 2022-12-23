@@ -34,6 +34,23 @@
       border-radius: 24px;
     }
 
+    &:first-child {
+      .soft-skills__item-img {
+        background-color: #f3ebff;
+      }
+    }
+
+    &:nth-child(2) {
+      .soft-skills__item-img {
+        background-color: $color-white;
+      }
+    }
+
+    &:nth-child(3) {
+      .soft-skills__item-img {
+        background-color: #dbe7ff;
+      }
+    }
 
     &:hover {
       background-color: $main-color2;
@@ -53,6 +70,10 @@
 
   &__item-title {
     margin-bottom: 25px;
+    
+    @include desktop {
+      font-size: 30px;
+    }
   }
 
   &__item-content {
@@ -72,9 +93,13 @@
     align-items: center;
     opacity: 0;
     transition: all .5s;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 
     @include tablets {
       max-width: 40%;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 12px;
     }
 
     img {
