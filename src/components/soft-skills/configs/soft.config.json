@@ -1,20 +1,26 @@
 [
   {
-    "id": 0,
-    "title": "Teamwork",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "src": "/images/soft-skills/teamwork.jpg"
-  },
-  {
     "id": 1,
-    "title": "Good Communication",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "src": "/images/soft-skills/good-communication.jpg"
+    "title": "Teamwork",
+    "description": "I know how to interact in a team. I believe that by working on the project together with other colleagues, you can achieve much better results than by yourself. Teamwork allows you to achieve a synergy effect when: 2+2=5 or even more.",
+    "src": "/images/soft-skills/teamwork.png"
   },
   {
     "id": 2,
     "title": "Problem-solving",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "src": "/images/soft-skills/problem-solving.jpg"
+    "description": "I like to be in the mode of solving complex problems when my brain is most productive. This stimulates constant growth and development, to find new ways to solve atypical situations and make non-standard decisions.\n",
+    "src": "/images/soft-skills/problem-solving.png"
+  },
+  {
+    "id": 3,
+    "title": "Attention to detail",
+    "description": "I cannot afford to do the task half-heartedly or to do it without meeting the quality criteria. That is why I always meticulously and responsibly treat all the details of the project, check the status of its implementation, as well as calculate possible options for problems (as far as possible).\n",
+    "src": "/images/soft-skills/attention-to-detail.png"
+  },
+  {
+    "id": 4,
+    "title": "Time-Management",
+    "description": "Rational use of time allows to perform tasks more efficiently. In addition, planning and routine simulate me to self-organize and maintain discipline.",
+    "src": "/images/soft-skills/time-management.png"
   }
 ]

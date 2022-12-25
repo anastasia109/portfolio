@@ -55,7 +55,8 @@
     .technology__list-text {
       padding: 20px 20px 60px; } }
 .technology__list-label {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  overflow: hidden; }
   @media (min-width: 768px) {
     .technology__list-label {
       margin-bottom: 25px; } }

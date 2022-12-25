@@ -12,14 +12,17 @@ const Banner = () => {
     return (
         <div className="banner aos-init">
             <div className="banner__content">
-                <p className="banner__info">
+                <h1 className="banner__title aos-init" data-aos="animation-translate-up" data-aos-delay="200">
                     <span data-aos="transform" data-aos-delay="150"
-                          className="aos-init">Hello, my name's Anastasia. </span>
+                          className="aos-init">Hello</span>
+                    <span data-aos="transform" data-aos-delay="150"
+                          className="aos-init">I'm Anastasia</span>
                     <span data-aos="transform" data-aos-delay="300"
-                          className="aos-init">I'm a Front-end developer.</span>
-                </p>
-                <h1 className="banner__title aos-init" data-aos="animation-translate-up" data-aos-delay="200">Portfolio
-                    site</h1>
+                          className="aos-init">Front-end developer</span>
+                </h1>
+                <p className="banner__subtitle" data-aos="animation-translate-up" data-aos-delay="200">I will to constant self-improvement and self-knowledge.
+                    I regularly set myself new challenges in order to test myself for strength, as well as to stimulate me not to stop there.
+                    I believe that a person is capable of more than he thinks.</p>
             </div>
             <div className="banner__figures">
                 <Parallax
