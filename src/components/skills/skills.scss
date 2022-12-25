@@ -149,6 +149,19 @@
     }
   }
 
+  &__items-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .skills__item {
+      width: 20%;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+  }
+
   .slick-list {
     overflow: visible;
   }

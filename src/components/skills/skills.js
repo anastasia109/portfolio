@@ -1,11 +1,12 @@
 import React from 'react';
 import Slider from "react-slick";
-import skillsLists from './configs/skills.config.json';
+import {Link} from "react-router-dom";
+import skillsLists from "./configs/skills.config.json";
+import SkillsItem from "./skills-item";
 
 import './skills.css';
-
 const Skills = () => {
-    var settings = {
+    const settings = {
         arrows: true,
         infinite: true,
         speed: 500,
@@ -30,24 +31,26 @@ const Skills = () => {
                     <div className="skills__items">
                         <div className="skills__items-inner">
                             <Slider {...settings}>
-                                {skillsLists.map((item, i) => {
-                                    const delay = i + '00';
-                                    const {title, src, description} = item;
-                                    return (
-                                        <div key={i} className="skills__item aos-init" data-aos="animation-translate-y"
-                                             data-aos-delay={delay}>
-                                            <div className="skills__item-container">
-                                                <div className="skills__item-image">
-                                                    <img src={src} alt={title}/>
-                                                </div>
-                                                <h4 className="skills__item-title">{title}</h4>
-                                                <p className="skills__item-description">{description}</p>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
+                                {
+                                    skillsLists.map((item, i) => {
+                                        const delay = i + '00';
+                                        const {title, src, description} = item;
+
+                                        return (
+                                            <SkillsItem i={i}
+                                                        delay={delay}
+                                                        title={title}
+                                                        src={src}
+                                                        description={description}
+                                            />
+                                        )
+                                    })
+                                }
                             </Slider>
                         </div>
+                    </div>
+                    <div className="skills__btn">
+                        <Link className="btn btn__l" to={'/skills'}>More</Link>
                     </div>
                 </div>
             </div>

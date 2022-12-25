@@ -1,7 +1,8 @@
 /* colors */
 /* fonts */
 .main {
-  display: block; }
+  display: block;
+  overflow: hidden; }
   .main__title {
     margin-bottom: 30px; }
 

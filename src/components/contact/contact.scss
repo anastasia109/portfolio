@@ -99,7 +99,7 @@
 
   &__details {
     @include laptop {
-      justify-content: end;
+      justify-content: flex-end;
       margin-top: -30%;
     }
 

@@ -41,6 +41,19 @@ a {
   margin: 0 auto;
 }
 
+.page-container {
+  padding-top: 30px;
+
+  @include tablets {
+    padding-top: 50px;
+  }
+
+  @include laptop {
+    padding-top: 100px;
+  }
+
+}
+
 .inner {
   @include desktop {
     width: 80%;

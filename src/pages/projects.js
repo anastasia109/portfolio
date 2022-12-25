@@ -1,12 +1,18 @@
 import React from 'react';
 import Technology from "../components/technology";
+import Header from "../components/header";
+import {useLocation} from "react-router-dom";
 
 
 const Projects = () => {
+    const {pathname} = useLocation();
     return (
-        <div className='container'>
-            <Technology />
-        </div>
+        <>
+            <Header pathname={pathname}/>
+            <div className='container'>
+                <Technology />
+            </div>
+        </>
     );
 };
 

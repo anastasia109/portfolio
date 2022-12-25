@@ -1,0 +1,14 @@
+Gli2kMDnaVSp0eaMyKi
+XL9M4BzJcAPqHdp
+
+https://app.netlify.com/teams/drobotun-nastia/overview
+
+
+
+PSD to HTML;
+Development of themes for WordPress CMS (working with APIs, widgets, page templates, custom post types and
+taxonomy, extension of admin function panel, etc.);
+Installation, integration, refinement of modules, extensions;
+Website optimization (speed, basic SEO: Schema markup, Open Graph protocol);
+Website transfer to another domain / hosting;
+Error correction on existing web page;

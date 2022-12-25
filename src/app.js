@@ -1,7 +1,6 @@
 import React, {Fragment, useState, useEffect} from 'react';
 
 import AppRouter from "./components/app-router";
-import Header from "./components/header";
 import Footer from "./components/footer";
 import Top from "./components/top";
 import Spinner from "./components/spinner";
@@ -29,7 +28,6 @@ const App = () => {
                     :
                     <div className="page" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"
                          id="top">
-                        <Header/>
                         <AppRouter/>
                         <Footer/>
                         <Top/>
