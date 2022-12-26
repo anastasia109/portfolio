@@ -28,7 +28,7 @@ const Header = ({pathname}) => {
                    to="project"
                    spy={true}
                    smooth={true}
-                   offset={-10}
+                   offset={-50}
                    duration={500}>
                 Projects
             </LinkS>
@@ -36,7 +36,7 @@ const Header = ({pathname}) => {
                    to="skills"
                    spy={true}
                    smooth={true}
-                   offset={-10}
+                   offset={-50}
                    duration={500}>
                 Skills
             </LinkS>
@@ -44,7 +44,7 @@ const Header = ({pathname}) => {
                    to="experience"
                    spy={true}
                    smooth={true}
-                   offset={-10}
+                   offset={-50}
                    duration={500}>
                 Experience
             </LinkS>
@@ -52,7 +52,7 @@ const Header = ({pathname}) => {
                    to="soft-skills"
                    spy={true}
                    smooth={true}
-                   offset={-10}
+                   offset={-50}
                    duration={500}>
                 Soft skills
             </LinkS>
@@ -60,7 +60,7 @@ const Header = ({pathname}) => {
                    to="contact"
                    spy={true}
                    smooth={true}
-                   offset={-10}
+                   offset={-50}
                    duration={500}>
                 Contact Me
             </LinkS>

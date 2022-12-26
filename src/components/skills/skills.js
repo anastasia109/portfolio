@@ -33,7 +33,7 @@ const Skills = () => {
                             <Slider {...settings}>
                                 {
                                     skillsLists.map((item, i) => {
-                                        const delay = i + '00';
+                                        const delay = i + '0';
                                         const {title, src, description} = item;
 
                                         return (
