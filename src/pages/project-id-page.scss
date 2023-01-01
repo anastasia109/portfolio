@@ -49,6 +49,10 @@
       width: 50%;
       margin-bottom: 60px;
     }
+
+    img {
+      width: 100%;
+    }
   }
 
   &__subtitle {
@@ -81,7 +85,7 @@
 
     @include tablets {
       width: 50%;
-      margin: 2%;
+      margin-left: 4%;
       border-radius: 24px;
     }
 
@@ -91,36 +95,12 @@
     }
   }
 
-  &__logo {
-    text-align: center;
-    width: 100%;
-    padding: 20px 20px 10px;
-
-    @include tablets {
-      padding: 30px 30px 15px;
-    }
-
-    @include desktop {
-      width: 30%;
-      padding: 30px;
-    }
-
-    img {
-      width: 100%;
-      max-width: 350px;
-    }
-  }
 
   &__content {
     width: 100%;
-    padding: 0 20px 20px;
+    padding: 20px;
 
     @include tablets {
-      padding: 0 30px 30px;
-    }
-
-    @include desktop {
-      width: 70%;
       padding: 30px;
     }
   }

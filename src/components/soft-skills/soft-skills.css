@@ -2,77 +2,102 @@
 /* fonts */
 /* breakpoints */
 .soft-skills {
-  padding: 30px 0; }
-  @media (min-width: 768px) {
-    .soft-skills {
-      padding: 50px 0; } }
-  @media (min-width: 1024px) {
-    .soft-skills {
-      padding: 100px 0; } }
-  .soft-skills__items {
-    display: flex;
-    flex-wrap: wrap; }
+  padding: 30px 0;
+}
+@media (min-width: 768px) {
+  .soft-skills {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .soft-skills {
+    padding: 100px 0;
+  }
+}
+.soft-skills__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.soft-skills__item {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px 1px rgba(156, 140, 194, 0.5);
+  background-color: #9c8cc2;
+}
+@media (min-width: 768px) {
   .soft-skills__item {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px 1px rgba(156, 140, 194, 0.5);
-    background-color: #9c8cc2; }
-    @media (min-width: 768px) {
-      .soft-skills__item {
-        margin: 30px 20px;
-        flex-direction: row;
-        width: calc(100% / 2 - 40px);
-        border-radius: 24px;
-        background-color: #ffffff; } }
-    @media (min-width: 768px) {
-      .soft-skills__item:hover {
-        background-color: #9c8cc2; }
-        .soft-skills__item:hover .soft-skills__item-img {
-          background-color: #ffffff;
-          opacity: 1;
-          transition: all .25s; }
-        .soft-skills__item:hover .soft-skills__item-content {
-          color: #ffffff; } }
+    margin: 30px 20px;
+    flex-direction: row;
+    width: calc(50% - 40px);
+    border-radius: 24px;
+    background-color: #ffffff;
+  }
+}
+@media (min-width: 768px) {
+  .soft-skills__item:hover {
+    background-color: #9c8cc2;
+  }
+  .soft-skills__item:hover .soft-skills__item-img {
+    background-color: #ffffff;
+    opacity: 1;
+    transition: all 0.25s;
+  }
+  .soft-skills__item:hover .soft-skills__item-content {
+    color: #ffffff;
+  }
+}
+.soft-skills__item-title {
+  margin-bottom: 25px;
+}
+@media (min-width: 1366px) {
   .soft-skills__item-title {
-    margin-bottom: 25px; }
-    @media (min-width: 1366px) {
-      .soft-skills__item-title {
-        font-size: 30px; } }
+    font-size: 30px;
+  }
+}
+.soft-skills__item-content {
+  padding: 15px;
+  font-size: 14px;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
   .soft-skills__item-content {
-    padding: 15px;
-    font-size: 14px;
-    color: #ffffff; }
-    @media (min-width: 768px) {
-      .soft-skills__item-content {
-        max-width: 60%;
-        padding: 50px 15px 50px 50px;
-        font-size: 16px;
-        color: #232340; } }
+    max-width: 60%;
+    padding: 50px 15px 50px 50px;
+    font-size: 16px;
+    color: #232340;
+  }
+}
+.soft-skills__item-img {
+  display: flex;
+  align-items: center;
+  transition: all 0.25s;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
   .soft-skills__item-img {
-    display: flex;
-    align-items: center;
-    transition: all .25s;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-    background-color: #ffffff; }
-    @media (min-width: 768px) {
-      .soft-skills__item-img {
-        opacity: 0;
-        max-width: 40%;
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 24px;
-        border-top-right-radius: 24px;
-        background-color: transparent; } }
-    .soft-skills__item-img img {
-      width: 100%;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px; }
-      @media (min-width: 768px) {
-        .soft-skills__item-img img {
-          border-top-left-radius: 0;
-          border-top-right-radius: 0; } }
+    opacity: 0;
+    max-width: 40%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    background-color: transparent;
+  }
+}
+.soft-skills__item-img img {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+@media (min-width: 768px) {
+  .soft-skills__item-img img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
 
 /*# sourceMappingURL=soft-skills.css.map */

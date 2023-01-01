@@ -5,6 +5,7 @@ import lists from '../components/technology/configs/technology.config.json';
 import Header from "../components/header";
 
 import './project-id-page.css';
+import TagList from "../components/filter-list/tag-list";
 
 const ProjectIdPage = () => {
     let {id} = useParams();
@@ -24,9 +25,11 @@ const ProjectIdPage = () => {
                     </div>
 
                     <div className="project-id__main">
-                        <img src={item[0].src} alt={item[0].label} className="project-id__img"/>
+                        <div className="project-id__img">
+                            <img src={item[0].src} alt={item[0].label}/>
+                            <TagList list={item[0]} />
+                        </div>
                         <div className="project-id__info">
-                            <div className="project-id__logo"><img src={item[0].logo} alt={item[0].label}/></div>
                             <div className="project-id__content">
                                 <h3 className="project-id__content-title">{item[0].description}</h3>
                                 <p className="project-id__content-text">{item[0].content}</p>

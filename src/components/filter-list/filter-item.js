@@ -2,16 +2,14 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import './filter-item.css';
+import TagList from "./tag-list";
 
 const FilterItem = ({newList}) => {
     return (
         <>
             {newList.map((list, i) => {
                     const {id, src, label, suplabel} = list,
-                        tags = list.tags.split(",").slice(0, -1),
-                        delay = i + '0';
-
-                    const tagList = tags.map((tag) => <li key={tag} className="technology__list-tag">{tag}</li>)
+                            delay = i + '0';
 
                     return (
                         <li key={i} className="technology__list-item aos-init" data-aos="animation-translate-y"
@@ -25,7 +23,7 @@ const FilterItem = ({newList}) => {
                                 <div className="technology__list-suplabel">{suplabel}</div>
                                 <div className="technology__list-show">
                                     <ul className="technology__list-tags">
-                                        {tagList}
+                                        <TagList list={list} />
                                     </ul>
                                     <Link className="btn"
                                           to={'/projects/' + id}>Read more</Link>

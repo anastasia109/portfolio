@@ -34,6 +34,10 @@
         border: 1px solid $main-color2;
         border-radius: 12px;
         overflow: hidden;
+
+        @include tablets {
+          border: none;
+        }
       }
 
       .fa-angle-down {

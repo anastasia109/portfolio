@@ -3,8 +3,10 @@
 /* breakpoints */
 .main {
   display: block;
-  overflow: hidden; }
-  .main__title {
-    margin-bottom: 30px; }
+  overflow: hidden;
+}
+.main__title {
+  margin-bottom: 30px;
+}
 
 /*# sourceMappingURL=main.css.map */
