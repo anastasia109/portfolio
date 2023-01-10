@@ -9,7 +9,7 @@ import TagList from "../components/filter-list/tag-list";
 
 const ProjectIdPage = () => {
     let {id} = useParams();
-    const item = lists.filter(list => list.id == id);
+    const item = lists.filter(list => list.id === Number(id));
     const {pathname} = useLocation();
 
     return (
