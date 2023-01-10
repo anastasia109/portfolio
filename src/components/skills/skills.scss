@@ -45,16 +45,15 @@
     display: flex;
     justify-content: center;
     padding: 40px 10px 20px 10px;
-    min-height: 210px;
+    min-height: 180px;
 
     @include tablets {
       padding: 100px 30px 60px;
-      min-height: 380px;
+      min-height: 310px;
     }
 
     @include laptop {
-      padding: 140px 30px 60px;
-      min-height: 480px;
+      min-height: 370px;
     }
 
     &:before {
@@ -69,17 +68,6 @@
     }
 
     &:hover {
-      .skills__item-container {
-        position: absolute;
-        top: 0;
-        left: 30px;
-        right: 30px;
-      }
-
-      .skills__item-description {
-        display: block;
-      }
-
       .skills__item-image {
         background-color: $color-white;
       }
@@ -95,11 +83,6 @@
         background: $main-color2;
       }
     }
-  }
-
-  &__item-description {
-    display: none;
-    color: $color-white;
   }
 
   &__item-image {
@@ -282,5 +265,33 @@
 
   .slick-next {
     right: 0;
+  }
+
+  &__page {
+    .skills__item {
+      padding: 20px 10px;
+
+      @include tablets {
+        padding: 60px 30px;
+      }
+
+      &:before {
+        display: none;
+      }
+
+      &:hover {
+        .skills__item-image {
+          background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(232, 223, 253, 0.5) 100%);
+        }
+
+        .skills__item-title {
+          color: $main-color2;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+    }
   }
 }

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import logo from '../../static/icon/logo.svg';
 import {Link} from "react-router-dom";
 import {Link as LinkS} from "react-scroll";
+import Pdf from '../../static/CV_Front-End_Drobotun_Anastasiia_en.pdf';
 
 import './header.css';
 
@@ -56,7 +57,7 @@ const Header = ({pathname}) => {
                    duration={500}>
                 Soft skills
             </LinkS>
-            <LinkS className="btn"
+            <LinkS activeClass="active"
                    to="contact"
                    spy={true}
                    smooth={true}
@@ -64,6 +65,7 @@ const Header = ({pathname}) => {
                    duration={500}>
                 Contact Me
             </LinkS>
+            <a className="btn" href={Pdf} target = "_blank">Resume</a>
         </div>
         :
         <div className={menuClassName.join(" ")}>

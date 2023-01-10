@@ -11,7 +11,7 @@ const Skills = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 4,
         responsive: [
             {
                 breakpoint: 767,

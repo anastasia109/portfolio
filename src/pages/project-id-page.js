@@ -27,12 +27,12 @@ const ProjectIdPage = () => {
                     <div className="project-id__main">
                         <div className="project-id__img">
                             <img src={item[0].src} alt={item[0].label}/>
-                            <TagList list={item[0]} />
                         </div>
                         <div className="project-id__info">
                             <div className="project-id__content">
                                 <h3 className="project-id__content-title">{item[0].description}</h3>
                                 <p className="project-id__content-text">{item[0].content}</p>
+                                <TagList list={item[0]} />
                             </div>
                         </div>
                     </div>

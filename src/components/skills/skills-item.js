@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SkillsItem = ({i, delay, src, title, description}) => {
+const SkillsItem = ({i, delay, src, title}) => {
     return (
         <div key={i} className="skills__item aos-init" data-aos="animation-translate-y"
              data-aos-delay={delay}>
@@ -9,7 +9,6 @@ const SkillsItem = ({i, delay, src, title, description}) => {
                     <img src={src} alt={title}/>
                 </div>
                 <h4 className="skills__item-title">{title}</h4>
-                <p className="skills__item-description">{description}</p>
             </div>
         </div>
     );

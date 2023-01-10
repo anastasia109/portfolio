@@ -2,121 +2,101 @@
   {
     "id": 1,
     "title": "React",
-    "src": "/images/skills/react.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "src": "/images/skills/react.svg"
   },
   {
     "id": 2,
     "title": "HTML5",
-    "src": "/images/skills/html5.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "src": "/images/skills/html5.svg"
   },
   {
     "id": 3,
     "title": "CSS3",
-    "src": "/images/skills/css3.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "src": "/images/skills/css3.svg"
   },
   {
     "id": 4,
-    "title": "LESS/SASS",
-    "src": "/images/skills/sass.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "JS",
+    "src": "/images/skills/javascript.svg"
   },
   {
     "id": 5,
-    "title": "JS",
-    "src": "/images/skills/javascript.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "LESS/SASS",
+    "src": "/images/skills/sass.svg"
   },
   {
     "id": 6,
-    "title": "PHP",
-    "src": "/images/skills/php.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "TypeScript",
+    "src": "/images/skills/typescript.svg"
   },
   {
     "id": 7,
-    "title": "MySQL",
-    "src": "/images/skills/mysql.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "Next.js",
+    "src": "/images/skills/next-js.svg"
   },
   {
     "id": 8,
-    "title": "Wordpress",
-    "src": "/images/skills/wordpress.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "PHP",
+    "src": "/images/skills/php.svg"
   },
   {
     "id": 9,
-    "title": "Magento",
-    "src": "/images/skills/magento.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "MySQL",
+    "src": "/images/skills/mysql.svg"
   },
   {
     "id": 10,
-    "title": "Next.js",
-    "src": "/images/skills/next-js.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "Git",
+    "src": "/images/skills/git.svg"
   },
   {
     "id": 11,
-    "title": "GraphQL",
-    "src": "/images/skills/graphql.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "Wordpress",
+    "src": "/images/skills/wordpress.svg"
   },
   {
     "id": 12,
-    "title": "BEM",
-    "src": "/images/skills/bem.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "Magento",
+    "src": "/images/skills/magento.svg"
   },
   {
     "id": 13,
-    "title": "Three.js",
-    "src": "/images/skills/threejs.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "Webpack",
+    "src": "/images/skills/webpack.svg"
   },
   {
     "id": 14,
-    "title": "Webpack",
-    "src": "/images/skills/webpack.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "Docker",
+    "src": "/images/skills/docker.svg"
   },
   {
     "id": 15,
-    "title": "Docker",
-    "src": "/images/skills/docker.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "BEM",
+    "src": "/images/skills/bem.svg"
   },
   {
     "id": 16,
-    "title": "Git",
-    "src": "/images/skills/git.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "GraphQL",
+    "src": "/images/skills/graphql.svg"
   },
   {
     "id": 17,
-    "title": "Photoshop",
-    "src": "/images/skills/photoshop.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "Three.js",
+    "src": "/images/skills/threejs.svg"
   },
   {
     "id": 18,
-    "title": "Zeplin",
-    "src": "/images/skills/zeplin.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "Photoshop",
+    "src": "/images/skills/photoshop.svg"
   },
   {
     "id": 19,
-    "title": "Figma",
-    "src": "/images/skills/figma.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "Zeplin",
+    "src": "/images/skills/zeplin.svg"
   },
   {
     "id": 20,
-    "title": "TypeScript",
-    "src": "/images/skills/typescript.svg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua."
+    "title": "Figma",
+    "src": "/images/skills/figma.svg"
   }
 ]

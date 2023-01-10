@@ -19,7 +19,9 @@ const FilterItem = ({newList}) => {
                             </div>
 
                             <div className="technology__list-text">
-                                <h5 className="technology__list-label">{label} </h5>
+                                <h5 className="technology__list-label">
+                                    <Link to={'/projects/' + id}>{label}</Link>
+                                </h5>
                                 <div className="technology__list-suplabel">{suplabel}</div>
                                 <div className="technology__list-show">
                                     <ul className="technology__list-tags">
