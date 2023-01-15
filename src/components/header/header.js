@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import logo from '../../static/icon/logo.svg';
-import {ScrollRestoration} from "react-router-dom";
 import {NavLink} from "react-router-dom";
 import {Link as LinkS} from "react-scroll";
 import Pdf from '../../static/CV_Front-End_Drobotun_Anastasiia_en.pdf';
