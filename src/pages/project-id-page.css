@@ -69,6 +69,7 @@
 .project-id__popup-inner img {
   cursor: default;
   width: 100%;
+  height: 100%;
 }
 .project-id__popup-close {
   position: absolute;
