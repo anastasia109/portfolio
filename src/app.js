@@ -24,7 +24,7 @@ const App = () => {
         <Fragment>
             {
                 isLoading
-                    ? <Spinner />
+                    ? <Spinner/>
                     :
                     <div className="page" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"
                          id="top">

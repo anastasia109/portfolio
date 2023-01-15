@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import logo from '../../static/icon/logo.svg';
-import {Link} from "react-router-dom";
+import {ScrollRestoration} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {Link as LinkS} from "react-scroll";
 import Pdf from '../../static/CV_Front-End_Drobotun_Anastasiia_en.pdf';
 
@@ -65,13 +66,13 @@ const Header = ({pathname}) => {
                    duration={500}>
                 Contact Me
             </LinkS>
-            <a className="btn" href={Pdf} target = "_blank" rel="noreferrer">Resume</a>
+            <a className="btn" href={Pdf} target="_blank" rel="noreferrer">Resume</a>
         </div>
         :
         <div className={menuClassName.join(" ")}>
-           <Link to="/">Home</Link>
-           <Link to="/projects">Projects</Link>
-           <Link to="/skills">Skills</Link>
+            <NavLink to="/" end>Home</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/skills">Skills</NavLink>
         </div>
     ;
 
@@ -80,9 +81,9 @@ const Header = ({pathname}) => {
             <div className="header-container">
                 <div className="header">
                     <div className="header__logo">
-                        <Link to="/">
+                        <NavLink to="/" end>
                             <img src={logo} alt='Drobotun Anastasia logo' width="100px"/>
-                        </Link>
+                        </NavLink>
                     </div>
                     <nav>
                         {showMenu}

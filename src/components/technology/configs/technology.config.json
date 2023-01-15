@@ -15,7 +15,8 @@
     "description": "Creating new website",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Wordpress,JS,HTML5,CSS3,",
-    "src": "/images/technology/museum.jpg"
+    "src": "/images/technology/museum.jpg",
+    "imageFull": "/images/technology/museum-full.jpg"
   },
   {
     "id": 3,
@@ -82,12 +83,13 @@
   },
   {
     "id": 10,
-    "label": "Seo-wave",
-    "sublabel": "Create corp site",
-    "description": "Creating new theme,bug fixing,markup",
+    "label": "Beauty service",
+    "sublabel": "Online store",
+    "description": "Create online store",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Joomla,JS,HTML5,CSS3,",
-    "src": "/images/technology/seowave.jpg"
+    "tags": "OpenCart,JS,HTML5,CSS3,LESS/SASS,",
+    "src": "/images/technology/beauty.jpg",
+    "imageFull": "/images/technology/beauty-full.jpg"
   },
   {
     "id": 11,

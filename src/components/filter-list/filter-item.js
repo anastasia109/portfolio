@@ -15,7 +15,7 @@ const FilterItem = ({newList}) => {
                         <li key={i} className="technology__list-item aos-init" data-aos="animation-translate-y"
                             data-aos-delay={delay}>
                             <div className="technology__list-image">
-                                <img src={src} alt={label}/>
+                                <Link to={'/projects/' + id}><img src={src} alt={label}/></Link>
                             </div>
 
                             <div className="technology__list-text">
