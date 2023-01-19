@@ -6,7 +6,8 @@
     "description": "Create new block from builder",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "React,JS,HTML5,CSS3,LESS/SASS,TweenMax,Webpack,Wordpress,",
-    "src": "/images/technology/marie.jpg"
+    "src": "/images/technology/marie.jpg",
+    "imageFull": "/images/technology/marie-full.jpg"
   },
   {
     "id": 2,
@@ -25,7 +26,8 @@
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "React,JS,HTML5,CSS3,Webpack,",
-    "src": "/images/technology/bike.jpg"
+    "src": "/images/technology/bike.jpg",
+    "imageFull": "/images/technology/bike-full.jpg"
   },
   {
     "id": 4,
@@ -34,7 +36,8 @@
     "description": "Create new block from builder",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "React,Wordpress,JS,HTML5,CSS3,Webpack,",
-    "src": "/images/technology/gut.jpg"
+    "src": "/images/technology/gut.jpg",
+    "imageFull": "/images/technology/gut-full.jpg"
   },
   {
     "id": 5,
@@ -43,7 +46,8 @@
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Magento,JS,HTML5,LESS/SASS,",
-    "src": "/images/technology/und.jpg"
+    "src": "/images/technology/und.jpg",
+    "imageFull": "/images/technology/und-full.jpg"
   },
   {
     "id": 6,
@@ -52,7 +56,8 @@
     "description": "Online store",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "OpenCart,JS,HTML5,CSS3,LESS/SASS,",
-    "src": "/images/technology/pharma.jpg"
+    "src": "/images/technology/pharma.jpg",
+    "imageFull": "/images/technology/pharma-full.jpg"
   },
   {
     "id": 7,
@@ -61,16 +66,8 @@
     "description": "Create online store",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "OpenCart,JS,HTML5,CSS3,LESS/SASS,",
-    "src": "/images/technology/arhitektor.jpg"
-  },
-  {
-    "id": 8,
-    "label": "Brand Seowave",
-    "sublabel": "Landing page",
-    "description": "Landing page",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "TweenMax,",
-    "src": "/images/technology/brand.jpg"
+    "src": "/images/technology/architect.jpg",
+    "imageFull": "/images/technology/architect-full.jpg"
   },
   {
     "id": 9,
@@ -79,7 +76,8 @@
     "description": "Creating new website",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Wordpress,JS,HTML5,CSS3,",
-    "src": "/images/technology/vipidei.jpg"
+    "src": "/images/technology/vipidei.jpg",
+    "imageFull": "/images/technology/vipidei-full.jpg"
   },
   {
     "id": 10,
@@ -98,7 +96,8 @@
     "description": "Created and updated UI",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Wordpress,Woocommerce,JS,HTML5,CSS3,",
-    "src": "/images/technology/wimpo.jpg"
+    "src": "/images/technology/wimpo.jpg",
+    "imageFull": "/images/technology/wimpo-full.jpg"
   },
   {
     "id": 12,
@@ -107,7 +106,8 @@
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Wordpress,JS,PHP,CSS3,LESS/SASS,",
-    "src": "/images/technology/suprime.jpg"
+    "src": "/images/technology/suprime.jpg",
+    "imageFull": "/images/technology/suprime.jpg"
   },
   {
     "id": 13,
@@ -116,7 +116,8 @@
     "description": "Create wordpress corp site",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Wordpress,JS,HTML5,CSS3,",
-    "src": "/images/technology/legal.jpg"
+    "src": "/images/technology/legal.jpg",
+    "imageFull": "/images/technology/legal-full.jpg"
   },
   {
     "id": 14,
@@ -125,16 +126,8 @@
     "description": "Create corp site",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Wordpress,JS,HTML5,CSS3,",
-    "src": "/images/technology/avantage.jpg"
-  },
-  {
-    "id": 15,
-    "label": "Koko mama",
-    "sublabel": "Online store",
-    "description": "Create online store",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "OpenCart,JS,HTML5,CSS3,",
-    "src": "/images/technology/kokomama.jpg"
+    "src": "/images/technology/avantage.jpg",
+    "imageFull": "/images/technology/avantage-full.jpg"
   },
   {
     "id": 16,
@@ -143,7 +136,8 @@
     "description": "Create online store",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "OpenCart,JS,HTML5,CSS3,",
-    "src": "/images/technology/valentir.jpg"
+    "src": "/images/technology/valentir.jpg",
+    "imageFull": "/images/technology/valentir-full.jpg"
   },
   {
     "id": 17,
@@ -152,7 +146,8 @@
     "description": "Create wordpress online store",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Wordpress,Woocommerce,JS,HTML5,CSS3,",
-    "src": "/images/technology/uni.jpg"
+    "src": "/images/technology/uni.jpg",
+    "imageFull": "/images/technology/uni-full.jpg"
   },
   {
     "id": 18,
@@ -161,7 +156,8 @@
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Vue,HTML5,LESS/SASS,JS,Webpack,",
-    "src": "/images/technology/hautarzt.jpg"
+    "src": "/images/technology/hautarzt.jpg",
+    "imageFull": "/images/technology/hautarzt-full.jpg"
   },
   {
     "id": 19,
@@ -170,7 +166,8 @@
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Magento,JS,HTML5,LESS/SASS,Webpack,",
-    "src": "/images/technology/armogan.jpg"
+    "src": "/images/technology/armogan.jpg",
+    "imageFull": "/images/technology/armogan-full.jpg"
   },
   {
     "id": 20,
@@ -179,7 +176,8 @@
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Magento,JS,HTML5,LESS/SASS,Graphql,",
-    "src": "/images/technology/damp-e.jpg"
+    "src": "/images/technology/damp-e.jpg",
+    "imageFull": "/images/technology/damp-e-full.jpg"
   },
   {
     "id": 21,
@@ -188,7 +186,8 @@
     "description": "Created new UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Magento,JS,HTML5,LESS/SASS,",
-    "src": "/images/technology/sap.jpg"
+    "src": "/images/technology/sap.jpg",
+    "imageFull": "/images/technology/sap-full.jpg"
   },
   {
     "id": 22,
@@ -197,7 +196,8 @@
     "description": "Created and updated UI",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Wordpress,JS,HTML5,CSS3,",
-    "src": "/images/technology/mvp.jpg"
+    "src": "/images/technology/mvp.jpg",
+    "imageFull": "/images/technology/mvp-full.jpg"
   },
   {
     "id": 23,
@@ -206,7 +206,8 @@
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Magento,JS,HTML5,LESS/SASS,Grunt",
-    "src": "/images/technology/delm.jpg"
+    "src": "/images/technology/delm.jpg",
+    "imageFull": "/images/technology/delm-full.jpg"
   },
   {
     "id": 24,
@@ -215,6 +216,7 @@
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Magento,JS,HTML5,LESS/SASS,Grunt",
-    "src": "/images/technology/gadgetline.jpg"
+    "src": "/images/technology/gadgetline.jpg",
+    "imageFull": "/images/technology/gadgetline-full.jpg"
   }
 ]
