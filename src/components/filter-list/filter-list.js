@@ -1,22 +1,38 @@
-import React, {useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import FilterItem from "./filter-item";
 import './filter-list.css';
 import {Link as LinkS} from "react-scroll";
+import {PathContext} from "../utils/path-context";
 
 const FilterList = ({lists, showItems}) => {
-
     const [visible, setShowMore] = useState(false);
+    const {pathname} = useContext(PathContext);
 
     const newList = lists.slice(0, showItems);
 
     const newShowList = lists.slice(newList.length, lists.length);
 
-    const indicator = newShowList.length > 0;
+    const showALL = () => {
+        if (pathname === '/projects'){
+            indicator = false;
+            setShowMore(!visible);
+        }
+    }
+
+    useEffect(() => {
+        showALL();
+    }, [])
+
+    let indicator = newShowList.length > 0;
+
+    if (pathname === '/projects'){
+        indicator = false;
+    }
 
     return (
         <>
             <ul className="technology__list">
-                <FilterItem newList={newList} />
+                <FilterItem newList={newList}/>
                 {visible ? <FilterItem newList={newShowList}/> : null}
             </ul>
 

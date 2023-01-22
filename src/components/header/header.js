@@ -69,9 +69,9 @@ const Header = ({pathname}) => {
         </div>
         :
         <div className={menuClassName.join(" ")}>
-            <NavLink to="/" end>Home</NavLink>
-            <NavLink to="/projects">Projects</NavLink>
-            <NavLink to="/skills">Skills</NavLink>
+            <NavLink to="/" end onClick={()=>window.scrollTo(0, 0)}>Home</NavLink>
+            <NavLink to="/projects" onClick={()=>window.scrollTo(0, 0)}>Projects</NavLink>
+            <NavLink to="/skills" onClick={()=>window.scrollTo(0, 0)}>Skills</NavLink>
         </div>
     ;
 
@@ -80,7 +80,7 @@ const Header = ({pathname}) => {
             <div className="header-container">
                 <div className="header">
                     <div className="header__logo">
-                        <NavLink to="/" end>
+                        <NavLink to="/" end onClick={()=>window.scrollTo(0, 0)}>
                             <img src={logo} alt='Drobotun Anastasia logo' width="100px"/>
                         </NavLink>
                     </div>

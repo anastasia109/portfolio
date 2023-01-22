@@ -50,7 +50,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="skills__btn">
-                        <Link className="btn btn__l" to={'/skills'}>More</Link>
+                        <Link className="btn btn__l" to={'/skills'} onClick={()=>window.scrollTo(0, 0)}>More</Link>
                     </div>
                 </div>
             </div>

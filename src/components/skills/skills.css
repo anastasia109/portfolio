@@ -271,9 +271,6 @@
 .skills__page .skills__item:hover .skills__item-image {
   background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(232, 223, 253, 0.5) 100%);
 }
-.skills__page .skills__item:hover .skills__item-title {
-  color: #9c8cc2;
-}
 .skills__page .skills__item:hover:before {
   display: none;
 }

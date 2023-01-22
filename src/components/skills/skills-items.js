@@ -9,7 +9,7 @@ const SkillsItems = () => {
             const {title, src, description} = item;
 
             return (
-                <SkillsItem i={i}
+                <SkillsItem key={i}
                             delay={delay}
                             title={title}
                             src={src}

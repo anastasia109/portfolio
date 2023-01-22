@@ -18,8 +18,13 @@ const App = () => {
         AOS.init();
         AOS.refresh();
 
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+
         setLoading(false);
     }, [])
+
     return (
         <Fragment>
             {

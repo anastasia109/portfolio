@@ -28,7 +28,7 @@ const FilterItem = ({newList}) => {
                                         <TagList list={list} />
                                     </ul>
                                     <Link className="btn"
-                                          to={'/projects/' + id}>Read more</Link>
+                                          to={'/projects/' + id} onClick={()=>window.scrollTo(0, 0)}>Read more</Link>
                                 </div>
                             </div>
                         </li>)

@@ -35,7 +35,6 @@ const ProjectIdPage = () => {
                         <h2 className="main__title">{item[0].label}</h2>
                         <span className="project-id__subtitle">{item[0].sublabel}</span>
                     </div>
-
                     <div className="project-id__main">
                         <div className="project-id__img" onClick={handleShowPopup}>
                             {item[0].src ? <img src={item[0].src} alt={item[0].label}/> :
