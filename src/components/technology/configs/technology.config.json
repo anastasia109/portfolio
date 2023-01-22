@@ -41,16 +41,6 @@
   },
   {
     "id": 5,
-    "label": "Unidencellular",
-    "sublabel": "M1 to M2 Migration",
-    "description": "Created and updated UI,bug-fixing,markup",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Magento,JS,HTML5,LESS/SASS,",
-    "src": "/images/technology/und.jpg",
-    "imageFull": "/images/technology/und-full.jpg"
-  },
-  {
-    "id": 6,
     "label": "Pharma hyaluron",
     "sublabel": "Create online store",
     "description": "Online store",
@@ -60,7 +50,7 @@
     "imageFull": "/images/technology/pharma-full.jpg"
   },
   {
-    "id": 7,
+    "id": 6,
     "label": "Arhitektor krasoty",
     "sublabel": "Online store",
     "description": "Create online store",
@@ -70,67 +60,7 @@
     "imageFull": "/images/technology/architect-full.jpg"
   },
   {
-    "id": 9,
-    "label": "Vipidei",
-    "sublabel": "Wordpress corp site",
-    "description": "Creating new website",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Wordpress,JS,HTML5,CSS3,",
-    "src": "/images/technology/vipidei.jpg",
-    "imageFull": "/images/technology/vipidei-full.jpg"
-  },
-  {
-    "id": 10,
-    "label": "Beauty service",
-    "sublabel": "Online store",
-    "description": "Create online store",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "OpenCart,JS,HTML5,CSS3,LESS/SASS,",
-    "src": "/images/technology/beauty.jpg",
-    "imageFull": "/images/technology/beauty-full.jpg"
-  },
-  {
-    "id": 11,
-    "label": "Wimpolepharmacy",
-    "sublabel": "Wordpress online store",
-    "description": "Created and updated UI",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Wordpress,Woocommerce,JS,HTML5,CSS3,",
-    "src": "/images/technology/wimpo.jpg",
-    "imageFull": "/images/technology/wimpo-full.jpg"
-  },
-  {
-    "id": 12,
-    "label": "Suprime",
-    "sublabel": "Group of Wordpress projects",
-    "description": "Created and updated UI,bug-fixing,markup",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Wordpress,JS,PHP,CSS3,LESS/SASS,",
-    "src": "/images/technology/suprime.jpg",
-    "imageFull": "/images/technology/suprime.jpg"
-  },
-  {
-    "id": 13,
-    "label": "Legal 100",
-    "sublabel": "Wordpress corp site",
-    "description": "Create wordpress corp site",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Wordpress,JS,HTML5,CSS3,",
-    "src": "/images/technology/legal.jpg",
-    "imageFull": "/images/technology/legal-full.jpg"
-  },
-  {
-    "id": 14,
-    "label": "Avantage",
-    "sublabel": "Create corp site",
-    "description": "Create corp site",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Wordpress,JS,HTML5,CSS3,",
-    "src": "/images/technology/avantage.jpg",
-    "imageFull": "/images/technology/avantage-full.jpg"
-  },
-  {
-    "id": 16,
+    "id": 7,
     "label": "Valentir store",
     "sublabel": "Online store",
     "description": "Create online store",
@@ -140,7 +70,47 @@
     "imageFull": "/images/technology/valentir-full.jpg"
   },
   {
-    "id": 17,
+    "id": 8,
+    "label": "Beauty service",
+    "sublabel": "Online store",
+    "description": "Create online store",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
+    "tags": "OpenCart,JS,HTML5,CSS3,LESS/SASS,",
+    "src": "/images/technology/beauty.jpg",
+    "imageFull": "/images/technology/beauty-full.jpg"
+  },
+  {
+    "id": 9,
+    "label": "Suprime",
+    "sublabel": "Group of Wordpress projects",
+    "description": "Created and updated UI,bug-fixing,markup",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
+    "tags": "Wordpress,JS,PHP,CSS3,LESS/SASS,",
+    "src": "/images/technology/suprime.jpg",
+    "imageFull": "/images/technology/suprime.jpg"
+  },
+  {
+    "id": 10,
+    "label": "Legal 100",
+    "sublabel": "Wordpress corp site",
+    "description": "Create wordpress corp site",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
+    "tags": "Wordpress,JS,HTML5,CSS3,",
+    "src": "/images/technology/legal.jpg",
+    "imageFull": "/images/technology/legal-full.jpg"
+  },
+  {
+    "id": 11,
+    "label": "Avantage",
+    "sublabel": "Create corp site",
+    "description": "Create corp site",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
+    "tags": "Wordpress,JS,HTML5,CSS3,",
+    "src": "/images/technology/avantage.jpg",
+    "imageFull": "/images/technology/avantage-full.jpg"
+  },
+  {
+    "id": 12,
     "label": "Unifield",
     "sublabel": "Wordpress online store",
     "description": "Create wordpress online store",
@@ -150,17 +120,17 @@
     "imageFull": "/images/technology/uni-full.jpg"
   },
   {
-    "id": 18,
+    "id": 13,
     "label": "Hautarzt",
     "sublabel": "Website online consultation",
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Vue,HTML5,LESS/SASS,JS,Webpack,",
+    "tags": "React,HTML5,LESS/SASS,JS,Webpack,",
     "src": "/images/technology/hautarzt.jpg",
     "imageFull": "/images/technology/hautarzt-full.jpg"
   },
   {
-    "id": 19,
+    "id": 14,
     "label": "Armogan",
     "sublabel": "Magento 2 CE online store",
     "description": "Created and updated UI,bug-fixing,markup",
@@ -170,17 +140,17 @@
     "imageFull": "/images/technology/armogan-full.jpg"
   },
   {
-    "id": 20,
+    "id": 15,
     "label": "Damp-e PWA",
     "sublabel": "M2 Website",
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Magento,JS,HTML5,LESS/SASS,Graphql,",
+    "tags": "Magento,JS,HTML5,LESS/SASS,Graphql,React",
     "src": "/images/technology/damp-e.jpg",
     "imageFull": "/images/technology/damp-e-full.jpg"
   },
   {
-    "id": 21,
+    "id": 16,
     "label": "SapienCreations",
     "sublabel": "M1 Website",
     "description": "Created new UI,bug-fixing,markup",
@@ -190,17 +160,7 @@
     "imageFull": "/images/technology/sap-full.jpg"
   },
   {
-    "id": 22,
-    "label": "MVP",
-    "sublabel": "Wordpress corp site",
-    "description": "Created and updated UI",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Wordpress,JS,HTML5,CSS3,",
-    "src": "/images/technology/mvp.jpg",
-    "imageFull": "/images/technology/mvp-full.jpg"
-  },
-  {
-    "id": 23,
+    "id": 17,
     "label": "Delm",
     "sublabel": "M2 Website",
     "description": "Created and updated UI,bug-fixing,markup",
@@ -210,13 +170,43 @@
     "imageFull": "/images/technology/delm-full.jpg"
   },
   {
-    "id": 24,
-    "label": "Gadgetline",
-    "sublabel": "M2 Website",
+    "id": 18,
+    "label": "Amita",
+    "sublabel": "M2 Website, HYVA",
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Magento,JS,HTML5,LESS/SASS,Grunt",
-    "src": "/images/technology/gadgetline.jpg",
-    "imageFull": "/images/technology/gadgetline-full.jpg"
+    "src": "/images/technology/amita.jpg",
+    "imageFull": "/images/technology/amita-full.jpg"
+  },
+  {
+    "id": 19,
+    "label": "Hasayeret",
+    "sublabel": "M2 Website, HYVA",
+    "description": "Created and updated UI,bug-fixing,markup",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
+    "tags": "Magento,JS,HTML5,LESS/SASS,Grunt",
+    "src": "/images/technology/amita.jpg",
+    "imageFull": "/images/technology/amita-full.jpg"
+  },
+  {
+    "id": 20,
+    "label": "Vipidei",
+    "sublabel": "Wordpress corp site",
+    "description": "Creating new website",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
+    "tags": "Wordpress,JS,HTML5,CSS3,",
+    "src": "/images/technology/vipidei.jpg",
+    "imageFull": "/images/technology/vipidei-full.jpg"
+  },
+  {
+    "id": 21,
+    "label": "MVP",
+    "sublabel": "Wordpress corp site",
+    "description": "Created and updated UI",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
+    "tags": "Wordpress,JS,HTML5,CSS3,",
+    "src": "/images/technology/mvp.jpg",
+    "imageFull": "/images/technology/mvp-full.jpg"
   }
 ]
