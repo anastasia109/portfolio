@@ -21,7 +21,7 @@ const FilterList = ({lists, showItems}) => {
 
     useEffect(() => {
         showALL();
-    }, [])
+    })
 
     let indicator = newShowList.length > 0;
 
