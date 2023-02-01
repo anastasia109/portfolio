@@ -23,7 +23,7 @@ const Projects = () => {
     }, [selectedSort])
 
     const sortedAndSearch = useMemo(() => {
-        return sortedItems.filter(item => item.label.toLowerCase().includes(searchQuery.toLowerCase()))
+        return sortedItems.filter(item => item.tags.toLowerCase().includes(searchQuery.toLowerCase()))
     }, [searchQuery, sortedItems])
 
     const sortItems = (sort) => {
