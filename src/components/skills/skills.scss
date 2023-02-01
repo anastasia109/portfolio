@@ -287,6 +287,13 @@
         &:before {
           display: none;
         }
+
+        .skills__item-title {
+          color: $color-white;
+          @include tablets {
+            color: $main-color2;
+          }
+        }
       }
     }
   }

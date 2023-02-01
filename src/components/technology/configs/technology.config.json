@@ -145,7 +145,7 @@
     "sublabel": "M2 Website",
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
-    "tags": "Magento,JS,HTML5,LESS/SASS,Graphql,React",
+    "tags": "React,Magento,JS,HTML5,LESS/SASS,Graphql,",
     "src": "/images/technology/damp-e.jpg",
     "imageFull": "/images/technology/damp-e-full.jpg"
   },
@@ -181,13 +181,13 @@
   },
   {
     "id": 19,
-    "label": "Hasayeret",
+    "label": "Sayeret",
     "sublabel": "M2 Website, HYVA",
     "description": "Created and updated UI,bug-fixing,markup",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor  incididunt ut labore et dolore magna aliqua.",
     "tags": "Magento,JS,HTML5,LESS/SASS,Grunt",
-    "src": "/images/technology/amita.jpg",
-    "imageFull": "/images/technology/amita-full.jpg"
+    "src": "/images/technology/hasayeret.jpg",
+    "imageFull": "/images/technology/hasayeret-full.jpg"
   },
   {
     "id": 20,

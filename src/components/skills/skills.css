@@ -274,5 +274,13 @@
 .skills__page .skills__item:hover:before {
   display: none;
 }
+.skills__page .skills__item:hover .skills__item-title {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .skills__page .skills__item:hover .skills__item-title {
+    color: #9c8cc2;
+  }
+}
 
 /*# sourceMappingURL=skills.css.map */

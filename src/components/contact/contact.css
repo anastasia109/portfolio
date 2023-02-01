@@ -39,6 +39,10 @@
 .contact__form {
   width: 100%;
 }
+.contact__form-block {
+  position: relative;
+  z-index: 2;
+}
 .contact__form-input {
   margin-bottom: 20px;
 }

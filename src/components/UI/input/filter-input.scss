@@ -1,0 +1,16 @@
+@import "../../../static/scss/base/variables.scss";
+@import "../../../static/scss/base/mixins.scss";
+
+.filter-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid $main-color2;
+  border-radius: 12px;
+  background-color: $color-white;
+
+  @include tablets {
+    font-size: 18px;
+  }
+}

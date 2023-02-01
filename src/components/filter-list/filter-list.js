@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState} from 'react';
 import FilterItem from "./filter-item";
 import './filter-list.css';
 import {Link as LinkS} from "react-scroll";
-import {PathContext} from "../utils/path-context";
+import {PathContext} from "../../utils/path-context";
 
 const FilterList = ({lists, showItems}) => {
     const [visible, setShowMore] = useState(false);
