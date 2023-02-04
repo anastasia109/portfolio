@@ -30,6 +30,8 @@ const Projects = () => {
         setSelectedSort(sort);
     }
 
+
+
     return (
         <>
             <Header pathname={pathname}/>

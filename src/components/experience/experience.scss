@@ -23,41 +23,13 @@
 
   &__item {
     width: 100%;
-    max-width: 470px;
     margin-bottom: 30px;
 
-    @include tablets {
-      max-width: 330px;
-      margin-bottom: 0;
-    }
-
-    @include laptop {
-      max-width: 365px;
-    }
-
-    @include desktop {
-      max-width: 470px;
-    }
-
-    &:first-child {
-
-      @include tablets {
-        margin-left: auto;
-      }
-
-      .experience__item-image {
-        background: $main-color2;
-      }
-    }
-
-    &:nth-child(2) {
-
-      @include tablets {
-        margin-top: -275px;
-      }
-
-      @include laptop {
-        margin-top: -310px;
+    &:nth-child(2n) {
+      .experience__item-main {
+        @include tablets {
+          flex-direction: row-reverse;
+        }
       }
 
       .experience__item-image {
@@ -65,20 +37,18 @@
       }
     }
 
-    &:nth-child(3) {
-
-      @include tablets {
-        margin: -70px 0 0 auto;
-      }
-
-      @include desktop {
-        margin-top: 40px;
-        margin-right: 100px;
-      }
-
+    &:nth-child(2n-1) {
       .experience__item-image {
         background: $main-color2;
       }
+    }
+  }
+
+  &__item-main {
+    @include tablets {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
     }
   }
 
@@ -87,11 +57,18 @@
     margin-bottom: 40px;
 
     @include tablets {
+      width: 40%;
       border-radius: 24px;
     }
 
     img {
       width: 100%;
+    }
+  }
+
+  &__item-content {
+    @include tablets {
+      width: 60%;
     }
   }
 
@@ -109,6 +86,7 @@
   }
 
   &__item-description {
+    list-style: inside;
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.2;
@@ -116,7 +94,12 @@
     @include tablets {
       margin-bottom: 20px;
       font-size: 18px;
-      line-height: 1.7;
+      line-height: 1.5;
+    }
+
+    li {
+      margin-bottom: 5px;
+
     }
   }
 
