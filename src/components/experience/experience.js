@@ -5,7 +5,7 @@ import './experience.css';
 const experienceLists = [
     {
         id: 0,
-        company: "Freelance",
+        company: "NDA Company",
         during: 'August 2022 – Present',
         description: [
             'Created and updated UI, bug-fixing, tasks estimation, markup;',
