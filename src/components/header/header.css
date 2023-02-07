@@ -142,6 +142,35 @@ header {
     display: none;
   }
 }
+@media (min-width: 768px) {
+  .header__btns {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.header__btns .btn {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header__btns .btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+.header__btns .btn:first-child {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .header__btns .btn:first-child {
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .header__btns .btn:last-child {
+    margin-right: 8px;
+  }
+}
 
 .overlay {
   position: fixed;

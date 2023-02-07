@@ -65,7 +65,10 @@ const Header = ({pathname}) => {
                    duration={500}>
                 Contact Me
             </LinkS>
-            <a className="btn" href={Pdf} target="_blank" rel="noreferrer">Resume</a>
+            <div className="header__btns">
+                <a className="btn" href={Pdf} target="_blank" rel="noreferrer">Resume</a>
+                <a className="btn" href="https://github.com/anastasia109/portfolio" target="_blank" rel="noreferrer">Code</a>
+            </div>
         </div>
         :
         <div className={menuClassName.join(" ")}>

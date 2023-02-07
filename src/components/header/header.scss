@@ -160,6 +160,36 @@ header {
       display: none;
     }
   }
+
+  &__btns {
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btn {
+      text-align: center;
+      @include tablets {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      &:first-child {
+        margin-left: 0;
+
+        @include tablets {
+          margin-left: 8px;
+          margin-bottom: 8px;
+        }
+      }
+
+      &:last-child {
+        @include tablets {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
 }
 
 .overlay {
