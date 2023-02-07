@@ -16,7 +16,7 @@ const Footer = () => {
                         <img src={logo} alt='Drobotun Anastasia logo' width="100px" height="92px"/>
 
                         <div className="copyright">
-                            <FontAwesomeIcon icon={faCopyright}/> 2022 Drobotun Anastasiia
+                            <FontAwesomeIcon icon={faCopyright}/>{new Date().getFullYear()} Drobotun Anastasiia
                         </div>
                     </div>
                 </div>
